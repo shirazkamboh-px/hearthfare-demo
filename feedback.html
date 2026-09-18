@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Send feedback — Hearthfare</title>
+<link rel="icon" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .fb { max-width: 34rem; margin: 0 auto; padding: var(--space-7) var(--gutter); }
+  .fb label { display: block; margin-top: var(--space-4); font-size: var(--text-sm); font-weight: 600; }
+  .fb input, .fb textarea { width: 100%; margin-top: var(--space-2); padding: 0.625rem 0.75rem; font: inherit; font-size: var(--text-sm); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--white); box-sizing: border-box; }
+  .fb button { margin-top: var(--space-5); }
+</style>
+</head>
+<body>
+<main class="fb">
+  <h1>Send feedback</h1>
+  <p>The Feedback button in the corner of any page fills this in for you. This page is the fallback.</p>
+
+  <!-- Netlify detects this static form at deploy time; the widget posts to it. -->
+  <form name="feedback" method="POST" action="/feedback.html" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="feedback">
+    <p hidden><label>Leave this empty: <input name="bot-field"></label></p>
+    <label>Your name <input type="text" name="name" autocomplete="name"></label>
+    <label>Page <input type="text" name="page" value="/"></label>
+    <label>Screen width <input type="text" name="viewport"></label>
+    <label>Feedback <textarea name="message" rows="6" required></textarea></label>
+    <button class="btn btn--primary" type="submit"><span class="btn__label">Send feedback</span></button>
+  </form>
+</main>
+</body>
+</html>
