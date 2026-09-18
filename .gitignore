@@ -6,3 +6,6 @@ docs/
 *.docx
 *.md
 ~$*
+
+# README is the one .md that belongs in the repo
+!README.md
