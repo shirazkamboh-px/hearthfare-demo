@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storefront states — Hearthfare</title>
+<link rel="icon" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body class="page-app" data-fm-layer="Storefront states page">
+<header class="site-header" data-fm-layer="Header">
+<a class="brand" href="../index.html"><img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt=""><span class="brand__text"><span class="brand__name">hearthfare</span><span class="brand__tagline">Homemade Meals. Local Connections.</span></span></a>
+<nav class="site-nav" aria-label="Primary"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="../how-it-works.html">How it works</a></li><li class="site-nav__item"><a class="site-nav__link" href="../why-hearthfare.html">Why Hearthfare</a></li><li class="site-nav__item"><a class="site-nav__link" href="../whats-cooking.html">What's cooking</a></li><li class="site-nav__item"><a class="site-nav__link" href="../for-cooks.html">For cooks</a></li></ul></nav>
+<div class="header-actions"><a class="login-link" href="../login.html">Log in</a></div>
+</header>
+
+<!-- What a customer sees for each storefront state set in cook-storefront-edit, plus item/time availability. -->
+<main class="sf-body sf-body--single" data-fm-layer="States body">
+<div class="page-head"><div class="page-head__text">
+<h1 class="page-head__title">Storefront states</h1>
+<p class="page-head__sub">Open, Paused, Closed and Hidden — each should look intentional, never broken.</p></div></div>
+
+<div class="grid grid--2" style="align-items:start;" data-fm-layer="States grid">
+
+<section class="panel" data-fm-layer="State — Open">
+<div class="panel__head"><p class="state-card__label">Open</p><span class="pill pill--ok"><span class="pill__dot"></span>Open</span></div>
+<div class="panel__body">
+<div class="table__person"><img class="avatar avatar--lg" src="assets/cook-journey.jpg" alt="" style="border-radius:var(--radius-sm);object-fit:cover;"><span class="table__person-text"><span class="sf-section__title">Li's Hearth</span><span class="table__person-sub">Taking orders · next pickup today 4:00 PM</span></span></div>
+<div class="btn-row" style="margin-top:1rem;"><a class="btn btn--primary btn--sm" href="shop-storefront.html"><span class="btn__label">Order for pickup</span></a><a class="btn btn--outline btn--sm" href="shop-storefront.html#dinein"><span class="btn__label">Request dine-in</span></a></div></div>
+</section>
+
+<section class="panel" data-fm-layer="State — Paused">
+<div class="panel__head"><p class="state-card__label">Paused</p><span class="pill pill--warn"><span class="pill__dot"></span>Paused</span></div>
+<div class="panel__body">
+<div class="table__person"><img class="avatar avatar--lg" src="assets/cook-journey.jpg" alt="" style="border-radius:var(--radius-sm);object-fit:cover;"><span class="table__person-text"><span class="sf-section__title">Li's Hearth</span><span class="table__person-sub">Menu visible · ordering paused</span></span></div>
+<div class="banner banner--warn" style="margin-top:1rem;"><svg class="banner__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M10 9v6M14 9v6"/></svg><div class="banner__text"><p class="banner__title">Li has paused new orders for now</p><p class="banner__body">You can still browse the menu and save this Hearth. Ordering reopens at 4:00 PM today.</p></div></div>
+<div class="btn-row" style="margin-top:1rem;"><button class="btn btn--sm" type="button" disabled><span class="btn__label">Ordering paused</span></button><button class="btn btn--outline btn--sm" type="button"><span class="btn__label">Save Hearth</span></button></div></div>
+</section>
+
+<section class="panel" data-fm-layer="State — Closed">
+<div class="panel__head"><p class="state-card__label">Closed</p><span class="pill pill--muted"><span class="pill__dot"></span>Closed</span></div>
+<div class="panel__body">
+<div class="table__person"><img class="avatar avatar--lg" src="assets/cook-journey.jpg" alt="" style="border-radius:var(--radius-sm);object-fit:cover;"><span class="table__person-text"><span class="sf-section__title">Li's Hearth</span><span class="table__person-sub">Menu visible · closed this week</span></span></div>
+<div class="banner banner--info" style="margin-top:1rem;"><svg class="banner__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3.5V6m8-2.5V6"/></svg><div class="banner__text"><p class="banner__title">Closed until Thursday 18 September</p><p class="banner__body">Li's next pickup window is Thursday 18 September at 4:00 PM. Browse the menu now; ordering opens then.</p></div></div>
+<div class="btn-row" style="margin-top:1rem;"><button class="btn btn--sm" type="button" disabled><span class="btn__label">Closed</span></button><button class="btn btn--outline btn--sm" type="button"><span class="btn__label">Save Hearth</span></button></div></div>
+</section>
+
+<section class="panel" data-fm-layer="State — Hidden">
+<div class="panel__head"><p class="state-card__label">Hidden (visiting the link)</p><span class="pill pill--muted">Hidden</span></div>
+<div class="empty">
+<svg class="empty__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5 5.5 4.5h13L20 9.5"/><path d="M4 9.5h16v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 18.5Z"/><path d="M9.5 20v-5h5v5"/></svg>
+<p class="empty__title">This Hearth isn't available right now</p>
+<p class="empty__body">It may be taking a break. If you have an order here, you can still find it in your orders.</p>
+<div class="empty__action btn-row" style="justify-content:center;"><a class="btn btn--primary btn--sm" href="shop-search.html"><span class="btn__label">Find Hearths near you</span></a><a class="btn btn--outline btn--sm" href="customer-orders.html"><span class="btn__label">Your orders</span></a></div></div>
+</section>
+</div>
+
+<section class="sf-section" style="margin-top:var(--space-6);" data-fm-layer="Section — Item and time availability">
+<h2 class="sf-section__title">Sold out, Full and Unavailable</h2>
+<p class="sf-section__body">Visibly off and not selectable until availability returns — for example when Li raises inventory or capacity and saves.</p>
+<div class="grid grid--2" style="align-items:start;">
+<article class="dish dish--out"><img class="dish__photo" src="assets/dish-pho.png" alt=""><div class="dish__text"><div class="dish__top"><h3 class="dish__name">Horchata, by the quart</h3><span class="dish__price">$8.00</span></div><p class="dish__body">Sold out — automatically at the day's cap, or marked by Li.</p><div class="dish__foot"><div class="dish__tags"><span class="pill pill--danger">Sold out today</span></div><button class="btn btn--sm" type="button" disabled><span class="btn__label">Sold out</span></button></div></div></article>
+<div class="panel"><div class="panel__body"><div class="grid" style="gap:0.5rem;">
+<span class="slot slot--off"><span class="slot__time">Today · 7:00 – 7:30 PM</span><span class="slot__left">Full</span></span>
+<span class="slot slot--off"><span class="slot__time">Sat 13 · 11:00 AM – 12:30 PM</span><span class="slot__left">Unavailable</span></span>
+<span class="slot slot--off"><span class="slot__time">Sat 13 Sep · 6:30 PM dine-in</span><span class="slot__left">Full</span></span></div>
+<p class="field__hint" style="margin-top:0.75rem;">Full: every order or seat is taken. Unavailable: Li closed this window to new orders.</p></div></div>
+<div class="panel"><div class="panel__body">
+<p class="form__legend" style="margin-bottom:0.75rem;">A Hearth that doesn't offer dine-in at all</p>
+<div class="fulfil" role="group" aria-label="Pickup or dine-in">
+<button class="fulfil__opt fulfil__opt--on" type="button" aria-pressed="true"><svg class="fulfil__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg><span><span class="fulfil__title">Pickup</span><span class="fulfil__sub">Next: today, 4:00 – 4:30 PM</span></span></button>
+<button class="fulfil__opt" type="button" disabled><svg class="fulfil__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5v7a2.5 2.5 0 0 0 5 0v-7M9 3.5v17"/><path d="M16.5 3.5c-1.4 1.6-1.8 4-1.4 6.3.2 1 1 1.7 2 1.7h1.4V3.5"/><path d="M18.5 11.5v9"/></svg><span><span class="fulfil__title">Dine-in</span><span class="fulfil__sub">Not offered by this Hearth</span></span></button>
+</div>
+<p class="field__hint" style="margin-top:0.75rem;">Grayed out and not selectable — nothing to tap, nothing to explain.</p></div></div>
+</div>
+</section>
+</main>
+<footer class="site-footer site-footer--bar-only">
+<div class="site-footer__bar"><p class="site-footer__copy">© 2026 Hearthfare. All rights reserved.</p><p class="site-footer__made">Made for home cooks in San Diego and Los Angeles.</p></div></footer>
+<script src="../role-switch.js"></script>
+</body>
+</html>

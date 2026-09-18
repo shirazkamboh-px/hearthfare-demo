@@ -1,0 +1,8 @@
+# Local Netlify folder
+.netlify
+
+# Internal docs — kept out of the repo so they never reach the published site
+docs/
+*.docx
+*.md
+~$*

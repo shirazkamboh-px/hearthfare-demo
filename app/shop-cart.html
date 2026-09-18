@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your cart — Hearthfare</title>
+<link rel="icon" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body class="page-app" data-fm-layer="Cart page">
+
+<header class="site-header" data-fm-layer="Header">
+  <a class="brand" href="../index.html" data-fm-layer="Brand">
+    <img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt="" data-fm-layer="Brand mark">
+    <span class="brand__text" data-fm-layer="Brand text">
+      <span class="brand__name" data-fm-layer="Brand name">hearthfare</span>
+      <span class="brand__tagline" data-fm-layer="Brand tagline">Homemade Meals. Local Connections.</span>
+    </span>
+  </a>
+
+  <nav class="site-nav" aria-label="Primary" data-fm-layer="Main nav">
+    <ul class="site-nav__list" data-fm-layer="Nav list">
+      <li class="site-nav__item" data-fm-layer="Nav item — How it works"><a class="site-nav__link" href="../how-it-works.html" data-fm-layer="Nav label — How it works">How it works</a></li>
+      <li class="site-nav__item" data-fm-layer="Nav item — Why Hearthfare"><a class="site-nav__link" href="../why-hearthfare.html" data-fm-layer="Nav label — Why Hearthfare">Why Hearthfare</a></li>
+      <li class="site-nav__item" data-fm-layer="Nav item — What's cooking"><a class="site-nav__link" href="../whats-cooking.html" data-fm-layer="Nav label — What's cooking">What's cooking</a></li>
+      <li class="site-nav__item" data-fm-layer="Nav item — For cooks"><a class="site-nav__link" href="../for-cooks.html" data-fm-layer="Nav label — For cooks">For cooks</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-actions" data-fm-layer="Header actions">
+    <a class="cart" href="shop-cart.html" aria-current="page" aria-label="Cart, 3 items" data-fm-layer="Cart button">
+      <svg class="cart__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Cart icon">
+        <path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/>
+        <path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/>
+      </svg>
+      <span class="cart__badge" data-fm-layer="Cart badge">3</span>
+    </a>
+    <a class="login-link" href="../login.html?next=app/shop-cart.html" data-fm-layer="Log in link">Log in</a>
+    <a class="btn btn--primary" href="../signup.html?next=app/shop-cart.html" data-fm-layer="Sign up button"><span class="btn__label" data-fm-layer="Sign up label">Sign up</span></a>
+  </div>
+</header>
+
+<main class="sf-body" style="padding-top:var(--space-6);" data-cart data-fm-layer="Cart body">
+
+  <!-- ===== Left: what is in the cart ===== -->
+  <div data-fm-layer="Cart content">
+
+    <div class="page-head" style="margin-bottom:var(--space-5);" data-fm-layer="Page head">
+      <div class="page-head__text" data-fm-layer="Page head text">
+        <a class="checkout-back" href="shop-storefront.html" data-fm-layer="Link — Keep shopping"><svg class="checkout-back__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Back"><path d="M19 12H5m6-6-6 6 6 6"/></svg><span data-fm-layer="Label — Keep shopping">Keep shopping at Li's Hearth</span></a>
+        <h1 class="page-head__title" data-fm-layer="Page title">Your cart</h1>
+        <p class="page-head__sub" data-fm-layer="Page sub"><span data-cart-count data-fm-layer="Item count">3 items</span> from Li's Hearth</p>
+      </div>
+    </div>
+
+    <section class="panel" data-cart-full data-fm-layer="Panel — Li's Hearth">
+      <div class="panel__head" data-fm-layer="Panel head — Li's Hearth">
+        <div class="cart-hearth" data-fm-layer="Hearth">
+          <span class="avatar avatar--lg" data-fm-layer="Hearth logo"><img src="assets/cook-journey.jpg" alt="" data-fm-layer="Hearth logo photo"></span>
+          <div data-fm-layer="Hearth text">
+            <h2 class="panel__title" data-fm-layer="Hearth name">Li's Hearth</h2>
+            <p class="panel__sub" data-fm-layer="Hearth meta">Mexican · Oaxacan · North Park, San Diego</p>
+          </div>
+        </div>
+        <a class="panel__link" href="shop-storefront.html" data-fm-layer="Link — Add more">Add more</a>
+      </div>
+
+      <div class="panel__body" data-fm-layer="Panel body — Li's Hearth">
+        <div class="cart-method" data-fm-layer="Cart method — Pickup">
+          <span class="table__person-text" data-fm-layer="Method text"><span data-fm-layer="Method pill wrap"><span class="pill pill--pickup" data-fm-layer="Pill — Pickup"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Pill icon — Pickup"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg><span data-fm-layer="Pill label — Pickup">Pickup</span></span></span><span class="cart-method__when" data-fm-layer="Method when">Today · 4:00 – 4:30 PM</span></span>
+          <a class="panel__link" href="shop-storefront.html#order-how" data-fm-layer="Link — Change method">Change</a>
+        </div>
+
+        <div class="cart-items" data-fm-layer="Cart items">
+          <article class="cart-item" data-price="14" data-max="9" data-fm-layer="Cart item — Birria">
+            <img class="cart-item__thumb" src="assets/dish-birria.png" alt="" data-fm-layer="Item photo — Birria">
+            <div class="cart-item__text" data-fm-layer="Item text — Birria">
+              <h3 class="cart-item__name" data-fm-layer="Item name — Birria">Birria plate</h3>
+              <p class="cart-item__meta" data-fm-layer="Item meta — Birria">Regular · $14.00 each · no onions please</p>
+              <div class="cart-item__controls" data-fm-layer="Item controls — Birria">
+                <div class="qty" role="group" aria-label="Quantity of Birria plate" data-fm-layer="Quantity — Birria">
+                  <button class="qty__btn" type="button" data-qty="-1" aria-label="One fewer Birria plate" data-fm-layer="Button — Fewer Birria"><svg class="qty__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" data-fm-layer="Icon — Minus"><path d="M5 12h14"/></svg></button>
+                  <span class="qty__value" aria-live="polite" data-fm-layer="Quantity value — Birria">2</span>
+                  <button class="qty__btn" type="button" data-qty="1" aria-label="One more Birria plate" data-fm-layer="Button — More Birria"><svg class="qty__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" data-fm-layer="Icon — Plus"><path d="M12 5v14M5 12h14"/></svg></button>
+                </div>
+                <span class="cart-item__stock" data-fm-layer="Stock — Birria">9 left today</span>
+                <button class="link-button cart-item__remove" type="button" data-remove data-fm-layer="Button — Remove Birria">Remove</button>
+              </div>
+            </div>
+            <p class="cart-item__price" data-fm-layer="Item price — Birria"><span class="cart-item__total" data-fm-layer="Item total — Birria">$28.00</span></p>
+          </article>
+
+          <article class="cart-item" data-price="26" data-max="2" data-fm-layer="Cart item — Tamales">
+            <img class="cart-item__thumb" src="assets/dish-tamales.jpg" alt="" data-fm-layer="Item photo — Tamales">
+            <div class="cart-item__text" data-fm-layer="Item text — Tamales">
+              <h3 class="cart-item__name" data-fm-layer="Item name — Tamales">Tamales, by the dozen</h3>
+              <p class="cart-item__meta" data-fm-layer="Item meta — Tamales">Chicken in salsa verde · $26.00 a dozen</p>
+              <div class="cart-item__controls" data-fm-layer="Item controls — Tamales">
+                <div class="qty" role="group" aria-label="Quantity of Tamales, by the dozen" data-fm-layer="Quantity — Tamales">
+                  <button class="qty__btn" type="button" data-qty="-1" aria-label="One fewer dozen tamales" data-fm-layer="Button — Fewer Tamales"><svg class="qty__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" data-fm-layer="Icon — Minus"><path d="M5 12h14"/></svg></button>
+                  <span class="qty__value" aria-live="polite" data-fm-layer="Quantity value — Tamales">1</span>
+                  <button class="qty__btn" type="button" data-qty="1" aria-label="One more dozen tamales" data-fm-layer="Button — More Tamales"><svg class="qty__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" data-fm-layer="Icon — Plus"><path d="M12 5v14M5 12h14"/></svg></button>
+                </div>
+                <span class="cart-item__stock cart-item__stock--low" data-fm-layer="Stock — Tamales">Only 2 left today</span>
+                <button class="link-button cart-item__remove" type="button" data-remove data-fm-layer="Button — Remove Tamales">Remove</button>
+              </div>
+            </div>
+            <p class="cart-item__price" data-fm-layer="Item price — Tamales"><span class="cart-item__total" data-fm-layer="Item total — Tamales">$26.00</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" data-cart-empty hidden data-fm-layer="Panel — Empty cart">
+      <div class="empty" data-fm-layer="Empty cart">
+        <svg class="empty__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Empty icon"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg>
+        <p class="empty__title" data-fm-layer="Empty title">Your cart is empty</p>
+        <p class="empty__body" data-fm-layer="Empty body">Find a Hearth near you and add something homemade.</p>
+        <a class="btn btn--primary btn--sm empty__action" href="shop-search.html" data-fm-layer="Button — Find food"><span class="btn__label" data-fm-layer="Label — Find food">Find food near you</span></a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ===== Right: summary ===== -->
+  <aside class="cart-panel" data-cart-full data-fm-layer="Summary panel">
+    <div class="panel" data-fm-layer="Panel — Summary">
+      <div class="panel__head" data-fm-layer="Panel head — Summary">
+        <h2 class="panel__title" data-fm-layer="Panel title — Summary">Order summary</h2>
+        <span class="pill pill--muted" data-cart-count data-fm-layer="Pill — Item count">3 items</span>
+      </div>
+      <div class="panel__body" data-fm-layer="Panel body — Summary">
+        <div class="money" data-fm-layer="Summary money">
+          <div class="money__row" data-fm-layer="Money row — Subtotal"><span class="money__label" data-fm-layer="Money label — Subtotal">Subtotal</span><span class="money__value" data-cart-subtotal data-fm-layer="Money value — Subtotal">$54.00</span></div>
+          <div class="money__row" data-fm-layer="Money row — Tax"><span class="money__label" data-fm-layer="Money label — Tax">Sales tax (7.75%)</span><span class="money__value" data-cart-tax data-fm-layer="Money value — Tax">$4.19</span></div>
+          <div class="money__row" data-fm-layer="Money row — Fee"><span class="money__label" data-fm-layer="Money label — Fee">Hearthfare platform fee <span class="money__info" data-fm-layer="Money info — Fee">i</span></span><span class="money__value" data-cart-fee data-fm-layer="Money value — Fee">$3.24</span></div>
+          <div class="money__row money__row--total" data-fm-layer="Money row — Total"><span class="money__label" data-fm-layer="Money label — Total">Total</span><span class="money__value" data-cart-total data-fm-layer="Money value — Total">$61.43</span></div>
+        </div>
+        <p class="money__note" style="margin-top:0.875rem;" data-fm-layer="Fee explanation">This fee helps support the operation, technology, and services provided by Hearthfare. No tip is required.</p>
+        <div style="margin-top:1.25rem;" data-fm-layer="Summary action">
+          <a class="btn btn--primary btn--block" href="../login.html?next=app/shop-checkout.html" data-fm-layer="Button — Checkout"><span class="btn__label" data-fm-layer="Label — Checkout">Go to checkout</span></a>
+        </div>
+        <p class="money__note money__note--bare" style="margin-top:0.875rem;" data-fm-layer="Summary footnote">Your food payment goes directly to Li's own Stripe account. You choose pickup details and pay at checkout.</p>
+      </div>
+    </div>
+  </aside>
+
+</main>
+
+<footer class="site-footer" data-fm-layer="Footer">
+  <div class="site-footer__brand" data-fm-layer="Footer brand">
+    <a class="brand brand--footer" href="../index.html" data-fm-layer="Footer brand link">
+      <img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt="" data-fm-layer="Footer brand mark">
+      <span class="brand__name brand__name--footer" data-fm-layer="Footer brand name">hearthfare</span>
+    </a>
+    <p class="site-footer__blurb" data-fm-layer="Footer blurb">Homemade meals. Local connections. Discover the cooks in your neighborhood.</p>
+  </div>
+
+  <nav class="footer-col" aria-label="Explore" data-fm-layer="Footer column — Explore">
+    <h3 class="footer-col__title" data-fm-layer="Footer column title — Explore">EXPLORE</h3>
+    <ul class="footer-col__list" data-fm-layer="Footer link list — Explore">
+      <li class="footer-col__item" data-fm-layer="Footer item — Find food"><a class="footer-col__link" href="shop-search.html" data-fm-layer="Footer link — Find food">Find food</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — What's cooking"><a class="footer-col__link" href="../whats-cooking.html" data-fm-layer="Footer link — What's cooking">What's cooking</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — How it works"><a class="footer-col__link" href="../how-it-works.html" data-fm-layer="Footer link — How it works">How it works</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Why Hearthfare"><a class="footer-col__link" href="../why-hearthfare.html" data-fm-layer="Footer link — Why Hearthfare">Why Hearthfare</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Create an account"><a class="footer-col__link" href="../signup.html" data-fm-layer="Footer link — Create an account">Create an account</a></li>
+    </ul>
+  </nav>
+
+  <nav class="footer-col" aria-label="For cooks" data-fm-layer="Footer column — For cooks">
+    <h3 class="footer-col__title" data-fm-layer="Footer column title — For cooks">FOR COOKS</h3>
+    <ul class="footer-col__list" data-fm-layer="Footer link list — For cooks">
+      <li class="footer-col__item" data-fm-layer="Footer item — Start your own Hearth"><a class="footer-col__link" href="../signup.html" data-fm-layer="Footer link — Start your own Hearth">Start your own Hearth</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — For cooks"><a class="footer-col__link" href="../for-cooks.html" data-fm-layer="Footer link — For cooks">For cooks</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Hearth log in"><a class="footer-col__link" href="../login.html" data-fm-layer="Footer link — Hearth log in">Hearth log in</a></li>
+    </ul>
+  </nav>
+
+  <nav class="footer-col" aria-label="Legal" data-fm-layer="Footer column — Legal">
+    <h3 class="footer-col__title" data-fm-layer="Footer column title — Legal">LEGAL</h3>
+    <ul class="footer-col__list" data-fm-layer="Footer link list — Legal">
+      <li class="footer-col__item" data-fm-layer="Footer item — Terms of Service"><a class="footer-col__link" href="#" data-fm-layer="Footer link — Terms of Service">Terms of Service</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Privacy Policy"><a class="footer-col__link" href="#" data-fm-layer="Footer link — Privacy Policy">Privacy Policy</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Contact"><a class="footer-col__link" href="#" data-fm-layer="Footer link — Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="site-footer__bar" data-fm-layer="Footer bar">
+    <span class="site-footer__copy" data-fm-layer="Footer copyright">&copy; 2026 Hearthfare</span>
+    <span class="site-footer__made" data-fm-layer="Footer made in">Made in Home Kitchens</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="../role-switch.js"></script>
+</body>
+</html>

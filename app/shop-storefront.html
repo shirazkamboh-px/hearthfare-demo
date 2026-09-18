@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Li's Hearth — Hearthfare</title>
+<link rel="icon" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body class="page-app" data-fm-layer="Storefront page">
+
+<header class="site-header" data-fm-layer="Header">
+  <a class="brand" href="../index.html" data-fm-layer="Brand">
+    <img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt="" data-fm-layer="Brand mark">
+    <span class="brand__text" data-fm-layer="Brand text">
+      <span class="brand__name" data-fm-layer="Brand name">hearthfare</span>
+      <span class="brand__tagline" data-fm-layer="Brand tagline">Homemade Meals. Local Connections.</span>
+    </span>
+  </a>
+
+  <nav class="site-nav" aria-label="Primary" data-fm-layer="Main nav">
+    <ul class="site-nav__list" data-fm-layer="Nav list">
+      <li class="site-nav__item" data-fm-layer="Nav item — How it works"><a class="site-nav__link" href="../how-it-works.html" data-fm-layer="Nav label — How it works">How it works</a></li>
+      <li class="site-nav__item" data-fm-layer="Nav item — Why Hearthfare"><a class="site-nav__link" href="../why-hearthfare.html" data-fm-layer="Nav label — Why Hearthfare">Why Hearthfare</a></li>
+      <li class="site-nav__item" data-fm-layer="Nav item — What's cooking"><a class="site-nav__link" href="../whats-cooking.html" data-fm-layer="Nav label — What's cooking">What's cooking</a></li>
+      <li class="site-nav__item" data-fm-layer="Nav item — For cooks"><a class="site-nav__link" href="../for-cooks.html" data-fm-layer="Nav label — For cooks">For cooks</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-actions" data-fm-layer="Header actions">
+    <a class="cart" href="shop-cart.html" aria-label="Cart, 3 items" data-fm-layer="Cart button">
+      <svg class="cart__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Cart icon">
+        <path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/>
+        <path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/>
+      </svg>
+      <span class="cart__badge" data-fm-layer="Cart badge">3</span>
+    </a>
+    <a class="login-link" href="../login.html" data-fm-layer="Log in link">Log in</a>
+    <a class="btn btn--primary" href="../signup.html" data-fm-layer="Sign up button"><span class="btn__label" data-fm-layer="Sign up label">Sign up</span></a>
+  </div>
+</header>
+
+<main data-fm-layer="Storefront main">
+
+  <!-- ===== Hero ===== -->
+  <section class="sf-hero" data-fm-layer="Storefront hero">
+    <img class="sf-hero__photo" src="assets/cook-hero.jpg" alt="Li plating birria in her home kitchen" data-fm-layer="Hero photo">
+  </section>
+
+  <div class="sf-head" data-fm-layer="Storefront head">
+    <div class="sf-head__card" data-fm-layer="Head card">
+      <img class="sf-head__logo" src="assets/cook-journey.jpg" alt="Li of Li's Hearth" data-fm-layer="Hearth logo">
+
+      <div class="sf-head__text" data-fm-layer="Head text">
+        <div class="sf-head__badges" data-fm-layer="Head badges">
+          <button class="verified link-button" type="button" popovertarget="pop-verified" data-fm-layer="Badge — Verified">
+            <svg class="verified__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Check"><path d="m4 12.5 5 5L20 6.5"/></svg>
+            Verified by Hearthfare
+          </button>
+          <span class="pill pill--accent" data-fm-layer="Pill — Home kitchen">Made in a Home Kitchen</span>
+          <span class="pill pill--ok" data-fm-layer="Pill — Open"><span class="pill__dot" data-fm-layer="Dot — Open"></span>Open</span>
+        </div>
+
+        <h1 class="sf-head__name" data-fm-layer="Hearth name">Li's Hearth</h1>
+
+        <div class="sf-head__meta" data-fm-layer="Head meta">
+          <a class="sf-head__meta-item" href="#reviews" data-fm-layer="Meta — Rating">
+            <svg class="sf-head__meta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-fm-layer="Icon — Star"><path d="m12 4 2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 17.4 6.7 20.1l1-5.8-4.2-4.1 5.9-.9Z"/></svg>
+            <span class="link-button" data-fm-layer="Rating link">4.8 · 46 reviews</span>
+          </a>
+          <span class="sf-head__meta-item" data-fm-layer="Meta — Cuisine">
+            <svg class="sf-head__meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Cuisine"><path d="M6.5 3.5v7a2.5 2.5 0 0 0 5 0v-7M9 3.5v17"/><path d="M16.5 3.5c-1.4 1.6-1.8 4-1.4 6.3.2 1 1 1.7 2 1.7h1.4V3.5"/><path d="M18.5 11.5v9"/></svg>
+            Mexican · Oaxacan
+          </span>
+          <span class="sf-head__meta-item" data-fm-layer="Meta — Distance">
+            <svg class="sf-head__meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Pin"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            1.4 miles · North Park, San Diego
+          </span>
+          <span class="sf-head__meta-item" data-fm-layer="Meta — Policies">
+            <a class="link-button" href="#policies" data-fm-layer="Link — Policies">Policies</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="sf-head__actions" data-fm-layer="Head actions">
+        <a class="btn btn--primary btn--sm" href="customer-messages.html" data-fm-layer="Button — Message">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Message"><path d="M20 12.5a7 7 0 0 1-7 7H8l-4 2.5.9-3.6A7 7 0 0 1 11 4.5h2a7 7 0 0 1 7 7Z"/></svg>
+          <span class="btn__label" data-fm-layer="Label — Message">Message Li</span>
+        </a>
+        <a class="btn btn--outline btn--sm" href="customer-favorites.html" data-fm-layer="Button — Favorite">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Heart"><path d="M12 20s-7-4.4-7-9.4A4.1 4.1 0 0 1 12 7.6a4.1 4.1 0 0 1 7 3c0 5-7 9.4-7 9.4Z"/></svg>
+          <span class="btn__label" data-fm-layer="Label — Favorite">Save Hearth</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Body ===== -->
+  <div class="sf-body" data-fm-layer="Storefront body">
+
+    <!-- Left: how and when first, then the menu, reviews, policies -->
+    <div data-fm-layer="Storefront content">
+
+      <section class="sf-section" id="order-how" data-fm-layer="Section — How and when">
+        <h2 class="sf-section__title" data-fm-layer="Section title — How">How would you like it?</h2>
+        <div class="fulfil" role="group" aria-label="Pickup or dine-in" data-fm-layer="Fulfillment selector">
+          <button class="fulfil__opt fulfil__opt--on" type="button" data-mode="pickup" aria-pressed="true" data-fm-layer="Option — Pickup">
+            <svg class="fulfil__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg>
+            <span><span class="fulfil__title">Pickup</span><span class="fulfil__sub">Next: today, 4:00 – 4:30 PM</span></span>
+          </button>
+          <!-- Li's Hearth offers dine-in, so this stays enabled. On a Hearth that
+               doesn't, add `disabled` here, drop `data-mode`, and swap the sub
+               copy for "Not offered by this Hearth" (see shop-storefront-states.html). -->
+          <button class="fulfil__opt" type="button" data-mode="dinein" aria-pressed="false" data-fm-layer="Option — Dine-in">
+            <svg class="fulfil__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5v7a2.5 2.5 0 0 0 5 0v-7M9 3.5v17"/><path d="M16.5 3.5c-1.4 1.6-1.8 4-1.4 6.3.2 1 1 1.7 2 1.7h1.4V3.5"/><path d="M18.5 11.5v9"/></svg>
+            <span><span class="fulfil__title">Dine-in</span><span class="fulfil__sub">Request a seat · next: tonight, 7:00 PM</span></span>
+          </button>
+        </div>
+
+        <div class="panel" data-show="pickup" data-fm-layer="Panel — Pickup times">
+          <div class="panel__head" data-fm-layer="Panel head — Pickup times">
+            <h3 class="panel__title" data-fm-layer="Panel title — Pickup times">Choose a pickup time</h3>
+            <button class="panel__link link-button" type="button" popovertarget="pop-pickup" data-fm-layer="Link — Pickup details">Pickup details</button>
+          </div>
+          <div class="panel__body" data-fm-layer="Panel body — Pickup times">
+            <div class="slots" data-fm-layer="Pickup slots">
+              <label class="slot" data-fm-layer="Slot — Today 4:00"><span class="consent"><input class="consent__box" type="radio" name="pickup-time" checked><span class="slot__time">Today · 4:00 – 4:30 PM</span></span><span class="slot__left">2 left</span></label>
+              <label class="slot" data-fm-layer="Slot — Today 5:30"><span class="consent"><input class="consent__box" type="radio" name="pickup-time"><span class="slot__time">Today · 5:30 – 6:00 PM</span></span><span class="slot__left">4 left</span></label>
+              <label class="slot slot--off" data-fm-layer="Slot — Today 7:00 full"><span class="consent"><input class="consent__box" type="radio" name="pickup-time" disabled><span class="slot__time">Today · 7:00 – 7:30 PM</span></span><span class="slot__left">Full</span></label>
+              <label class="slot slot--off" data-fm-layer="Slot — Sat 11:00 unavailable"><span class="consent"><input class="consent__box" type="radio" name="pickup-time" disabled><span class="slot__time">Sat 13 · 11:00 AM – 12:30 PM</span></span><span class="slot__left">Unavailable</span></label>
+              <label class="slot" data-fm-layer="Slot — Sun 12:00"><span class="consent"><input class="consent__box" type="radio" name="pickup-time"><span class="slot__time">Sun 14 · 12:00 – 12:15 PM</span></span><span class="slot__left">4 left</span></label>
+            </div>
+            <p class="field__hint" style="margin-top:0.75rem;" data-fm-layer="Hint — Pickup cutoff">Orders close at 1:00 PM for same-day pickup.</p>
+          </div>
+        </div>
+
+        <div class="panel" data-show="dinein" hidden data-fm-layer="Panel — Dine-in times">
+          <div class="panel__head" data-fm-layer="Panel head — Dine-in times">
+            <h3 class="panel__title" data-fm-layer="Panel title — Dine-in times">Choose a dine-in time</h3>
+            <button class="panel__link link-button" type="button" popovertarget="pop-dinein" data-fm-layer="Link — How dine-in works">How dine-in works</button>
+          </div>
+          <div class="panel__body" data-fm-layer="Panel body — Dine-in times">
+            <div class="slots" data-fm-layer="Dine-in slots">
+              <label class="slot" data-fm-layer="Slot — Tonight"><span class="consent"><input class="consent__box" type="radio" name="dinein-time" checked><span class="slot__time">Tonight · 7:00 PM</span></span><span class="slot__left">2 seats left</span></label>
+              <label class="slot" data-fm-layer="Slot — Fri 12"><span class="consent"><input class="consent__box" type="radio" name="dinein-time"><span class="slot__time">Fri 12 Sep · 7:00 PM</span></span><span class="slot__left">4 seats left</span></label>
+              <label class="slot slot--off" data-fm-layer="Slot — Sat 13 full"><span class="consent"><input class="consent__box" type="radio" name="dinein-time" disabled><span class="slot__time">Sat 13 Sep · 6:30 PM</span></span><span class="slot__left">Full</span></label>
+              <label class="slot slot--off" data-fm-layer="Slot — Sun 14 unavailable"><span class="consent"><input class="consent__box" type="radio" name="dinein-time" disabled><span class="slot__time">Sun 14 Sep · 12:00 PM</span></span><span class="slot__left">Unavailable</span></label>
+            </div>
+            <div class="field" style="margin-top:1rem;max-width:12rem;" data-fm-layer="Field — Guests">
+              <label class="field__label" for="sf-guests">Guests</label>
+              <select class="input input--select" id="sf-guests"><option>1 guest</option><option selected>2 guests</option></select>
+              <p class="field__hint">2 seats left tonight.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sf-section" data-fm-layer="Section — Menu">
+        <h2 class="sf-section__title" data-fm-layer="Section title — Menu">This week's menu</h2>
+
+        <h3 class="form__legend" style="margin:1rem 0 0.75rem;" data-fm-layer="Menu category — Mains">Mains</h3>
+        <article class="dish" data-fm-layer="Dish — Birria">
+          <img class="dish__photo" src="assets/dish-birria.png" alt="" data-fm-layer="Dish photo — Birria">
+          <div class="dish__text" data-fm-layer="Dish text — Birria">
+            <a class="dish__rating" href="#reviews" data-fm-layer="Rating — Birria">
+              <svg class="dish__rating-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-fm-layer="Star — Birria"><path d="m12 4 2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 17.4 6.7 20.1l1-5.8-4.2-4.1 5.9-.9Z"/></svg>
+              <span data-fm-layer="Rating value — Birria">4.9 (31)</span>
+            </a>
+            <div class="dish__top" data-fm-layer="Dish top — Birria">
+              <h3 class="dish__name" data-fm-layer="Dish name — Birria">Birria plate</h3>
+              <span class="dish__price" data-fm-layer="Dish price — Birria">$14.00 – $22.00</span>
+            </div>
+            <p class="dish__body" data-fm-layer="Dish body — Birria">Slow-braised beef in guajillo and ancho, with consommé, corn tortillas, onion, cilantro and lime. Six hours on the stove. Contains beef, wheat.</p>
+            <div class="dish__foot" data-fm-layer="Dish foot — Birria">
+              <div class="dish__tags" data-fm-layer="Dish tags — Birria">
+                <span class="pill pill--muted" data-fm-layer="Tag — Regular">Regular $14.00</span>
+                <span class="pill pill--muted" data-fm-layer="Tag — Large">Large $22.00</span>
+                <span class="pill pill--ok" data-fm-layer="Tag — Left">9 left today</span>
+              </div>
+              <button class="btn btn--primary btn--sm" type="button" data-fm-layer="Button — Add birria"><span class="btn__label" data-fm-layer="Label — Add birria">Add to order</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish" data-fm-layer="Dish — Tamales">
+          <img class="dish__photo" src="assets/dish-tamales.jpg" alt="" data-fm-layer="Dish photo — Tamales">
+          <div class="dish__text" data-fm-layer="Dish text — Tamales">
+            <a class="dish__rating" href="#reviews" data-fm-layer="Rating — Tamales">
+              <svg class="dish__rating-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-fm-layer="Star — Tamales"><path d="m12 4 2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 17.4 6.7 20.1l1-5.8-4.2-4.1 5.9-.9Z"/></svg>
+              <span data-fm-layer="Rating value — Tamales">4.7 (12)</span>
+            </a>
+            <div class="dish__top" data-fm-layer="Dish top — Tamales">
+              <h3 class="dish__name" data-fm-layer="Dish name — Tamales">Tamales, by the dozen</h3>
+              <span class="dish__price" data-fm-layer="Dish price — Tamales">$26.00</span>
+            </div>
+            <p class="dish__body" data-fm-layer="Dish body — Tamales">Masa ground the same morning. Choose chicken in salsa verde, rajas con queso, or sweet pineapple. Contains corn, dairy.</p>
+            <div class="dish__foot" data-fm-layer="Dish foot — Tamales">
+              <div class="dish__tags" data-fm-layer="Dish tags — Tamales">
+                <span class="pill pill--muted" data-fm-layer="Tag — Dozen">Dozen $26.00</span>
+                <span class="pill pill--warn" data-fm-layer="Tag — Low">Only 2 left today</span>
+              </div>
+              <button class="btn btn--primary btn--sm" type="button" data-fm-layer="Button — Add tamales"><span class="btn__label" data-fm-layer="Label — Add tamales">Add to order</span></button>
+            </div>
+          </div>
+        </article>
+
+        <h3 class="form__legend" style="margin:1.25rem 0 0.75rem;" data-fm-layer="Menu category — Drinks">Drinks</h3>
+        <article class="dish dish--out" data-fm-layer="Dish — Horchata">
+          <img class="dish__photo" src="assets/dish-horchata.jpg" alt="" data-fm-layer="Dish photo — Horchata">
+          <div class="dish__text" data-fm-layer="Dish text — Horchata">
+            <a class="dish__rating" href="#reviews" data-fm-layer="Rating — Horchata">
+              <svg class="dish__rating-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-fm-layer="Star — Horchata"><path d="m12 4 2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 17.4 6.7 20.1l1-5.8-4.2-4.1 5.9-.9Z"/></svg>
+              <span data-fm-layer="Rating value — Horchata">4.8 (9)</span>
+            </a>
+            <div class="dish__top" data-fm-layer="Dish top — Horchata">
+              <h3 class="dish__name" data-fm-layer="Dish name — Horchata">Horchata, by the quart</h3>
+              <span class="dish__price" data-fm-layer="Dish price — Horchata">$8.00</span>
+            </div>
+            <p class="dish__body" data-fm-layer="Dish body — Horchata">Rice, cinnamon, a little condensed milk. Made fresh each morning. Contains dairy.</p>
+            <div class="dish__foot" data-fm-layer="Dish foot — Horchata">
+              <div class="dish__tags" data-fm-layer="Dish tags — Horchata">
+                <span class="pill pill--danger" data-fm-layer="Tag — Sold out">Sold out today</span>
+              </div>
+              <button class="btn btn--sm" type="button" disabled data-fm-layer="Button — Sold out"><span class="btn__label" data-fm-layer="Label — Sold out">Sold out</span></button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="sf-section" id="reviews" data-fm-layer="Section — Reviews">
+        <div class="sf-section__head" data-fm-layer="Section head — Reviews">
+          <h2 class="sf-section__title" data-fm-layer="Section title — Reviews">Reviews · 4.8 from 46</h2>
+          <button class="btn btn--outline btn--sm" type="button" popovertarget="pop-review" data-fm-layer="Button — Write review">
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16Z"/><path d="m13.5 6.5 4 4"/></svg>
+            <span class="btn__label">Write a review</span>
+          </button>
+        </div>
+        <div class="grid grid--2" data-review-list data-fm-layer="Review grid">
+          <div class="panel" data-fm-layer="Review — Marisol">
+            <div class="panel__body">
+              <span class="table__person"><span class="avatar"><img src="assets/avatars/marisol.jpg" alt=""></span><span class="table__person-text"><span class="table__strong">Marisol R.</span><span class="table__person-sub">Pickup · 3 Sep 2026</span></span></span>
+              <p class="dish__body" style="margin-top:0.75rem;">★★★★★ The birria consommé is the best I have had outside Oaxaca. Li had my name on the bag and it was still hot at home.</p>
+              <div class="review-reply__posted" data-fm-layer="Posted reply — Marisol"><span class="avatar" data-fm-layer="Avatar — Li reply Marisol"><img src="assets/cook-hero.jpg" alt="Li" data-fm-layer="Avatar photo — Li reply Marisol"></span><div data-fm-layer="Posted reply text — Marisol"><p class="req__title" style="font-size:var(--text-sm);" data-fm-layer="Posted reply name — Marisol">Li's Hearth <span class="table__person-sub" data-fm-layer="Posted reply label — Marisol">replied</span></p><p class="req__body" data-fm-layer="Posted reply body — Marisol">Thank you so much, Marisol! Means the world hearing it reminded you of home.</p></div></div>
+            </div>
+          </div>
+          <div class="panel" data-fm-layer="Review — Owen">
+            <div class="panel__body">
+              <span class="table__person"><span class="avatar"><img src="assets/avatars/owen.jpg" alt=""></span><span class="table__person-text"><span class="table__strong">Owen M.</span><span class="table__person-sub">Dine-in · 29 Aug 2026</span></span></span>
+              <p class="dish__body" style="margin-top:0.75rem;">★★★★★ Four chairs, one table, great company. Felt like dinner at a friend's house.</p>
+              <div class="review-reply__posted" data-fm-layer="Posted reply — Owen"><span class="avatar" data-fm-layer="Avatar — Li reply Owen"><img src="assets/cook-hero.jpg" alt="Li" data-fm-layer="Avatar photo — Li reply Owen"></span><div data-fm-layer="Posted reply text — Owen"><p class="req__title" style="font-size:var(--text-sm);" data-fm-layer="Posted reply name — Owen">Li's Hearth <span class="table__person-sub" data-fm-layer="Posted reply label — Owen">replied</span></p><p class="req__body" data-fm-layer="Posted reply body — Owen">So glad you came by, Owen — hope to see you at the table again soon!</p></div></div>
+            </div>
+          </div>
+        </div>
+        <details class="reviews-more" data-fm-layer="All reviews">
+          <summary class="panel__link" data-fm-layer="Link — All reviews">Read all 46 reviews</summary>
+          <div class="grid grid--2" data-fm-layer="More reviews grid">
+            <div class="panel" data-fm-layer="Review — Priya">
+              <div class="panel__body">
+                <span class="table__person"><span class="avatar"><img src="assets/avatars/priya.jpg" alt=""></span><span class="table__person-text"><span class="table__strong">Priya S.</span><span class="table__person-sub">Pickup · 27 Aug 2026</span></span></span>
+                <p class="dish__body" style="margin-top:0.75rem;">★★★★★ Chicken tamales in salsa verde, still steaming. We froze half and they reheated perfectly.</p>
+              </div>
+            </div>
+            <div class="panel" data-fm-layer="Review — Tomas">
+              <div class="panel__body">
+                <span class="table__person"><span class="avatar"><img src="assets/avatars/tomas.jpg" alt=""></span><span class="table__person-text"><span class="table__strong">Tomás G.</span><span class="table__person-sub">Pickup · 22 Aug 2026</span></span></span>
+                <p class="dish__body" style="margin-top:0.75rem;">★★★★☆ Birria was excellent. Pickup ran about ten minutes late, but Li messaged ahead to let me know.</p>
+              </div>
+            </div>
+            <div class="panel" data-fm-layer="Review — Hannah">
+              <div class="panel__body">
+                <span class="table__person"><span class="avatar"><img src="assets/avatars/hannah.jpg" alt=""></span><span class="table__person-text"><span class="table__strong">Hannah K.</span><span class="table__person-sub">Dine-in · 16 Aug 2026</span></span></span>
+                <p class="dish__body" style="margin-top:0.75rem;">★★★★★ Sat with two neighbours I had never met. Left with a recipe for horchata and a new Friday habit.</p>
+              </div>
+            </div>
+            <div class="panel" data-fm-layer="Review — Jamal">
+              <div class="panel__body">
+                <span class="table__person"><span class="avatar"><img src="assets/avatars/jamal.jpg" alt=""></span><span class="table__person-text"><span class="table__strong">Jamal W.</span><span class="table__person-sub">Pickup · 9 Aug 2026</span></span></span>
+                <p class="dish__body" style="margin-top:0.75rem;">★★★★★ The large plate feeds two. The consommé alone is worth the drive across town.</p>
+              </div>
+            </div>
+            <div class="panel" data-fm-layer="Review — Keiko">
+              <div class="panel__body">
+                <span class="table__person"><span class="avatar"><img src="assets/avatars/keiko.jpg" alt=""></span><span class="table__person-text"><span class="table__strong">Keiko T.</span><span class="table__person-sub">Pickup · 2 Aug 2026</span></span></span>
+                <p class="dish__body" style="margin-top:0.75rem;">★★★★☆ Pineapple tamales were a lovely surprise. Would love a smaller half-dozen option.</p>
+              </div>
+            </div>
+            <div class="panel" data-fm-layer="Review — Carmen">
+              <div class="panel__body">
+                <span class="table__person"><span class="avatar"><img src="assets/avatars/carmen.jpg" alt=""></span><span class="table__person-text"><span class="table__strong">Carmen L.</span><span class="table__person-sub">Dine-in · 25 Jul 2026</span></span></span>
+                <p class="dish__body" style="margin-top:0.75rem;">★★★★★ Tastes like my grandmother's kitchen in Oaxaca. Li asked about my allergies before I even sat down.</p>
+                <div class="review-reply__posted" data-fm-layer="Posted reply — Carmen"><span class="avatar" data-fm-layer="Avatar — Li reply Carmen"><img src="assets/cook-hero.jpg" alt="Li" data-fm-layer="Avatar photo — Li reply Carmen"></span><div data-fm-layer="Posted reply text — Carmen"><p class="req__title" style="font-size:var(--text-sm);" data-fm-layer="Posted reply name — Carmen">Li's Hearth <span class="table__person-sub" data-fm-layer="Posted reply label — Carmen">replied</span></p><p class="req__body" data-fm-layer="Posted reply body — Carmen">Gracias, Carmen — so glad you felt at home at the table. See you again soon!</p></div></div>
+              </div>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <section class="sf-section" id="policies" data-fm-layer="Section — Policies">
+        <h2 class="sf-section__title" data-fm-layer="Section title — Policies">Good to know before you order</h2>
+        <div class="grid grid--3" data-fm-layer="Policy grid">
+
+          <div class="panel" data-fm-layer="Panel — Allergy">
+            <div class="panel__body" data-fm-layer="Panel body — Allergy">
+              <img class="policy__icon" src="assets/icons/allergy.svg" width="40" height="40" alt="" data-fm-layer="Icon — Allergy">
+              <p class="policy__title" data-fm-layer="Policy title — Allergy">Allergy notice</p>
+              <p class="policy__body" data-fm-layer="Policy body — Allergy">This food is made in a home kitchen that also handles wheat, dairy, tree nuts and shellfish.</p>
+              <button class="panel__link link-button" type="button" popovertarget="pop-allergy" style="margin-top:0.5rem;" data-fm-layer="Link — Allergy more">Read the full notice</button>
+            </div>
+          </div>
+
+          <div class="panel" data-fm-layer="Panel — Cancellation">
+            <div class="panel__body" data-fm-layer="Panel body — Cancellation">
+              <img class="policy__icon" src="assets/icons/cancellation.svg" width="40" height="40" alt="" data-fm-layer="Icon — Cancellation">
+              <p class="policy__title" data-fm-layer="Policy title — Cancellation">Cancellation policy</p>
+              <p class="policy__body" data-fm-layer="Policy body — Cancellation">Cancel up to 3 hours before your pickup window for a full refund.</p>
+              <button class="panel__link link-button" type="button" popovertarget="pop-cancel" style="margin-top:0.5rem;" data-fm-layer="Link — Cancellation more">Read the full policy</button>
+            </div>
+          </div>
+
+          <div class="panel" data-fm-layer="Panel — Refund">
+            <div class="panel__body" data-fm-layer="Panel body — Refund">
+              <img class="policy__icon" src="assets/icons/refund.svg" width="40" height="40" alt="" data-fm-layer="Icon — Refund">
+              <p class="policy__title" data-fm-layer="Policy title — Refund">Refund policy</p>
+              <p class="policy__body" data-fm-layer="Policy body — Refund">If something is wrong with your food, message Li and it will be made right.</p>
+              <button class="panel__link link-button" type="button" popovertarget="pop-refund" style="margin-top:0.5rem;" data-fm-layer="Link — Refund more">Read the full policy</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="sf-section" id="verified" data-fm-layer="Section — Trust">
+        <div class="banner banner--card" data-fm-layer="Banner — Permit">
+          <svg class="banner__icon banner__icon--trust" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Shield"><path d="M12 3.5 5 6.2v5.5c0 4.2 2.9 7.5 7 8.8 4.1-1.3 7-4.6 7-8.8V6.2Z"/><path d="m9.2 12 2 2 3.6-3.8"/></svg>
+          <div class="banner__text" data-fm-layer="Banner text — Permit">
+            <p class="banner__title" data-fm-layer="Banner title — Permit">Permit MEHKO-2026-00841 · Active</p>
+            <p class="banner__body" data-fm-layer="Banner body — Permit">San Diego County Department of Environmental Health and Quality. <button class="link-button" type="button" popovertarget="pop-verified">What does Verified mean?</button></p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Right: cart — the chosen method and time stay pinned at the top -->
+    <aside class="cart-panel" data-fm-layer="Cart panel">
+      <div class="panel" data-fm-layer="Panel — Cart">
+        <div class="panel__head" data-fm-layer="Panel head — Cart">
+          <h2 class="panel__title" data-fm-layer="Panel title — Cart">Your order</h2>
+          <span class="pill pill--muted" data-fm-layer="Pill — Item count">3 items</span>
+        </div>
+
+        <div class="panel__body" data-fm-layer="Panel body — Cart">
+          <div class="cart-method" data-show="pickup" data-fm-layer="Cart method — Pickup">
+            <span class="table__person-text"><span><span class="pill pill--pickup"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg><span>Pickup</span></span></span><span class="cart-method__when">Today · 4:00 – 4:30 PM</span></span>
+            <a class="panel__link" href="#order-how">Change</a>
+          </div>
+          <div class="cart-method" data-show="dinein" hidden data-fm-layer="Cart method — Dine-in">
+            <span class="table__person-text"><span><span class="pill pill--dinein"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5v7a2.5 2.5 0 0 0 5 0v-7M9 3.5v17"/><path d="M16.5 3.5c-1.4 1.6-1.8 4-1.4 6.3.2 1 1 1.7 2 1.7h1.4V3.5"/><path d="M18.5 11.5v9"/></svg><span>Dine-in request</span></span></span><span class="cart-method__when">Tonight · 7:00 PM · 2 guests</span></span>
+            <a class="panel__link" href="#order-how">Change</a>
+          </div>
+
+          <div style="margin-top:0.5rem;" data-fm-layer="Cart lines">
+            <div class="cart-line" data-fm-layer="Cart line — Birria"><img class="cart-line__thumb" src="assets/dish-birria.png" alt="" data-fm-layer="Line photo — Birria">
+              <span class="cart-line__text" data-fm-layer="Line text — Birria">
+                <span class="cart-line__name" data-fm-layer="Line name — Birria">Birria plate</span>
+                <span class="cart-line__meta" data-fm-layer="Line meta — Birria">Regular · no onions please</span><span class="cart-line__qty" data-fm-layer="Qty — Birria">2 &times; $14.00</span>
+              </span>
+              <span class="cart-line__price" data-fm-layer="Line price — Birria">$28.00</span>
+            </div>
+            <div class="cart-line" data-fm-layer="Cart line — Tamales"><img class="cart-line__thumb" src="assets/dish-tamales.jpg" alt="" data-fm-layer="Line photo — Tamales">
+              <span class="cart-line__text" data-fm-layer="Line text — Tamales">
+                <span class="cart-line__name" data-fm-layer="Line name — Tamales">Tamales, by the dozen</span>
+                <span class="cart-line__meta" data-fm-layer="Line meta — Tamales">Chicken in salsa verde</span><span class="cart-line__qty" data-fm-layer="Qty — Tamales">1 &times; $26.00</span>
+              </span>
+              <span class="cart-line__price" data-fm-layer="Line price — Tamales">$26.00</span>
+            </div>
+          </div>
+
+          <div class="money" style="margin-top:1.25rem;" data-fm-layer="Cart money">
+            <div class="money__row" data-fm-layer="Money row — Subtotal">
+              <span class="money__label" data-fm-layer="Money label — Subtotal">Subtotal</span>
+              <span class="money__value" data-fm-layer="Money value — Subtotal">$54.00</span>
+            </div>
+            <div class="money__row" data-fm-layer="Money row — Tax">
+              <span class="money__label" data-fm-layer="Money label — Tax">Sales tax (7.75%)</span>
+              <span class="money__value" data-fm-layer="Money value — Tax">$4.19</span>
+            </div>
+            <div class="money__row" data-fm-layer="Money row — Fee">
+              <span class="money__label" data-fm-layer="Money label — Fee">
+                Hearthfare platform fee
+                <span class="money__info" data-fm-layer="Money info — Fee">i</span>
+              </span>
+              <span class="money__value" data-fm-layer="Money value — Fee">$3.24</span>
+            </div>
+            <div class="money__row money__row--total" data-fm-layer="Money row — Total">
+              <span class="money__label" data-fm-layer="Money label — Total">Total</span>
+              <span class="money__value" data-fm-layer="Money value — Total">$61.43</span>
+            </div>
+          </div>
+
+          <div style="margin-top:1.25rem;" data-fm-layer="Cart action">
+            <a class="btn btn--primary btn--block" href="../login.html?next=app/shop-checkout.html" data-show="pickup" data-fm-layer="Button — Checkout"><span class="btn__label" data-fm-layer="Label — Checkout">Go to checkout</span></a>
+            <p class="field__hint" style="margin-top:0;margin-bottom:0.625rem;" data-show="dinein" hidden data-fm-layer="Notice — Outside response hours">Currently outside response hours · Responses resume 9:00 AM.</p>
+            <a class="btn btn--primary btn--block" href="../login.html?next=app/shop-checkout-dinein.html" data-show="dinein" hidden data-fm-layer="Button — Request dine-in"><span class="btn__label" data-fm-layer="Label — Request dine-in">Request dine-in</span></a>
+          </div>
+
+          <p class="money__note money__note--bare" style="margin-top:0.875rem;" data-show="pickup" data-fm-layer="Cart note">Your food payment goes directly to Li's own Stripe account. No tip is required — your meal already supports the person who made it.</p>
+          <p class="money__note money__note--bare" style="margin-top:0.875rem;" data-show="dinein" hidden data-fm-layer="Cart note — Dine-in">This is a request, not a booking. Your card is held, not charged, until Li accepts.</p>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Brief explanations — native popovers, closed by default -->
+  <div class="pop" id="pop-verified" popover data-fm-layer="Popover — Verified">
+    <p class="pop__title">What "Verified by Hearthfare" means</p>
+    <p class="pop__body">Li's Hearth holds a current home kitchen permit from the San Diego County Department of Environmental Health and Quality, permit MEHKO-2026-00841. A Hearthfare Account Manager checked that permit before this Hearth was allowed to accept its first order.</p>
+  </div>
+  <div class="pop" id="pop-pickup" popover data-fm-layer="Popover — Pickup">
+    <p class="pop__title">Pickup at Li's Hearth</p>
+    <p class="pop__body">Orders close at 1:00 PM for same-day pickup. Park on 30th Street and come to the side gate — the orange one. Your name will be on the bag.</p>
+  </div>
+  <div class="pop" id="pop-dinein" popover data-fm-layer="Popover — Dine-in">
+    <p class="pop__title">How dine-in works</p>
+    <p class="pop__body">Dine-in is a request, not an instant booking. Your card is held, not charged. During Li's response hours, she has 15 minutes to accept; outside those hours, the 15 minutes start when she's next able to respond. Only once she accepts is the payment taken. If Li declines or doesn't answer in time, the hold is released and you are not charged. Four chairs at one table, so you may be sitting with neighbors you have not met yet.</p>
+  </div>
+  <div class="pop" id="pop-allergy" popover data-fm-layer="Popover — Allergy">
+    <p class="pop__title">Allergy notice</p>
+    <p class="pop__body">This food is made in a home kitchen that also handles wheat, dairy, tree nuts and shellfish. I cannot guarantee any dish is free of an allergen. If you have a serious allergy, please message me before ordering.</p>
+  </div>
+  <div class="pop" id="pop-cancel" popover data-fm-layer="Popover — Cancellation">
+    <p class="pop__title">Cancellation policy</p>
+    <p class="pop__body">Cancel up to 3 hours before your pickup window for a full refund. After that I have already shopped and started cooking, so I can only offer a partial refund.</p>
+  </div>
+  <div class="pop pop--form" id="pop-review" popover data-fm-layer="Popover — Write review">
+    <p class="pop__title">Review Li's Hearth</p>
+    <p class="pop__body">Only customers who have ordered from Li's Hearth can post a review.</p>
+    <form class="form" style="margin-top:1rem;" data-review-form data-fm-layer="Form — Write review">
+      <fieldset class="rate" data-fm-layer="Field — Rating">
+        <legend class="form__legend">Your rating</legend>
+        <input class="sr-only" type="radio" name="rating" id="rate-1" value="1" required><label for="rate-1"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 4 2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 17.4 6.7 20.1l1-5.8-4.2-4.1 5.9-.9Z"/></svg><span class="sr-only">1 star</span></label>
+        <input class="sr-only" type="radio" name="rating" id="rate-2" value="2"><label for="rate-2"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 4 2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 17.4 6.7 20.1l1-5.8-4.2-4.1 5.9-.9Z"/></svg><span class="sr-only">2 stars</span></label>
+        <input class="sr-only" type="radio" name="rating" id="rate-3" value="3"><label for="rate-3"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 4 2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 17.4 6.7 20.1l1-5.8-4.2-4.1 5.9-.9Z"/></svg><span class="sr-only">3 stars</span></label>
+        <input class="sr-only" type="radio" name="rating" id="rate-4" value="4"><label for="rate-4"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 4 2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 17.4 6.7 20.1l1-5.8-4.2-4.1 5.9-.9Z"/></svg><span class="sr-only">4 stars</span></label>
+        <input class="sr-only" type="radio" name="rating" id="rate-5" value="5"><label for="rate-5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 4 2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 17.4 6.7 20.1l1-5.8-4.2-4.1 5.9-.9Z"/></svg><span class="sr-only">5 stars</span></label>
+      </fieldset>
+      <div class="field" data-fm-layer="Field — Review text">
+        <label class="field__label" for="review-text">Your review</label>
+        <textarea class="input input--area" id="review-text" name="text" required maxlength="1000" placeholder="What did you order, and what was it like?"></textarea>
+        <p class="field__hint">Food safety concerns are handled privately by Hearthfare, not through reviews.</p>
+      </div>
+      <div class="btn-row" data-fm-layer="Actions — Write review">
+        <button class="btn btn--outline btn--sm" type="button" popovertarget="pop-review" popovertargetaction="hide"><span class="btn__label">Cancel</span></button>
+        <button class="btn btn--primary btn--sm" type="submit"><span class="btn__label">Post review</span></button>
+      </div>
+    </form>
+  </div>
+  <div class="pop" id="pop-refund" popover data-fm-layer="Popover — Refund">
+    <p class="pop__title">Refund policy</p>
+    <p class="pop__body">If something is wrong with your food, message me and I will make it right — a full or partial refund, whichever fits. Refunds are processed through Stripe back to your original card.</p>
+  </div>
+</main>
+
+<footer class="site-footer site-footer--bar-only" data-fm-layer="Footer">
+  <div class="site-footer__bar" data-fm-layer="Footer bar">
+    <p class="site-footer__copy" data-fm-layer="Footer copy">© 2026 Hearthfare. All rights reserved.</p>
+    <p class="site-footer__made" data-fm-layer="Footer made">Made for home cooks in San Diego and Los Angeles.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="../role-switch.js"></script>
+</body>
+</html>

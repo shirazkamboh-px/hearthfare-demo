@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard — Admin | Hearthfare</title>
+<link rel="icon" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body data-fm-layer="Dashboard page">
+<div class="app" data-fm-layer="App shell">
+<div class="app-scrim" hidden data-fm-layer="Menu scrim"></div>
+<aside class="app-side" data-fm-layer="Sidebar">
+<div class="app-side__top" data-fm-layer="Sidebar top"><a class="brand app-side__brand" href="admin-dashboard.html" data-fm-layer="Brand"><img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt="" data-fm-layer="Brand mark"><span class="brand__text" data-fm-layer="Brand text"><span class="brand__name" data-fm-layer="Brand name">hearthfare</span><span class="brand__tagline" data-fm-layer="Brand tagline">Admin</span></span></a><button class="icon-button app-side__close" type="button" data-menu-close aria-label="Close menu" data-fm-layer="Button — Close menu"><svg class="icon-button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true" data-fm-layer="Icon — Close"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+<nav class="app-side__nav" aria-label="Admin" data-fm-layer="Sidebar nav">
+<div class="app-side__group" data-fm-layer="Nav group — Overview">
+<p class="app-side__group-title" data-fm-layer="Nav group title — Overview">Overview</p><a class="app-side__link app-side__link--active" href="admin-dashboard.html" aria-current="page" data-fm-layer="Nav — Dashboard"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Dashboard"><rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.8"/></svg><span class="app-side__label" data-fm-layer="Nav label — Dashboard">Dashboard</span></a></div>
+<div class="app-side__group" data-fm-layer="Nav group — Hearths">
+<p class="app-side__group-title" data-fm-layer="Nav group title — Hearths">Hearths</p><a class="app-side__link" href="admin-operators.html" data-fm-layer="Nav — Operators"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Operators"><path d="M4 9.5 5.5 4.5h13L20 9.5"/><path d="M4 9.5h16v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 18.5Z"/><path d="M9.5 20v-5h5v5"/></svg><span class="app-side__label" data-fm-layer="Nav label — Operators">Operators</span></a><a class="app-side__link" href="admin-compliance.html" data-fm-layer="Nav — Compliance"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Compliance"><path d="M12 3.5 5 6.2v5.5c0 4.2 2.9 7.5 7 8.8 4.1-1.3 7-4.6 7-8.8V6.2Z"/><path d="m9.2 12 2 2 3.6-3.8"/></svg><span class="app-side__label" data-fm-layer="Nav label — Compliance">Compliance</span><span class="app-side__count" data-fm-layer="Nav count — Compliance">2</span></a><a class="app-side__link" href="admin-complaints.html" data-fm-layer="Nav — Complaints"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Complaints"><circle cx="12" cy="12" r="8.5"/><path d="M12 8.5v4.5m0 3h.01"/></svg><span class="app-side__label" data-fm-layer="Nav label — Complaints">Complaints</span><span class="app-side__count" data-fm-layer="Nav count — Complaints">1</span></a></div>
+<div class="app-side__group" data-fm-layer="Nav group — Marketplace">
+<p class="app-side__group-title" data-fm-layer="Nav group title — Marketplace">Marketplace</p><a class="app-side__link" href="admin-orders.html" data-fm-layer="Nav — Orders"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Orders"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg><span class="app-side__label" data-fm-layer="Nav label — Orders">Orders</span></a></div>
+<div class="app-side__group" data-fm-layer="Nav group — Records">
+<p class="app-side__group-title" data-fm-layer="Nav group title — Records">Records</p><a class="app-side__link" href="admin-audit-log.html" data-fm-layer="Nav — Audit log"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Audit log"><path d="M7 3.5h7l5 5v12a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 6 20.5v-15A2 2 0 0 1 7 3.5Z"/><path d="M13.5 3.8V9h5"/></svg><span class="app-side__label" data-fm-layer="Nav label — Audit log">Audit log</span></a></div></nav>
+<div class="app-side__foot" data-fm-layer="Sidebar foot"><a class="app-side__link" href="admin-settings.html" data-fm-layer="Nav — Settings"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Settings"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1v.3a2 2 0 1 1-4 0v-.2a1.6 1.6 0 0 0-2.8-1.1l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0-1.1-2.7H3.2a2 2 0 1 1 0-4h.2A1.6 1.6 0 0 0 4.5 6l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 2.7-1.1V2a2 2 0 1 1 4 0v.2a1.6 1.6 0 0 0 2.7 1.1l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0 1.1 2.7h.2a2 2 0 1 1 0 4h-.2a1.6 1.6 0 0 0-1.4 1Z"/></svg><span class="app-side__label" data-fm-layer="Nav label — Settings">Settings</span></a></div>
+</aside>
+<div class="app-main" data-fm-layer="Main">
+<header class="app-bar" data-fm-layer="Top bar">
+<div class="app-bar__lead" data-fm-layer="Top bar lead"><button class="icon-button" type="button" data-menu-open aria-label="Open menu" aria-expanded="false" data-fm-layer="Button — Menu"><svg class="icon-button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true" data-fm-layer="Icon — Hamburger"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><a class="brand" href="admin-dashboard.html" data-fm-layer="Brand — Top bar"><img class="brand__mark" src="assets/logo-mark.svg" width="34" height="31" alt="" data-fm-layer="Brand mark — Top bar"><span class="brand__text" data-fm-layer="Brand text — Top bar"><span class="brand__name" data-fm-layer="Brand name — Top bar">hearthfare</span></span></a></div>
+<div class="app-bar__context" data-fm-layer="Top bar context"><span class="app-bar__eyebrow" data-fm-layer="Top bar eyebrow">Administrator</span><span class="app-bar__name" data-fm-layer="Top bar name">Hearthfare · San Diego County and Los Angeles County</span></div>
+<div class="app-bar__actions" data-fm-layer="Top bar actions"><button class="icon-button" type="button" aria-label="Notifications" data-fm-layer="Button — Notifications"><svg class="icon-button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Bell"><path d="M18 8.5a6 6 0 1 0-12 0c0 5-2 6.5-2 6.5h16s-2-1.5-2-6.5Z"/><path d="M13.7 19a2 2 0 0 1-3.4 0"/></svg><span class="icon-button__dot" data-fm-layer="Dot — Unread"></span></button><span class="avatar" data-fm-layer="Avatar — Dana"><img src="assets/avatars/dana.jpg" alt="" data-fm-layer="Avatar photo — Dana"></span></div>
+</header>
+<main class="app-body" data-fm-layer="Body">
+<div class="app-body__inner" data-fm-layer="Body inner">
+<div class="page-head" data-fm-layer="Page head">
+<div class="page-head__text" data-fm-layer="Page head text">
+<h1 class="page-head__title" data-fm-layer="Page title">Good morning, Dana</h1>
+<p class="page-head__sub" data-fm-layer="Page sub">Thursday, 11 September 2026 · San Diego County and Los Angeles County</p></div>
+<div class="page-head__actions" data-fm-layer="Page head actions">
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,11rem)) auto;align-items:end;gap:0.75rem;width:100%;" data-fm-layer="Date range">
+<div class="field" data-fm-layer="Field — From">
+<label class="field__label" for="d-from" data-fm-layer="Label — From">From</label><input class="input" id="d-from" type="date" value="2026-08-01" data-fm-layer="Input — From"></div>
+<div class="field" data-fm-layer="Field — Until">
+<label class="field__label" for="d-until" data-fm-layer="Label — Until">Until</label><input class="input" id="d-until" type="date" value="2026-09-11" data-fm-layer="Input — Until"></div><button class="btn btn--primary" type="button" data-fm-layer="Button — Apply"><span class="btn__label" data-fm-layer="Label — Apply">Apply</span></button></div></div></div>
+<div class="banner banner--danger" data-fm-layer="Banner — Threshold"><svg class="banner__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Threshold"><circle cx="12" cy="12" r="8.5"/><path d="M12 8.5v4.5m0 3h.01"/></svg>
+<div class="banner__text" data-fm-layer="Banner text — Threshold">
+<p class="banner__title" data-fm-layer="Banner title — Threshold">Tita Nen's reached 3 qualifying complaints in 2026</p>
+<p class="banner__body" data-fm-layer="Banner body — Threshold">Report the Hearth name and permit number MEHKO-2026-00512 to the San Diego County Department of Environmental Health and Quality by Thursday 18 September 2026 — 7 days left. Ordering continues: reaching the threshold flags the Hearth for review and does not suspend it.</p>
+<div class="banner__actions" data-fm-layer="Banner actions — Threshold"><a class="btn btn--primary btn--sm" href="admin-complaint-detail.html" data-fm-layer="Button — Open complaint"><span class="btn__label" data-fm-layer="Label — Open complaint">Open complaint</span></a></div></div></div>
+<div class="grid grid--3" data-fm-layer="Report tiles">
+<article class="metric" data-fm-layer="Metric — Customers">
+<p class="metric__label" data-fm-layer="Metric label — Customers"><svg class="metric__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Customers"><circle cx="9" cy="8.5" r="3.5"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5.2a3.5 3.5 0 0 1 0 6.6M18 14.5a6 6 0 0 1 3 5.5"/></svg>Customers per week</p>
+<p class="metric__value" data-fm-layer="Metric value — Customers">184</p>
+<p class="metric__note" data-fm-layer="Metric note — Customers">Average · 1 August – 11 September 2026</p></article>
+<article class="metric" data-fm-layer="Metric — Revenue">
+<p class="metric__label" data-fm-layer="Metric label — Revenue"><svg class="metric__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Revenue"><path d="M12 3.5v17M16 7.5H10a2.75 2.75 0 0 0 0 5.5h4a2.75 2.75 0 0 1 0 5.5H7.5"/></svg>Revenue</p>
+<p class="metric__value" data-fm-layer="Metric value — Revenue">$48,236.40</p>
+<p class="metric__note" data-fm-layer="Metric note — Revenue">Paid by customers · $2,894.18 in Hearthfare platform fees</p></article>
+<article class="metric" data-fm-layer="Metric — Top area">
+<p class="metric__label" data-fm-layer="Metric label — Top area"><svg class="metric__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Top area"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>Top area</p>
+<p class="metric__value" data-fm-layer="Metric value — Top area">North Park</p>
+<p class="metric__note" data-fm-layer="Metric note — Top area">31% of orders · then City Heights and Kearny Mesa</p></article></div>
+<section class="panel panel--flush" data-fm-layer="Panel — Review">
+<div class="panel__head" data-fm-layer="Panel head — Review">
+<div data-fm-layer="Panel head text — Review">
+<h2 class="panel__title" data-fm-layer="Panel title — Review">Needs your review</h2></div></div>
+<div class="panel__body panel__body--rows" data-fm-layer="Panel body — Review">
+<article class="req" data-fm-layer="Request — Gloria"><svg class="req__icon req__icon--info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Gloria"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 1.8"/></svg>
+<div class="req__text" data-fm-layer="Request text — Gloria">
+<p class="req__title" data-fm-layer="Request title — Gloria">Casa Gloria is waiting for approval</p>
+<p class="req__body" data-fm-layer="Request body — Gloria">New Hearth in Los Angeles County · county permit uploaded, every other requirement met.</p>
+<div class="req__actions" data-fm-layer="Request actions — Gloria"><a class="btn btn--outline btn--sm" href="admin-operator-detail.html" data-fm-layer="Button — Review Gloria"><span class="btn__label" data-fm-layer="Label — Review Gloria">Review</span></a></div></div></article>
+<article class="req" data-fm-layer="Request — Marta"><svg class="req__icon req__icon--info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Marta"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 1.8"/></svg>
+<div class="req__text" data-fm-layer="Request text — Marta">
+<p class="req__title" data-fm-layer="Request title — Marta">Doña Marta's resubmitted after the permit expired</p>
+<p class="req__body" data-fm-layer="Request body — Marta">Renewed permit uploaded Wednesday 10 September · new orders stay blocked until an administrator approves.</p>
+<div class="req__actions" data-fm-layer="Request actions — Marta"><a class="btn btn--outline btn--sm" href="admin-compliance.html" data-fm-layer="Button — Review Marta"><span class="btn__label" data-fm-layer="Label — Review Marta">Review</span></a></div></div></article>
+<article class="req" data-fm-layer="Request — Lola"><svg class="req__icon req__icon--warn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Lola"><path d="M12 3.5 5 6.2v5.5c0 4.2 2.9 7.5 7 8.8 4.1-1.3 7-4.6 7-8.8V6.2Z"/><path d="m9.2 12 2 2 3.6-3.8"/></svg>
+<div class="req__text" data-fm-layer="Request text — Lola">
+<p class="req__title" data-fm-layer="Request title — Lola">Lola's Kusina is on a compliance hold</p>
+<p class="req__body" data-fm-layer="Request body — Lola">Placed by Chris Alvarez on Tuesday 9 September · waiting for clearance documents.</p>
+<div class="req__actions" data-fm-layer="Request actions — Lola"><a class="btn btn--outline btn--sm" href="admin-compliance.html" data-fm-layer="Button — View Lola"><span class="btn__label" data-fm-layer="Label — View Lola">View</span></a></div></div></article></div>
+<div class="panel__foot" data-fm-layer="Panel foot — Review"><a class="panel__link" href="admin-compliance.html" data-fm-layer="Link — Compliance">Open compliance</a></div></section>
+</div></main>
+</div>
+</div>
+<script src="app.js"></script>
+<script src="../role-switch.js"></script>
+</body>
+</html>

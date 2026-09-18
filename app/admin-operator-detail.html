@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa Gloria — Admin | Hearthfare</title>
+<link rel="icon" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body data-fm-layer="Casa Gloria page">
+<div class="app" data-fm-layer="App shell">
+<div class="app-scrim" hidden data-fm-layer="Menu scrim"></div>
+<aside class="app-side" data-fm-layer="Sidebar">
+<div class="app-side__top" data-fm-layer="Sidebar top"><a class="brand app-side__brand" href="admin-dashboard.html" data-fm-layer="Brand"><img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt="" data-fm-layer="Brand mark"><span class="brand__text" data-fm-layer="Brand text"><span class="brand__name" data-fm-layer="Brand name">hearthfare</span><span class="brand__tagline" data-fm-layer="Brand tagline">Admin</span></span></a><button class="icon-button app-side__close" type="button" data-menu-close aria-label="Close menu" data-fm-layer="Button — Close menu"><svg class="icon-button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true" data-fm-layer="Icon — Close"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+<nav class="app-side__nav" aria-label="Admin" data-fm-layer="Sidebar nav">
+<div class="app-side__group" data-fm-layer="Nav group — Overview">
+<p class="app-side__group-title" data-fm-layer="Nav group title — Overview">Overview</p><a class="app-side__link" href="admin-dashboard.html" data-fm-layer="Nav — Dashboard"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Dashboard"><rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.8"/></svg><span class="app-side__label" data-fm-layer="Nav label — Dashboard">Dashboard</span></a></div>
+<div class="app-side__group" data-fm-layer="Nav group — Hearths">
+<p class="app-side__group-title" data-fm-layer="Nav group title — Hearths">Hearths</p><a class="app-side__link app-side__link--active" href="admin-operators.html" aria-current="page" data-fm-layer="Nav — Operators"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Operators"><path d="M4 9.5 5.5 4.5h13L20 9.5"/><path d="M4 9.5h16v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 18.5Z"/><path d="M9.5 20v-5h5v5"/></svg><span class="app-side__label" data-fm-layer="Nav label — Operators">Operators</span></a><a class="app-side__link" href="admin-compliance.html" data-fm-layer="Nav — Compliance"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Compliance"><path d="M12 3.5 5 6.2v5.5c0 4.2 2.9 7.5 7 8.8 4.1-1.3 7-4.6 7-8.8V6.2Z"/><path d="m9.2 12 2 2 3.6-3.8"/></svg><span class="app-side__label" data-fm-layer="Nav label — Compliance">Compliance</span><span class="app-side__count" data-fm-layer="Nav count — Compliance">2</span></a><a class="app-side__link" href="admin-complaints.html" data-fm-layer="Nav — Complaints"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Complaints"><circle cx="12" cy="12" r="8.5"/><path d="M12 8.5v4.5m0 3h.01"/></svg><span class="app-side__label" data-fm-layer="Nav label — Complaints">Complaints</span><span class="app-side__count" data-fm-layer="Nav count — Complaints">1</span></a></div>
+<div class="app-side__group" data-fm-layer="Nav group — Marketplace">
+<p class="app-side__group-title" data-fm-layer="Nav group title — Marketplace">Marketplace</p><a class="app-side__link" href="admin-orders.html" data-fm-layer="Nav — Orders"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Orders"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg><span class="app-side__label" data-fm-layer="Nav label — Orders">Orders</span></a></div>
+<div class="app-side__group" data-fm-layer="Nav group — Records">
+<p class="app-side__group-title" data-fm-layer="Nav group title — Records">Records</p><a class="app-side__link" href="admin-audit-log.html" data-fm-layer="Nav — Audit log"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Audit log"><path d="M7 3.5h7l5 5v12a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 6 20.5v-15A2 2 0 0 1 7 3.5Z"/><path d="M13.5 3.8V9h5"/></svg><span class="app-side__label" data-fm-layer="Nav label — Audit log">Audit log</span></a></div></nav>
+<div class="app-side__foot" data-fm-layer="Sidebar foot"><a class="app-side__link" href="admin-settings.html" data-fm-layer="Nav — Settings"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Settings"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1v.3a2 2 0 1 1-4 0v-.2a1.6 1.6 0 0 0-2.8-1.1l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0-1.1-2.7H3.2a2 2 0 1 1 0-4h.2A1.6 1.6 0 0 0 4.5 6l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 2.7-1.1V2a2 2 0 1 1 4 0v.2a1.6 1.6 0 0 0 2.7 1.1l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0 1.1 2.7h.2a2 2 0 1 1 0 4h-.2a1.6 1.6 0 0 0-1.4 1Z"/></svg><span class="app-side__label" data-fm-layer="Nav label — Settings">Settings</span></a></div>
+</aside>
+<div class="app-main" data-fm-layer="Main">
+<header class="app-bar" data-fm-layer="Top bar">
+<div class="app-bar__lead" data-fm-layer="Top bar lead"><button class="icon-button" type="button" data-menu-open aria-label="Open menu" aria-expanded="false" data-fm-layer="Button — Menu"><svg class="icon-button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true" data-fm-layer="Icon — Hamburger"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><a class="brand" href="admin-dashboard.html" data-fm-layer="Brand — Top bar"><img class="brand__mark" src="assets/logo-mark.svg" width="34" height="31" alt="" data-fm-layer="Brand mark — Top bar"><span class="brand__text" data-fm-layer="Brand text — Top bar"><span class="brand__name" data-fm-layer="Brand name — Top bar">hearthfare</span></span></a></div>
+<div class="app-bar__context" data-fm-layer="Top bar context"><span class="app-bar__eyebrow" data-fm-layer="Top bar eyebrow">Administrator</span><span class="app-bar__name" data-fm-layer="Top bar name">Hearthfare · San Diego County and Los Angeles County</span></div>
+<div class="app-bar__actions" data-fm-layer="Top bar actions"><button class="icon-button" type="button" aria-label="Notifications" data-fm-layer="Button — Notifications"><svg class="icon-button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Bell"><path d="M18 8.5a6 6 0 1 0-12 0c0 5-2 6.5-2 6.5h16s-2-1.5-2-6.5Z"/><path d="M13.7 19a2 2 0 0 1-3.4 0"/></svg><span class="icon-button__dot" data-fm-layer="Dot — Unread"></span></button><span class="avatar" data-fm-layer="Avatar — Dana"><img src="assets/avatars/dana.jpg" alt="" data-fm-layer="Avatar photo — Dana"></span></div>
+</header>
+<main class="app-body" data-fm-layer="Body">
+<div class="app-body__inner" data-fm-layer="Body inner">
+<div class="page-head" data-fm-layer="Page head">
+<div class="page-head__text" data-fm-layer="Page head text">
+<h1 class="page-head__title" data-fm-layer="Page title">Casa Gloria</h1>
+<p class="page-head__sub" data-fm-layer="Page sub">Gloria Mendez · Boyle Heights, Los Angeles · hearthfare.com/casagloria</p></div>
+<div class="page-head__actions" data-fm-layer="Page head actions"><a class="btn btn--outline btn--sm" href="admin-operators.html" data-fm-layer="Button — All operators"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — All operators"><path d="M19 12H5m6-6-6 6 6 6"/></svg><span class="btn__label" data-fm-layer="Label — All operators">All operators</span></a><button class="btn btn--outline btn--sm" type="button" data-fm-layer="Button — Log in as Gloria"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Log in as Gloria"><path d="M14 4.5h4a1.5 1.5 0 0 1 1.5 1.5v12a1.5 1.5 0 0 1-1.5 1.5h-4"/><path d="M9.5 16.5 14 12 9.5 7.5M14 12H4"/></svg><span class="btn__label" data-fm-layer="Label — Log in as Gloria">Log in as Gloria</span></button><button class="btn btn--primary btn--sm" type="button" data-fm-layer="Button — Approve Operator"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Approve Operator"><path d="m4 12.5 5 5L20 6.5"/></svg><span class="btn__label" data-fm-layer="Label — Approve Operator">Approve Operator</span></button></div></div>
+<div class="banner banner--info" data-fm-layer="Banner — Awaiting approval"><svg class="banner__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Awaiting approval"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5m0-8.5h.01"/></svg>
+<div class="banner__text" data-fm-layer="Banner text — Awaiting approval">
+<p class="banner__title" data-fm-layer="Banner title — Awaiting approval">Casa Gloria is waiting for your approval</p>
+<p class="banner__body" data-fm-layer="Banner body — Awaiting approval">Gloria uploaded the county permit on Monday 8 September and resubmitted Casa Gloria for review on Tuesday 9 September.</p></div></div>
+<div class="wizard wizard--end" data-fm-layer="Operator layout">
+<div class="grid" style="align-content:start;" data-fm-layer="Operator main">
+<section class="panel" data-fm-layer="Panel — Activation">
+<div class="panel__head" data-fm-layer="Panel head — Activation">
+<div data-fm-layer="Panel head text — Activation">
+<h2 class="panel__title" data-fm-layer="Panel title — Activation">Before Casa Gloria can open</h2>
+<p class="panel__sub" data-fm-layer="Panel sub — Activation">Every requirement must be met, then an administrator approves.</p></div><span class="pill pill--info" data-fm-layer="Pill — Requirements count">8 of 9 done</span></div>
+<div class="panel__body" data-fm-layer="Panel body — Activation">
+<div class="stepper" data-fm-layer="Activation requirements"><span class="stepper__item stepper__item--done" data-fm-layer="Item — Activation requirements 1"><span class="stepper__mark" data-fm-layer="Mark — Activation requirements 1"><svg class="stepper__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Check Activation requirements 1"><path d="m4 12.5 5 5L20 6.5"/></svg></span>Stripe account connected</span><span class="stepper__item stepper__item--done" data-fm-layer="Item — Activation requirements 2"><span class="stepper__mark" data-fm-layer="Mark — Activation requirements 2"><svg class="stepper__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Check Activation requirements 2"><path d="m4 12.5 5 5L20 6.5"/></svg></span>Stripe account verified</span><span class="stepper__item stepper__item--done" data-fm-layer="Item — Activation requirements 3"><span class="stepper__mark" data-fm-layer="Mark — Activation requirements 3"><svg class="stepper__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Check Activation requirements 3"><path d="m4 12.5 5 5L20 6.5"/></svg></span>Compliance attestation completed</span><span class="stepper__item stepper__item--done" data-fm-layer="Item — Activation requirements 4"><span class="stepper__mark" data-fm-layer="Mark — Activation requirements 4"><svg class="stepper__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Check Activation requirements 4"><path d="m4 12.5 5 5L20 6.5"/></svg></span>Terms accepted and recorded</span><span class="stepper__item stepper__item--done" data-fm-layer="Item — Activation requirements 5"><span class="stepper__mark" data-fm-layer="Mark — Activation requirements 5"><svg class="stepper__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Check Activation requirements 5"><path d="m4 12.5 5 5L20 6.5"/></svg></span>Onboarding completed</span><span class="stepper__item stepper__item--done" data-fm-layer="Item — Activation requirements 6"><span class="stepper__mark" data-fm-layer="Mark — Activation requirements 6"><svg class="stepper__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Check Activation requirements 6"><path d="m4 12.5 5 5L20 6.5"/></svg></span>Required documents uploaded</span><span class="stepper__item stepper__item--done" data-fm-layer="Item — Activation requirements 7"><span class="stepper__mark" data-fm-layer="Mark — Activation requirements 7"><svg class="stepper__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Check Activation requirements 7"><path d="m4 12.5 5 5L20 6.5"/></svg></span>Licensing approval uploaded</span><span class="stepper__item stepper__item--done" data-fm-layer="Item — Activation requirements 8"><span class="stepper__mark" data-fm-layer="Mark — Activation requirements 8"><svg class="stepper__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Check Activation requirements 8"><path d="m4 12.5 5 5L20 6.5"/></svg></span>No complaint or compliance conditions outstanding</span><span class="stepper__item stepper__item--on" data-fm-layer="Item — Activation requirements 9"><span class="stepper__mark" data-fm-layer="Mark — Activation requirements 9"></span>Approved by a Hearthfare administrator</span></div></div>
+<div class="panel__foot" data-fm-layer="Panel foot — Activation">
+<div class="wizard__foot" data-fm-layer="Footer — Approve">
+<p class="switch-row__body" data-fm-layer="Text — Approve note">Approving records today as the activation date and starts the 12-month fee-free period.</p>
+<div class="btn-row" data-fm-layer="Footer actions — Approve"><button class="btn btn--primary btn--sm" type="button" data-fm-layer="Button — Approve Operator foot"><span class="btn__label" data-fm-layer="Label — Approve Operator foot">Approve Operator</span></button></div></div></div></section>
+<section class="panel" data-fm-layer="Panel — Permit">
+<div class="panel__head" data-fm-layer="Panel head — Permit">
+<div data-fm-layer="Panel head text — Permit">
+<h2 class="panel__title" data-fm-layer="Panel title — Permit">Permit and enforcement agency</h2></div><span class="pill pill--info" data-fm-layer="Pill — Permit status">Awaiting Hearthfare approval</span></div>
+<div class="panel__body" data-fm-layer="Panel body — Permit">
+<div class="money" data-fm-layer="Details — Permit">
+<div class="money__row" data-fm-layer="Row — Permit Permit number"><span class="money__label" data-fm-layer="Label — Permit Permit number">Permit number</span><span class="money__value" data-fm-layer="Value — Permit Permit number">MEHKO-LA-2026-00193</span></div>
+<div class="money__row" data-fm-layer="Row — Permit Expiration date"><span class="money__label" data-fm-layer="Label — Permit Expiration date">Expiration date</span><span class="money__value" data-fm-layer="Value — Permit Expiration date">8 September 2027</span></div>
+<div class="money__row" data-fm-layer="Row — Permit County"><span class="money__label" data-fm-layer="Label — Permit County">County</span><span class="money__value" data-fm-layer="Value — Permit County">Los Angeles County</span></div></div>
+<div style="margin-top:0.5rem;" data-fm-layer="Permit hint wrap">
+<p class="field__hint" data-fm-layer="Hint — Permit">Typed by the cook from the county permit. Check both against the uploaded permit.</p></div>
+<div style="margin-top:1.25rem;" data-fm-layer="Agency form wrap">
+<div class="form" data-fm-layer="Form — Agency">
+<div class="field" data-fm-layer="Field — Enforcement agency">
+<div class="field__label-row" data-fm-layer="Label row — Enforcement agency">
+<label class="field__label" for="agency" data-fm-layer="Label — Enforcement agency">Enforcement agency</label><span class="pill pill--muted" data-fm-layer="Pill — Set from county — Enforcement agency">Set from county</span></div>
+<select class="input input--select" id="agency" data-fm-layer="Select — Enforcement agency"><option selected data-fm-layer="Option — Los Angeles County Department of Public Health">Los Angeles County Department of Public Health</option><option data-fm-layer="Option — San Diego County Department of Environmental Health and Quality">San Diego County Department of Environmental Health and Quality</option></select>
+<p class="field__hint" data-fm-layer="Hint — Enforcement agency">Set automatically from the county. Change it only if it is wrong.</p></div></div></div></div>
+<div class="panel__foot" data-fm-layer="Panel foot — Permit">
+<div class="btn-row" data-fm-layer="Actions — Permit"><button class="btn btn--primary btn--sm" type="button" data-fm-layer="Button — Save agency"><span class="btn__label" data-fm-layer="Label — Save agency">Save agency</span></button></div></div></section>
+<section class="panel" data-fm-layer="Panel — Documents">
+<div class="panel__head" data-fm-layer="Panel head — Documents">
+<div data-fm-layer="Panel head text — Documents">
+<h2 class="panel__title" data-fm-layer="Panel title — Documents">Documents</h2>
+<p class="panel__sub" data-fm-layer="Panel sub — Documents">Uploaded by the cook, and generated from the licensing answers.</p></div></div>
+<div class="panel__body" data-fm-layer="Panel body — Documents">
+<div class="form__section" data-fm-layer="Section — Uploaded">
+<p class="form__legend" data-fm-layer="Legend — Uploaded">Uploaded</p>
+<div data-fm-layer="Documents — Uploaded">
+<div class="doc" data-fm-layer="Document — Permit"><span class="doc__icon" data-fm-layer="Document icon — Permit"><svg class="doc__glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Permit"><path d="M12 3.5 5 6.2v5.5c0 4.2 2.9 7.5 7 8.8 4.1-1.3 7-4.6 7-8.8V6.2Z"/><path d="m9.2 12 2 2 3.6-3.8"/></svg></span>
+<div class="doc__text" data-fm-layer="Document text — Permit">
+<p class="doc__name" data-fm-layer="Document name — Permit">County permit</p>
+<p class="doc__meta" data-fm-layer="Document meta — Permit">permit-casa-gloria.pdf · uploaded Monday 8 September 2026</p></div>
+<div class="doc__actions" data-fm-layer="Document actions — Permit"><span class="pill pill--info" data-fm-layer="Pill — Permit review">Waiting for review</span><button class="btn btn--outline btn--sm" type="button" data-fm-layer="Button — Download Permit"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Download Permit"><path d="M12 4.5v11M7.5 11 12 15.5 16.5 11"/><path d="M4.5 15v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span class="btn__label" data-fm-layer="Label — Download Permit">Download</span></button><button class="btn btn--outline btn--sm" type="button" data-fm-layer="Button — Accept Permit"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Accept Permit"><path d="m4 12.5 5 5L20 6.5"/></svg><span class="btn__label" data-fm-layer="Label — Accept Permit">Accept</span></button><button class="btn btn--outline btn--sm" type="button" data-fm-layer="Button — Needs changes Permit"><span class="btn__label" data-fm-layer="Label — Needs changes Permit">Needs changes</span></button></div></div>
+<div class="doc" data-fm-layer="Document — Food Manager"><span class="doc__icon" data-fm-layer="Document icon — Food Manager"><svg class="doc__glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Food Manager"><path d="M7 3.5h7l5 5v12a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 6 20.5v-15A2 2 0 0 1 7 3.5Z"/><path d="M13.5 3.8V9h5"/></svg></span>
+<div class="doc__text" data-fm-layer="Document text — Food Manager">
+<p class="doc__name" data-fm-layer="Document name — Food Manager">Food Manager Certification</p>
+<p class="doc__meta" data-fm-layer="Document meta — Food Manager">food-manager-certification.pdf · uploaded Sunday 20 July 2026</p></div>
+<div class="doc__actions" data-fm-layer="Document actions — Food Manager"><span class="pill pill--ok" data-fm-layer="Pill — Food Manager review">Accepted</span><button class="btn btn--outline btn--sm" type="button" data-fm-layer="Button — Download Food Manager"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Download Food Manager"><path d="M12 4.5v11M7.5 11 12 15.5 16.5 11"/><path d="M4.5 15v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span class="btn__label" data-fm-layer="Label — Download Food Manager">Download</span></button></div></div></div></div>
+<div style="margin-top:1.5rem;" data-fm-layer="Generated wrap">
+<div class="form__section" data-fm-layer="Section — Generated">
+<p class="form__legend" data-fm-layer="Legend — Generated">Generated</p>
+<div data-fm-layer="Documents — Generated">
+<div class="doc" data-fm-layer="Document — Application"><span class="doc__icon" data-fm-layer="Document icon — Application"><svg class="doc__glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Application"><path d="M7 3.5h7l5 5v12a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 6 20.5v-15A2 2 0 0 1 7 3.5Z"/><path d="M13.5 3.8V9h5"/></svg></span>
+<div class="doc__text" data-fm-layer="Document text — Application">
+<p class="doc__name" data-fm-layer="Document name — Application">MEHKO Permit Application</p>
+<p class="doc__meta" data-fm-layer="Document meta — Application">Version 2 · generated Wednesday 30 July 2026</p></div>
+<div class="doc__actions" data-fm-layer="Document actions — Application"><button class="btn btn--outline btn--sm" type="button" data-fm-layer="Button — Download Application"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Download Application"><path d="M12 4.5v11M7.5 11 12 15.5 16.5 11"/><path d="M4.5 15v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span class="btn__label" data-fm-layer="Label — Download Application">Download</span></button></div></div>
+<div class="doc" data-fm-layer="Document — SOP"><span class="doc__icon" data-fm-layer="Document icon — SOP"><svg class="doc__glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — SOP"><path d="M7 3.5h7l5 5v12a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 6 20.5v-15A2 2 0 0 1 7 3.5Z"/><path d="M13.5 3.8V9h5"/></svg></span>
+<div class="doc__text" data-fm-layer="Document text — SOP">
+<p class="doc__name" data-fm-layer="Document name — SOP">Standard Operating Procedures</p>
+<p class="doc__meta" data-fm-layer="Document meta — SOP">Version 1 · generated Wednesday 30 July 2026</p></div>
+<div class="doc__actions" data-fm-layer="Document actions — SOP"><button class="btn btn--outline btn--sm" type="button" data-fm-layer="Button — Download SOP"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Download SOP"><path d="M12 4.5v11M7.5 11 12 15.5 16.5 11"/><path d="M4.5 15v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span class="btn__label" data-fm-layer="Label — Download SOP">Download</span></button></div></div>
+<div class="doc" data-fm-layer="Document — Proposed Menu"><span class="doc__icon" data-fm-layer="Document icon — Proposed Menu"><svg class="doc__glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Proposed Menu"><path d="M7 3.5h7l5 5v12a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 6 20.5v-15A2 2 0 0 1 7 3.5Z"/><path d="M13.5 3.8V9h5"/></svg></span>
+<div class="doc__text" data-fm-layer="Document text — Proposed Menu">
+<p class="doc__name" data-fm-layer="Document name — Proposed Menu">Proposed Menu</p>
+<p class="doc__meta" data-fm-layer="Document meta — Proposed Menu">Version 2 · generated Wednesday 30 July 2026</p></div>
+<div class="doc__actions" data-fm-layer="Document actions — Proposed Menu"><button class="btn btn--outline btn--sm" type="button" data-fm-layer="Button — Download Proposed Menu"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Download Proposed Menu"><path d="M12 4.5v11M7.5 11 12 15.5 16.5 11"/><path d="M4.5 15v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span class="btn__label" data-fm-layer="Label — Download Proposed Menu">Download</span></button></div></div>
+<div class="doc" data-fm-layer="Document — Summary"><span class="doc__icon" data-fm-layer="Document icon — Summary"><svg class="doc__glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Summary"><path d="M7 3.5h7l5 5v12a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 6 20.5v-15A2 2 0 0 1 7 3.5Z"/><path d="M13.5 3.8V9h5"/></svg></span>
+<div class="doc__text" data-fm-layer="Document text — Summary">
+<p class="doc__name" data-fm-layer="Document name — Summary">Compliance Summary</p>
+<p class="doc__meta" data-fm-layer="Document meta — Summary">Version 1 · generated Wednesday 30 July 2026</p></div>
+<div class="doc__actions" data-fm-layer="Document actions — Summary"><button class="btn btn--outline btn--sm" type="button" data-fm-layer="Button — Download Summary"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Download Summary"><path d="M12 4.5v11M7.5 11 12 15.5 16.5 11"/><path d="M4.5 15v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span class="btn__label" data-fm-layer="Label — Download Summary">Download</span></button></div></div></div></div></div></div></section>
+<section class="panel" data-fm-layer="Panel — Submission">
+<div class="panel__head" data-fm-layer="Panel head — Submission">
+<div data-fm-layer="Panel head text — Submission">
+<h2 class="panel__title" data-fm-layer="Panel title — Submission">County submission</h2></div><span class="pill pill--ok" data-fm-layer="Pill — Submission status">Submitted</span></div>
+<div class="panel__body" data-fm-layer="Panel body — Submission">
+<div class="money" data-fm-layer="Details — Submission">
+<div class="money__row" data-fm-layer="Row — Submission Agency"><span class="money__label" data-fm-layer="Label — Submission Agency">Agency</span><span class="money__value" data-fm-layer="Value — Submission Agency">Los Angeles County Department of Public Health</span></div>
+<div class="money__row" data-fm-layer="Row — Submission Recipient"><span class="money__label" data-fm-layer="Label — Submission Recipient">Recipient</span><span class="money__value" data-fm-layer="Value — Submission Recipient">[Los Angeles County submission address]</span></div>
+<div class="money__row" data-fm-layer="Row — Submission Subject"><span class="money__label" data-fm-layer="Label — Submission Subject">Subject</span><span class="money__value" data-fm-layer="Value — Submission Subject">MEHKO Permit Application — Casa Gloria, 2210 East 1st Street, Los Angeles 90033</span></div>
+<div class="money__row" data-fm-layer="Row — Submission Documents"><span class="money__label" data-fm-layer="Label — Submission Documents">Documents</span><span class="money__value" data-fm-layer="Value — Submission Documents">5 attached</span></div>
+<div class="money__row" data-fm-layer="Row — Submission Package generated"><span class="money__label" data-fm-layer="Label — Submission Package generated">Package generated</span><span class="money__value" data-fm-layer="Value — Submission Package generated">Wednesday 30 July 2026 · 4:10 PM</span></div>
+<div class="money__row" data-fm-layer="Row — Submission Marked as submitted"><span class="money__label" data-fm-layer="Label — Submission Marked as submitted">Marked as submitted</span><span class="money__value" data-fm-layer="Value — Submission Marked as submitted">Friday 1 August 2026 · 9:02 AM</span></div></div>
+<div style="margin-top:1.25rem;" data-fm-layer="Submission notes wrap">
+<div class="form" data-fm-layer="Form — Submission notes">
+<div class="field" data-fm-layer="Field — Administrator notes">
+<label class="field__label" for="s-notes" data-fm-layer="Label — Administrator notes">Administrator notes</label>
+<textarea class="input input--area" id="s-notes" data-fm-layer="Textarea — Administrator notes">Helped Gloria upload the Food Manager Certification on 20 July.</textarea></div></div></div></div>
+<div class="panel__foot" data-fm-layer="Panel foot — Submission">
+<div class="btn-row" data-fm-layer="Actions — Submission"><button class="btn btn--outline btn--sm" type="button" data-fm-layer="Button — Download documents"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Download documents"><path d="M12 4.5v11M7.5 11 12 15.5 16.5 11"/><path d="M4.5 15v3a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg><span class="btn__label" data-fm-layer="Label — Download documents">Download documents</span></button><button class="btn btn--primary btn--sm" type="button" data-fm-layer="Button — Save notes"><span class="btn__label" data-fm-layer="Label — Save notes">Save notes</span></button></div></div></section>
+<section class="panel panel--flush" data-fm-layer="Panel — Fulfillment">
+<div class="panel__head" data-fm-layer="Panel head — Fulfillment">
+<div data-fm-layer="Panel head text — Fulfillment">
+<h2 class="panel__title" data-fm-layer="Panel title — Fulfillment">Pickup and dine-in</h2>
+<p class="panel__sub" data-fm-layer="Panel sub — Fulfillment">Set by the cook. Change them here if the cook needs help.</p></div></div>
+<div class="panel__body panel__body--rows" data-fm-layer="Panel body — Fulfillment">
+<div class="switch-row" data-fm-layer="Switch row — Pickup">
+<div data-fm-layer="Switch text — Pickup">
+<p class="switch-row__title" data-fm-layer="Switch title — Pickup">Pickup</p>
+<p class="switch-row__body" data-fm-layer="Switch body — Pickup">Saturday 11:00 – 11:30 AM · up to 10 orders · orders close at 9:00 AM</p></div><span class="toggle toggle--on" data-fm-layer="Toggle — Pickup"><span class="toggle__track" data-fm-layer="Toggle track — Pickup"><span class="toggle__knob" data-fm-layer="Toggle knob — Pickup"></span></span></span></div>
+<div class="switch-row" data-fm-layer="Switch row — Dine-in">
+<div data-fm-layer="Switch text — Dine-in">
+<p class="switch-row__title" data-fm-layer="Switch title — Dine-in">Dine-in</p>
+<p class="switch-row__body" data-fm-layer="Switch body — Dine-in">Not offered</p></div><span class="toggle" data-fm-layer="Toggle — Dine-in"><span class="toggle__track" data-fm-layer="Toggle track — Dine-in"><span class="toggle__knob" data-fm-layer="Toggle knob — Dine-in"></span></span></span></div></div>
+<div class="panel__foot" data-fm-layer="Panel foot — Fulfillment">
+<div class="btn-row" data-fm-layer="Actions — Fulfillment"><button class="btn btn--primary btn--sm" type="button" data-fm-layer="Button — Save fulfillment"><span class="btn__label" data-fm-layer="Label — Save fulfillment">Save</span></button></div></div></section></div>
+<div class="grid" style="align-content:start;" data-fm-layer="Operator rail">
+<aside class="panel" data-fm-layer="Panel — Operator">
+<div class="panel__head" data-fm-layer="Panel head — Operator">
+<div data-fm-layer="Panel head text — Operator">
+<h2 class="panel__title" data-fm-layer="Panel title — Operator">Operator</h2></div></div>
+<div class="panel__body" data-fm-layer="Panel body — Operator"><span class="table__person" data-fm-layer="Person — Gloria"><span class="avatar" data-fm-layer="Avatar — Gloria"><img src="assets/avatars/gloria.jpg" alt="" data-fm-layer="Avatar photo — Gloria"></span><span class="table__person-text" data-fm-layer="Person text — Gloria"><span class="table__strong" data-fm-layer="Person name — Gloria">Gloria Mendez</span><span class="table__person-sub" data-fm-layer="Person sub — Gloria">Owner · Casa Gloria</span></span></span>
+<div style="margin-top:1rem;" data-fm-layer="Operator details wrap">
+<div class="money" data-fm-layer="Details — Operator">
+<div class="money__row" data-fm-layer="Row — Operator Email"><span class="money__label" data-fm-layer="Label — Operator Email">Email</span><span class="money__value" data-fm-layer="Value — Operator Email">gloria.mendez@example.com</span></div>
+<div class="money__row" data-fm-layer="Row — Operator Mobile"><span class="money__label" data-fm-layer="Label — Operator Mobile">Mobile</span><span class="money__value" data-fm-layer="Value — Operator Mobile">(323) 555-0187</span></div>
+<div class="money__row" data-fm-layer="Row — Operator County"><span class="money__label" data-fm-layer="Label — Operator County">County</span><span class="money__value" data-fm-layer="Value — Operator County">Los Angeles</span></div>
+<div class="money__row" data-fm-layer="Row — Operator Storefront"><span class="money__label" data-fm-layer="Label — Operator Storefront">Storefront</span><span class="money__value" data-fm-layer="Value — Operator Storefront"><span class="pill pill--muted" data-fm-layer="Pill — Storefront status">Not activated</span></span></div>
+<div class="money__row" data-fm-layer="Row — Operator Activated"><span class="money__label" data-fm-layer="Label — Operator Activated">Activated</span><span class="money__value" data-fm-layer="Value — Operator Activated">Not yet</span></div></div></div></div></aside>
+<aside class="panel" data-fm-layer="Panel — Log in as">
+<div class="panel__head" data-fm-layer="Panel head — Log in as">
+<div data-fm-layer="Panel head text — Log in as">
+<h2 class="panel__title" data-fm-layer="Panel title — Log in as">Log in as Gloria</h2></div></div>
+<div class="panel__body" data-fm-layer="Panel body — Log in as">
+<p class="switch-row__body" data-fm-layer="Text — Log in as">Use Casa Gloria's account as Gloria sees it, without signing out. Everything you do is recorded in the audit log under your own name.</p></div>
+<div class="panel__foot" data-fm-layer="Panel foot — Log in as"><button class="btn btn--primary btn--sm btn--block" type="button" data-fm-layer="Button — Log in as Gloria rail"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Log in as Gloria rail"><path d="M14 4.5h4a1.5 1.5 0 0 1 1.5 1.5v12a1.5 1.5 0 0 1-1.5 1.5h-4"/><path d="M9.5 16.5 14 12 9.5 7.5M14 12H4"/></svg><span class="btn__label" data-fm-layer="Label — Log in as Gloria rail">Log in as Gloria</span></button></div></aside>
+<aside class="panel" data-fm-layer="Panel — Agreements">
+<div class="panel__head" data-fm-layer="Panel head — Agreements">
+<div data-fm-layer="Panel head text — Agreements">
+<h2 class="panel__title" data-fm-layer="Panel title — Agreements">Agreements accepted</h2></div></div>
+<div class="panel__body" data-fm-layer="Panel body — Agreements">
+<div class="money" data-fm-layer="Details — Agreements">
+<div class="money__row" data-fm-layer="Row — Agreements Terms of Service"><span class="money__label" data-fm-layer="Label — Agreements Terms of Service">Terms of Service</span><span class="money__value" data-fm-layer="Value — Agreements Terms of Service">2 Jul, 6:14 PM</span></div>
+<div class="money__row" data-fm-layer="Row — Agreements Privacy Policy"><span class="money__label" data-fm-layer="Label — Agreements Privacy Policy">Privacy Policy</span><span class="money__value" data-fm-layer="Value — Agreements Privacy Policy">2 Jul, 6:14 PM</span></div>
+<div class="money__row" data-fm-layer="Row — Agreements E-communications"><span class="money__label" data-fm-layer="Label — Agreements E-communications">E-communications</span><span class="money__value" data-fm-layer="Value — Agreements E-communications">2 Jul, 6:14 PM</span></div>
+<div class="money__row" data-fm-layer="Row — Agreements Operator Agreement"><span class="money__label" data-fm-layer="Label — Agreements Operator Agreement">Operator Agreement</span><span class="money__value" data-fm-layer="Value — Agreements Operator Agreement">9 Sep, 8:47 AM</span></div></div>
+<div style="margin-top:0.875rem;" data-fm-layer="Agreements note wrap">
+<p class="money__note" data-fm-layer="Note — Agreements">All version 1.0, accepted in 2026. Each acceptance is recorded with the version, date, time and IP address (203.0.113.24).</p></div></div></aside>
+<aside class="panel" data-fm-layer="Panel — Hold">
+<div class="panel__head" data-fm-layer="Panel head — Hold">
+<div data-fm-layer="Panel head text — Hold">
+<h2 class="panel__title" data-fm-layer="Panel title — Hold">Place a compliance hold</h2>
+<p class="panel__sub" data-fm-layer="Panel sub — Hold">Stops new orders straight away.</p></div></div>
+<div class="panel__body" data-fm-layer="Panel body — Hold">
+<div class="form" data-fm-layer="Form — Hold">
+<div class="field" data-fm-layer="Field — Based on">
+<label class="field__label" for="h-source" data-fm-layer="Label — Based on">Based on</label>
+<select class="input input--select" id="h-source" data-fm-layer="Select — Based on"><option selected data-fm-layer="Option — Agency notice">Agency notice</option><option data-fm-layer="Option — Documents from the cook">Documents from the cook</option><option data-fm-layer="Option — Other reliable information">Other reliable information</option></select></div>
+<div class="field" data-fm-layer="Field — Reason">
+<label class="field__label" for="h-reason" data-fm-layer="Label — Reason">Reason</label>
+<textarea class="input input--area" id="h-reason" placeholder="What you know, and where it came from." data-fm-layer="Textarea — Reason"></textarea></div>
+<p class="money__note" data-fm-layer="Note — Hold">Orders already accepted are not cancelled. The hold stays until clearance documents are uploaded and an administrator approves again.</p></div></div>
+<div class="panel__foot" data-fm-layer="Panel foot — Hold"><button class="btn btn--danger btn--sm btn--block" type="button" data-fm-layer="Button — Place hold"><span class="btn__label" data-fm-layer="Label — Place hold">Place hold</span></button></div></aside>
+<aside class="panel" data-fm-layer="Panel — Account">
+<div class="panel__head" data-fm-layer="Panel head — Account">
+<div data-fm-layer="Panel head text — Account">
+<h2 class="panel__title" data-fm-layer="Panel title — Account">Storefront and account</h2></div></div>
+<div class="panel__body" data-fm-layer="Panel body — Account">
+<div class="form" data-fm-layer="Form — Account">
+<div class="field" data-fm-layer="Field — Storefront status">
+<label class="field__label" for="sf-status" data-fm-layer="Label — Storefront status">Storefront status</label>
+<select class="input input--select" id="sf-status" data-fm-layer="Select — Storefront status"><option data-fm-layer="Option — Open">Open</option><option data-fm-layer="Option — Paused">Paused</option><option data-fm-layer="Option — Closed">Closed</option><option selected data-fm-layer="Option — Hidden">Hidden</option></select>
+<p class="field__hint" data-fm-layer="Hint — Storefront status">Overrides the cook's own setting.</p></div>
+<div class="grid" style="gap:0.5rem;" data-fm-layer="Account actions"><button class="btn btn--danger btn--sm btn--block" type="button" data-fm-layer="Button — Suspend storefront"><span class="btn__label" data-fm-layer="Label — Suspend storefront">Suspend storefront</span></button><button class="btn btn--outline btn--sm btn--block" type="button" data-fm-layer="Button — Reset password"><span class="btn__label" data-fm-layer="Label — Reset password">Reset password</span></button><button class="btn btn--danger btn--sm btn--block" type="button" data-fm-layer="Button — Suspend account"><span class="btn__label" data-fm-layer="Label — Suspend account">Suspend account</span></button><button class="btn btn--danger btn--sm btn--block" type="button" data-fm-layer="Button — Delete information"><span class="btn__label" data-fm-layer="Label — Delete information">Delete information</span></button></div></div></div></aside></div></div>
+</div></main>
+</div>
+</div>
+<script src="app.js"></script>
+<script src="../role-switch.js"></script>
+</body>
+</html>

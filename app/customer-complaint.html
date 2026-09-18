@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report a food safety concern — Hearthfare</title>
+<link rel="icon" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body data-fm-layer="Complaint page">
+<div class="app" data-fm-layer="App shell">
+<div class="app-scrim" hidden data-fm-layer="Menu scrim"></div>
+<aside class="app-side" data-fm-layer="Sidebar">
+<div class="app-side__top" data-fm-layer="Sidebar top"><a class="brand app-side__brand" href="customer-orders.html" data-fm-layer="Brand"><img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt="" data-fm-layer="Brand mark"><span class="brand__text" data-fm-layer="Brand text"><span class="brand__name" data-fm-layer="Brand name">hearthfare</span><span class="brand__tagline" data-fm-layer="Brand tagline">Your account</span></span></a><button class="icon-button app-side__close" type="button" data-menu-close aria-label="Close menu" data-fm-layer="Button — Close menu"><svg class="icon-button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Close"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+<nav class="app-side__nav" aria-label="Your account" data-fm-layer="Sidebar nav">
+<div class="app-side__group" data-fm-layer="Nav group — Today">
+<p class="app-side__group-title" data-fm-layer="Nav group title — Today">Today</p><a class="app-side__link app-side__link--active" href="customer-orders.html" aria-current="page" data-fm-layer="Nav — Orders"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Orders"><path d="M7 3.5h10A1.5 1.5 0 0 1 18.5 5v15.5l-3-2-3 2-3-2-3 2V5A1.5 1.5 0 0 1 7 3.5Z"/><path d="M9 8.5h6M9 12h6"/></svg><span class="app-side__label" data-fm-layer="Nav label — Orders">Orders</span><span class="app-side__count app-side__count--quiet" data-fm-layer="Nav count — Orders">3</span></a><a class="app-side__link" href="customer-messages.html" data-fm-layer="Nav — Messages"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Messages"><path d="M20 12.5a7 7 0 0 1-7 7H8l-4 2.5.9-3.6A7 7 0 0 1 11 4.5h2a7 7 0 0 1 7 7Z"/></svg><span class="app-side__label" data-fm-layer="Nav label — Messages">Messages</span><span class="app-side__count" data-fm-layer="Nav count — Messages">1</span></a></div>
+<div class="app-side__group" data-fm-layer="Nav group — Explore">
+<p class="app-side__group-title" data-fm-layer="Nav group title — Explore">Explore</p><a class="app-side__link" href="customer-favorites.html" data-fm-layer="Nav — Favorites"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Favorites"><path d="M12 20s-7-4.4-7-9.4A4.1 4.1 0 0 1 12 7.6a4.1 4.1 0 0 1 7 3c0 5-7 9.4-7 9.4Z"/></svg><span class="app-side__label" data-fm-layer="Nav label — Favorites">Favorites</span><span class="app-side__count app-side__count--quiet" data-fm-layer="Nav count — Favorites">3</span></a><a class="app-side__link" href="shop-search.html" data-fm-layer="Nav — Find food"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Find food"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><span class="app-side__label" data-fm-layer="Nav label — Find food">Find food</span></a></div>
+</nav>
+<div class="app-side__foot" data-fm-layer="Sidebar foot"><a class="app-side__link" href="customer-account.html" data-fm-layer="Nav — Account settings"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Account settings"><circle cx="12" cy="8.5" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></svg><span class="app-side__label" data-fm-layer="Nav label — Account settings">Account settings</span></a><a class="app-side__link" href="../index.html" data-fm-layer="Nav — Log out"><svg class="app-side__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Log out"><path d="M14 4.5h3.5A1.5 1.5 0 0 1 19 6v12a1.5 1.5 0 0 1-1.5 1.5H14"/><path d="M10 16.5 5.5 12 10 7.5M5.5 12H15"/></svg><span class="app-side__label" data-fm-layer="Nav label — Log out">Log out</span></a></div>
+</aside>
+<div class="app-main" data-fm-layer="Main">
+<header class="app-bar" data-fm-layer="Top bar">
+<div class="app-bar__lead" data-fm-layer="Top bar lead"><button class="icon-button" type="button" data-menu-open aria-label="Open menu" aria-expanded="false" data-fm-layer="Button — Menu"><svg class="icon-button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Hamburger"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><a class="brand" href="customer-orders.html" data-fm-layer="Brand — Top bar"><img class="brand__mark" src="assets/logo-mark.svg" width="34" height="31" alt="" data-fm-layer="Brand mark — Top bar"><span class="brand__text" data-fm-layer="Brand text — Top bar"><span class="brand__name" data-fm-layer="Brand name — Top bar">hearthfare</span></span></a></div>
+<div class="app-bar__context" data-fm-layer="Top bar context"><span class="app-bar__eyebrow" data-fm-layer="Top bar eyebrow">Your account</span><span class="app-bar__name" data-fm-layer="Top bar name">Marisol Ramirez · North Park, San Diego 92104</span></div>
+<div class="app-bar__actions" data-fm-layer="Top bar actions"><span class="pill pill--ok" data-fm-layer="Pill — Verified"><span class="pill__dot" data-fm-layer="Dot — Verified"></span>Verified</span><a class="btn btn--outline btn--sm" href="shop-search.html" data-fm-layer="Button — Find food"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Find food"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><span class="btn__label" data-fm-layer="Label — Find food">Find food</span></a><a class="icon-button" href="shop-cart.html" aria-label="Cart, 0 items" data-fm-layer="Button — Cart"><svg class="icon-button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Cart"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg></a><button class="icon-button" type="button" data-sheet-open aria-controls="notifications" aria-expanded="false" aria-label="Notifications" data-fm-layer="Button — Notifications"><svg class="icon-button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Bell"><path d="M18 8.5a6 6 0 1 0-12 0c0 5-2 6.5-2 6.5h16s-2-1.5-2-6.5Z"/><path d="M13.7 19a2 2 0 0 1-3.4 0"/></svg><span class="icon-button__dot" data-fm-layer="Dot — Unread"></span></button><span class="avatar" data-fm-layer="Avatar — Marisol"><img src="assets/avatars/marisol.jpg" alt="" data-fm-layer="Avatar photo — Marisol"></span></div>
+</header>
+<main class="app-body" data-fm-layer="Body">
+<div class="app-body__inner" data-fm-layer="Body inner">
+<div class="sf-body__head" data-fm-layer="Account head">
+<div class="page-head" data-fm-layer="Page head">
+<div class="page-head__text" data-fm-layer="Page head text">
+<h1 class="page-head__title" data-fm-layer="Page title">Report a food safety concern</h1>
+<p class="page-head__sub" data-fm-layer="Page sub">Order #2215 · Tita Nen's · Pickup · Wednesday 3 September</p></div>
+<div class="page-head__actions" data-fm-layer="Page head actions"><a class="btn btn--outline btn--sm" href="customer-order-detail.html" data-fm-layer="Button — Back to order"><svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Back to order"><path d="M19 12H5m6-6-6 6 6 6"/></svg><span class="btn__label" data-fm-layer="Label — Back to order">Back to order</span></a></div></div></div>
+<div class="wizard wizard--end" data-fm-layer="Complaint layout">
+<section class="panel" data-fm-layer="Panel — Complaint">
+<div class="panel__head" data-fm-layer="Panel head — Complaint">
+<div data-fm-layer="Panel head text — Complaint">
+<h2 class="panel__title" data-fm-layer="Panel title — Complaint">Your report</h2>
+<p class="panel__sub" data-fm-layer="Panel sub — Complaint">Sent privately to Hearthfare.</p></div></div>
+<div class="panel__body" data-fm-layer="Panel body — Complaint">
+<div class="form" data-fm-layer="Form — Complaint">
+<div class="form__section" data-fm-layer="Section — Category">
+<p class="form__legend" data-fm-layer="Legend — Category">What is it about?</p>
+<div class="grid grid--2" style="gap:0.5rem;" data-fm-layer="Category choices">
+<label class="slot" data-fm-layer="Choice — Food safety"><span class="consent" data-fm-layer="Choice main — Food safety"><input class="consent__box" type="radio" name="category" data-fm-layer="Radio — Food safety"><span class="slot__time" data-fm-layer="Choice title — Food safety">Food safety</span></span><span class="slot__left" data-fm-layer="Choice meta — Food safety"></span></label>
+<label class="slot" data-fm-layer="Choice — Sanitation"><span class="consent" data-fm-layer="Choice main — Sanitation"><input class="consent__box" type="radio" name="category" data-fm-layer="Radio — Sanitation"><span class="slot__time" data-fm-layer="Choice title — Sanitation">Sanitation</span></span><span class="slot__left" data-fm-layer="Choice meta — Sanitation"></span></label>
+<label class="slot" data-fm-layer="Choice — Hygiene"><span class="consent" data-fm-layer="Choice main — Hygiene"><input class="consent__box" type="radio" name="category" data-fm-layer="Radio — Hygiene"><span class="slot__time" data-fm-layer="Choice title — Hygiene">Hygiene</span></span><span class="slot__left" data-fm-layer="Choice meta — Hygiene"></span></label>
+<label class="slot slot--on" data-fm-layer="Choice — Illness"><span class="consent" data-fm-layer="Choice main — Illness"><input class="consent__box" type="radio" name="category" checked data-fm-layer="Radio — Illness"><span class="slot__time" data-fm-layer="Choice title — Illness">Illness</span></span><span class="slot__left" data-fm-layer="Choice meta — Illness"></span></label></div></div>
+<div class="field" data-fm-layer="Field — What happened?">
+<label class="field__label" for="c-desc" data-fm-layer="Label — What happened?">What happened?</label>
+<textarea class="input input--area" id="c-desc" data-fm-layer="Textarea — What happened?">My partner and I both had stomach pain and nausea a few hours after eating the chicken adobo.</textarea></div>
+<div class="field" data-fm-layer="Field — Related order">
+<label class="field__label" for="c-order" data-fm-layer="Label — Related order">Related order</label><input class="input" id="c-order" type="text" value="#2215 · Tita Nen's · 3 Sep 2026" readonly data-fm-layer="Input — Related order"></div></div></div>
+<div class="panel__foot" data-fm-layer="Panel foot — Complaint">
+<div class="btn-row" data-fm-layer="Actions — Complaint"><a class="btn btn--outline btn--sm" href="customer-order-detail.html" data-fm-layer="Button — Cancel"><span class="btn__label" data-fm-layer="Label — Cancel">Cancel</span></a><a class="btn btn--primary btn--sm" href="customer-order-detail.html" data-fm-layer="Button — Send report"><span class="btn__label" data-fm-layer="Label — Send report">Send report</span></a></div></div></section>
+<aside class="panel" data-fm-layer="Panel — Next">
+<div class="panel__head" data-fm-layer="Panel head — Next">
+<div data-fm-layer="Panel head text — Next">
+<h2 class="panel__title" data-fm-layer="Panel title — Next">What happens next</h2></div></div>
+<div class="panel__body" data-fm-layer="Panel body — Next">
+<div class="grid" style="gap:0.75rem;" data-fm-layer="Next notes">
+<p class="switch-row__body" data-fm-layer="Text — Stored">Hearthfare reviews every report. It is stored securely with your order and Tita Nen's permit details.</p>
+<p class="switch-row__body" data-fm-layer="Text — Private">Tita Nen's is not shown your name or contact details, unless Hearthfare authorizes it.</p>
+<p class="switch-row__body" data-fm-layer="Text — Separate">Reports are not published, and are kept separate from reviews and ratings.</p></div></div></aside></div></div></main>
+</div>
+</div>
+<div class="sheet-scrim" hidden data-sheet-close data-fm-layer="Sheet scrim"></div>
+<aside class="sheet sheet--notify" id="notifications" role="dialog" aria-labelledby="notif-title" hidden data-fm-layer="Drawer — Notifications">
+<div class="sheet__head" data-fm-layer="Drawer head — Notifications">
+<div data-fm-layer="Drawer head text — Notifications">
+<h2 class="panel__title panel__title--accent" id="notif-title" data-fm-layer="Drawer title — Notifications"><svg class="panel__title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Notifications"><path d="M18 8.5a6 6 0 1 0-12 0c0 5-2 6.5-2 6.5h16s-2-1.5-2-6.5Z"/><path d="M13.7 19a2 2 0 0 1-3.4 0"/></svg>Notifications</h2>
+<p class="panel__sub" data-fm-layer="Drawer sub — Notifications">Only what needs you now. Open an item to go straight to it.</p></div><button class="icon-button" type="button" data-sheet-close aria-label="Close" data-fm-layer="Button — Close notifications"><svg class="icon-button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Close"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+</div>
+<div class="sheet__body" data-fm-layer="Drawer body — Notifications">
+<article class="req" data-flag="orders" data-fm-layer="Notification — Pickup today · Li’s Hearth">
+<svg class="req__icon req__icon--warn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Pickup today · Li’s Hearth"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg>
+<div class="req__text" data-fm-layer="Notification text — Pickup today · Li’s Hearth">
+<p class="req__title" data-fm-layer="Notification title — Pickup today · Li’s Hearth"><a href="customer-order-detail.html" data-fm-layer="Link — Pickup today · Li’s Hearth">Pickup today · Li’s Hearth</a></p>
+<p class="req__body" data-fm-layer="Notification body — Pickup today · Li’s Hearth">Order #1042 · Birria plate ×2 · ready between 5:30 and 6:00 PM at 30th Street.</p>
+<div class="req__actions" data-fm-layer="Actions — Pickup today · Li’s Hearth">
+<a class="btn btn--primary btn--sm" href="customer-order-detail.html" data-fm-layer="Button — View order Pickup today · Li’s Hearth"><span class="btn__label" data-fm-layer="Label — View order Pickup today · Li’s Hearth">View order</span></a>
+</div>
+</div>
+</article>
+
+<article class="req" data-flag="messages" data-fm-layer="Notification — 1 unread message">
+<svg class="req__icon req__icon--info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — 1 unread message"><path d="M20 12.5a7 7 0 0 1-7 7H8l-4 2.5.9-3.6A7 7 0 0 1 11 4.5h2a7 7 0 0 1 7 7Z"/></svg>
+<div class="req__text" data-fm-layer="Notification text — 1 unread message">
+<p class="req__title" data-fm-layer="Notification title — 1 unread message"><a href="customer-messages.html" data-fm-layer="Link — 1 unread message">1 unread message</a></p>
+<p class="req__body" data-fm-layer="Notification body — 1 unread message">Tita Nen’s refunded one plate from order #2215 and replied to your note.</p>
+<div class="req__actions" data-fm-layer="Actions — 1 unread message">
+<a class="btn btn--primary btn--sm" href="customer-messages.html" data-fm-layer="Button — Read 1 unread message"><span class="btn__label" data-fm-layer="Label — Read 1 unread message">Read</span></a>
+</div>
+</div>
+</article>
+
+<article class="req" data-flag="orders" data-fm-layer="Notification — Leave a review">
+<svg class="req__icon req__icon--info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Leave a review"><path d="m12 4.2 2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4-3.9-3.8 5.4-.8Z"/></svg>
+<div class="req__text" data-fm-layer="Notification text — Leave a review">
+<p class="req__title" data-fm-layer="Notification title — Leave a review"><a href="customer-review.html" data-fm-layer="Link — Leave a review">Leave a review</a></p>
+<p class="req__body" data-fm-layer="Notification body — Leave a review">Order #0386 · Nhà Bếp Linh · dine-in on Friday 29 August. Your review helps other neighbours.</p>
+<div class="req__actions" data-fm-layer="Actions — Leave a review">
+<a class="btn btn--primary btn--sm" href="customer-review.html" data-fm-layer="Button — Review Leave a review"><span class="btn__label" data-fm-layer="Label — Review Leave a review">Review</span></a>
+</div>
+</div>
+</article>
+</div>
+<div class="sheet__foot" data-fm-layer="Drawer foot — Notifications"><a class="panel__link" href="customer-orders.html" data-fm-layer="Link — All orders">See all your orders</a></div>
+</aside>
+<script src="app.js"></script>
+<script src="../role-switch.js"></script>
+</body>
+</html>

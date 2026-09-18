@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hearthfare — Homemade food. Made nearby.</title>
+<link rel="icon" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" data-fm-layer="Header">
+  <a class="brand" href="#" data-fm-layer="Brand">
+    <img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt="" data-fm-layer="Brand mark">
+    <span class="brand__text" data-fm-layer="Brand text">
+      <span class="brand__name" data-fm-layer="Brand name">hearthfare</span>
+      <span class="brand__tagline" data-fm-layer="Brand tagline">Homemade Meals. Local Connections.</span>
+    </span>
+  </a>
+
+  <nav class="site-nav" aria-label="Primary" data-fm-layer="Main nav">
+    <ul class="site-nav__list" data-fm-layer="Nav list">
+      <li class="site-nav__item" data-fm-layer="Nav item — How it works"><a class="site-nav__link" href="how-it-works.html" data-fm-layer="Nav label — How it works">How it works</a></li>
+      <li class="site-nav__item" data-fm-layer="Nav item — Why Hearthfare"><a class="site-nav__link" href="why-hearthfare.html" data-fm-layer="Nav label — Why Hearthfare">Why Hearthfare</a></li>
+      <li class="site-nav__item" data-fm-layer="Nav item — What's cooking"><a class="site-nav__link" href="whats-cooking.html" data-fm-layer="Nav label — What's cooking">What's cooking</a></li>
+      <li class="site-nav__item" data-fm-layer="Nav item — For cooks"><a class="site-nav__link" href="for-cooks.html" data-fm-layer="Nav label — For cooks">For cooks</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-actions" data-fm-layer="Header actions">
+    <a class="cart" href="app/shop-cart.html" aria-label="Cart, 0 items" data-fm-layer="Cart button">
+      <svg class="cart__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Cart icon">
+        <path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/>
+        <path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/>
+      </svg>
+      <span class="cart__badge" data-fm-layer="Cart badge">0</span>
+    </a>
+    <a class="login-link" href="login.html" data-fm-layer="Log in link">Log in</a>
+    <a class="btn btn--primary" href="signup.html" data-fm-layer="Sign up button"><span class="btn__label" data-fm-layer="Sign up label">Sign up</span></a>
+  </div>
+</header>
+
+<main data-fm-layer="Page">
+
+  <section class="hero" data-fm-layer="Hero">
+    <img class="hero__photo" src="assets/hero-image.jpg" width="1440" height="393" alt="A home cook at the stove, an order handed over at the door, and neighbours sharing a meal in the garden — with the Hearthfare app in hand" data-fm-layer="Hero photo">
+
+    <div class="hero__inner" data-fm-layer="Hero content">
+      <h1 class="hero__title" data-fm-layer="Hero title">
+        <span class="hero__title-line" data-fm-layer="Hero title line 1">Homemade food.</span> <span class="hero__title-line hero__title-line--accent" data-fm-layer="Hero title line 2">Made nearby.</span>
+      </h1>
+      <p class="hero__sub" data-fm-layer="Hero subtitle">Pick Up or Dine In.</p>
+
+      <form class="zip-search" action="app/shop-search.html" data-fm-layer="ZIP search">
+        <label class="zip-search__label" for="zip" data-fm-layer="ZIP label">Enter your Address or ZIP Code</label>
+        <svg class="zip-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="ZIP pin icon">
+          <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/>
+          <circle cx="12" cy="10" r="2.6"/>
+        </svg>
+        <input class="zip-search__input" id="zip" name="zip" type="text" autocomplete="street-address" placeholder="Enter your Address or ZIP Code" data-fm-layer="ZIP input">
+        <button class="btn btn--primary zip-search__button" type="submit" data-fm-layer="Find food button"><span class="btn__label" data-fm-layer="Find food label">Find food near you</span></button>
+      </form>
+
+      <p class="hero__trust" data-fm-layer="Hero trust note">
+        <svg class="hero__trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Hero trust icon">
+          <path d="M12 3 5 6v5.6c0 4.3 2.9 7.6 7 9.4 4.1-1.8 7-5.1 7-9.4V6Z"/>
+          <path d="m9.2 12.2 2 2 3.6-4"/>
+        </svg>
+        <span class="hero__trust-text" data-fm-layer="Hero trust text">Every Hearth is county-licensed and verified by Hearthfare</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="how" id="how-it-works" data-fm-layer="How it works">
+    <h2 class="section-title how__title" data-fm-layer="How it works title">
+      <span class="section-title__lead" data-fm-layer="How title lead">How it</span>
+      <span class="section-title__accent" data-fm-layer="How title accent">Works</span>
+    </h2>
+
+    <ul class="how__list" data-fm-layer="Step list">
+      <li class="step" data-fm-layer="Step — Find a Hearth">
+        <svg class="step__icon" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-fm-layer="Step icon — Find a Hearth">
+          <path d="M0 41.6667C0 18.6548 18.6548 0 41.6667 0V0C64.6785 0 83.3333 18.6548 83.3333 41.6667V41.6667C83.3333 64.6785 64.6785 83.3333 41.6667 83.3333V83.3333C18.6548 83.3333 0 64.6785 0 41.6667V41.6667Z" fill="#FFE7D1"/>
+          <path d="M42.6633 40.9335C44.8377 39.5293 47.6186 39.1365 50.1056 39.8358C52.7085 40.5492 54.9302 42.4827 56.0304 44.9423C57.3861 47.9044 57.0028 51.5693 55.0529 54.1825C57.065 56.1998 59.0838 58.2102 61.0959 60.2274C61.6279 60.7007 61.7132 61.579 61.259 62.1317C60.7926 62.7654 59.7698 62.8569 59.2101 62.2958C57.1565 60.2628 55.1236 58.205 53.0734 56.1669C51.1977 57.5348 48.8019 58.167 46.4943 57.8768C43.8829 57.5763 41.4404 56.0863 39.9758 53.9032C38.5457 51.8186 38.0485 49.129 38.6183 46.6679C39.1382 44.3207 40.634 42.2186 42.6633 40.9335ZM35.8029 20.6747C38.6925 20.7524 41.537 21.8301 43.7668 23.6679C46.2797 25.7162 48.0259 28.6643 48.6633 31.8388C49.0432 33.6453 49.0086 35.5127 48.7599 37.3349C46.4456 37.1208 44.0639 37.5855 42.0363 38.7323C39.1519 40.33 37.0241 43.2286 36.4006 46.4706C35.7477 49.6538 36.5443 53.0909 38.5236 55.6679C38.0211 56.1255 37.532 56.6005 37.0002 57.0253C35.969 57.8164 34.381 57.7005 33.4621 56.785C28.4672 52.3824 24.2876 46.7725 22.5656 40.2645C21.7469 36.9517 21.3653 33.3729 22.4396 30.0722C23.3654 27.1912 25.2911 24.6482 27.8058 22.9677C30.1427 21.389 32.9842 20.5745 35.8029 20.6747ZM50.4963 42.9784C49.1473 42.2944 47.553 42.1236 46.0832 42.4794C44.0366 42.9648 42.2874 44.5277 41.5793 46.5087C41.03 47.9975 41.0607 49.6917 41.6652 51.1581C42.2438 52.595 43.3714 53.7991 44.7599 54.4813C46.2471 55.2223 48.0248 55.3481 49.6017 54.83C51.4946 54.2272 53.0594 52.6852 53.6916 50.8026C54.1717 49.4001 54.1463 47.8295 53.6213 46.4442C53.0599 44.9537 51.9194 43.6934 50.4963 42.9784ZM38.1867 28.4276C36.8412 27.773 35.2674 27.6182 33.8166 27.9774C31.7735 28.4731 30.0276 30.0324 29.3107 32.0116C28.6129 33.8632 28.834 36.0309 29.8996 37.7011C31.2105 39.8342 33.8341 41.0573 36.3127 40.66C38.1987 40.4009 39.9308 39.2436 40.9084 37.6132C41.8998 36.0017 42.1156 33.946 41.4972 32.16C40.9479 30.5419 39.7272 29.1651 38.1867 28.4276Z" fill="url(#icon-find)"/>
+          <defs><linearGradient id="icon-find" x1="12.05" y1="2.26" x2="35.54" y2="79.59" gradientUnits="userSpaceOnUse"><stop stop-color="#FC0120"/><stop offset="1" stop-color="#FFC606"/></linearGradient></defs>
+        </svg>
+        <span class="step__text" data-fm-layer="Step text — Find a Hearth">
+          <h3 class="step__title" data-fm-layer="Step title — Find a Hearth">Find a Hearth</h3>
+          <span class="step__body" data-fm-layer="Step body — Find a Hearth">Discover home cooks near you.</span>
+        </span>
+      </li>
+
+      <li class="step" data-fm-layer="Step — Place order">
+        <svg class="step__icon" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-fm-layer="Step icon — Place order">
+          <path d="M0 41.6667C0 18.6548 18.6548 0 41.6667 0V0C64.6785 0 83.3333 18.6548 83.3333 41.6667V41.6667C83.3333 64.6785 64.6785 83.3333 41.6667 83.3333V83.3333C18.6548 83.3333 0 64.6785 0 41.6667V41.6667Z" fill="#FFE7D1"/>
+          <path d="M41.047 42.9354C42.1012 42.0939 43.8599 42.8864 43.9181 44.2332C43.954 46.3522 43.9435 48.4768 43.9229 50.5975C44.0701 49.4524 45.347 48.6271 46.4337 49.0994C47.3989 49.4452 47.7327 50.5614 47.5685 51.4959C47.7036 51.0185 47.9074 50.5257 48.3351 50.2381C49.0607 49.6801 50.1956 49.8032 50.7843 50.5067C51.2632 51.0184 51.2686 51.7631 51.2755 52.4237C51.3439 51.0441 53.151 50.3083 54.1847 51.1932C54.8944 51.6485 54.8773 52.5584 54.8995 53.3045C54.9354 56.4248 54.8827 59.5458 54.8878 62.6678C50.1337 62.6661 45.3779 62.6612 40.6222 62.6698C40.4032 62.6937 40.1997 62.6128 40.044 62.4588C38.4201 61.0537 36.7957 59.6486 35.1632 58.2537C34.6327 57.8566 34.1863 57.2587 34.253 56.5604C34.2805 55.5405 35.3612 54.7105 36.3536 54.9823C37.6746 55.3759 38.9721 55.8518 40.2862 56.2762C40.2965 52.55 40.2354 48.8239 40.2833 45.0994C40.3004 44.3309 40.2889 43.3787 41.047 42.9354ZM47.587 20.6746C48.684 20.613 49.8739 20.7123 50.7501 21.45C51.6416 22.1364 52.1683 23.2523 52.1495 24.3768C52.1564 31.5073 52.1603 38.6379 52.1603 45.7684C52.1551 46.9082 52.1708 48.0483 52.1007 49.1864C51.115 48.2432 49.6787 47.8193 48.3507 48.201C47.6422 47.5506 46.7263 47.1615 45.7628 47.1239C45.7611 46.5232 45.7647 45.9208 45.7647 45.3201C46.7316 45.3013 47.7039 45.3615 48.669 45.2948C49.2663 45.2263 49.6084 44.4694 49.297 43.9627C49.1498 43.6497 48.799 43.5627 48.503 43.4549C48.6382 41.2914 48.0499 39.0535 46.6397 37.3778C45.3049 35.7244 43.3041 34.6599 41.1993 34.41C41.1669 33.8486 41.3579 33.1247 40.8429 32.7293C40.3877 32.353 39.621 32.5718 39.4327 33.1297C39.3335 33.549 39.3785 33.9839 39.3751 34.41C36.6489 34.7147 34.1331 36.4577 32.9317 38.9276C32.2114 40.3174 32.0054 41.906 32.0704 43.4549C31.7796 43.5644 31.4294 43.6433 31.2823 43.953C30.9179 44.5212 31.3965 45.3542 32.0724 45.3133C34.2013 45.3339 36.3324 45.3118 38.463 45.3221C38.463 48.1256 38.4596 50.929 38.463 53.7342C37.224 53.2361 35.779 52.7816 34.4903 53.3739C32.8033 54.0569 31.9072 56.1375 32.547 57.8387C33.0501 59.1652 34.3197 59.9391 35.338 60.8377C34.1349 60.8257 32.9297 60.8703 31.7267 60.8172C29.9247 60.6905 28.4036 59.0406 28.4259 57.2332C28.4173 46.2805 28.4237 35.3276 28.422 24.3748C28.3843 22.8977 29.3398 21.4655 30.7208 20.9383C31.4327 20.6251 32.2266 20.6712 32.9864 20.6746C33.0291 21.7802 32.8184 22.9561 33.3077 23.995C33.8553 25.2444 35.1532 26.1229 36.5206 26.1434C38.9711 26.1605 41.4236 26.1468 43.8741 26.1502C45.3046 26.1895 46.6995 25.3027 47.2677 23.9901C47.7519 22.9512 47.5443 21.7785 47.587 20.6746ZM34.7091 39.4627C35.8573 37.3661 38.2569 36.0363 40.6476 36.2039C43.2402 36.3083 45.6294 38.1779 46.379 40.658C46.6852 41.5702 46.692 42.5444 46.6749 43.4959C46.338 43.4942 46.0011 43.4942 45.6642 43.4959C45.2517 42.0085 43.8802 40.8324 42.3194 40.7742C40.6168 40.6392 39.0029 41.8666 38.5597 43.4959C37.0042 43.4959 35.4504 43.4957 33.8966 43.494C33.8333 42.111 33.9955 40.6763 34.7091 39.4627ZM45.7628 20.6727C45.6995 21.549 45.9295 22.4889 45.5685 23.3172C45.2639 23.9435 44.5827 24.3434 43.8897 24.3231C41.4905 24.3265 39.0888 24.3265 36.6896 24.3231C35.8272 24.3606 34.9936 23.7109 34.8497 22.8553C34.7624 22.1313 34.8295 21.4001 34.8106 20.6727C38.4608 20.6744 42.1127 20.6744 45.7628 20.6727Z" fill="url(#icon-order)"/>
+          <defs><linearGradient id="icon-order" x1="21.94" y1="2.24" x2="53.85" y2="72.18" gradientUnits="userSpaceOnUse"><stop stop-color="#FC0120"/><stop offset="1" stop-color="#FFC606"/></linearGradient></defs>
+        </svg>
+        <span class="step__text" data-fm-layer="Step text — Place order">
+          <h3 class="step__title" data-fm-layer="Step title — Place order">Place order</h3>
+          <span class="step__body" data-fm-layer="Step body — Place order">Choose your meal(s) and order.</span>
+        </span>
+      </li>
+
+      <li class="step" data-fm-layer="Step — Pick up or dine in">
+        <svg class="step__icon" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-fm-layer="Step icon — Pick up or dine in">
+          <path d="M0 41.6667C0 18.6548 18.6548 0 41.6667 0V0C64.6785 0 83.3333 18.6548 83.3333 41.6667V41.6667C83.3333 64.6785 64.6785 83.3333 41.6667 83.3333V83.3333C18.6548 83.3333 0 64.6785 0 41.6667V41.6667Z" fill="#FFE7D1"/>
+          <path d="M62.6436 58.1708C62.6436 59.6709 62.6623 61.171 62.6436 62.6523C58.1431 62.671 53.6418 62.671 49.1602 62.6523V58.1708C53.6606 58.1521 58.1619 58.1521 62.6436 58.1708ZM52.3301 59.7089C51.9175 59.6527 51.4856 59.6335 51.0918 59.746C50.4544 59.9712 50.5484 61.0585 51.2422 61.1523C51.6546 61.1898 52.0858 61.2276 52.4795 61.1152C53.1169 60.8902 53.0234 59.8031 52.3301 59.7089ZM58.3105 35.4999C59.2481 36.4375 60.1864 37.3748 61.124 38.3124C62.249 39.4187 62.7736 41.0315 62.6611 42.5878V51.9638C62.6424 52.47 62.661 52.9951 62.4736 53.4638C62.0986 54.5514 61.0488 55.3774 61.1426 56.6337C57.8985 56.6712 54.6542 56.6523 51.4102 56.6523C51.3539 56.0522 51.485 55.433 51.335 54.8329C50.7912 54.0079 50.2291 53.2013 49.9854 52.2451C49.6854 51.2514 49.6848 50.2203 49.7598 49.2079C50.9036 49.1329 52.0671 49.114 53.2109 49.2265C53.3048 50.2202 53.9047 51.1015 54.5234 51.8515C54.8423 52.3764 55.798 52.2263 55.873 51.5888C56.0042 51.0263 55.442 50.7076 55.1982 50.2763C54.2419 48.9074 54.2985 46.9198 55.3486 45.6259C55.6485 45.3071 55.7416 44.763 55.4229 44.4443C54.1104 43.1318 52.7791 41.8193 51.4854 40.5068C50.9228 39.963 50.9226 38.9312 51.5039 38.4062C52.029 37.8249 53.0607 37.8251 53.6045 38.3876C55.4046 40.169 57.1667 41.951 58.9668 43.7324C59.5106 44.2574 60.4856 43.6197 60.167 42.9072C59.6419 42.0821 58.7045 41.5563 58.1982 40.7499C58.142 38.9688 58.1611 37.2251 58.1611 35.4814L58.3105 35.4999ZM54.1855 20.6669C55.5543 20.667 56.661 21.7738 56.6611 23.1425V39.2128C55.5736 38.4065 54.8413 37.0556 53.4912 36.5869C52.1038 36.0998 50.3975 36.8316 49.835 38.2001C49.3288 39.2877 49.5723 40.6757 50.416 41.5195C51.5411 42.6633 52.6855 43.7692 53.8105 44.913C53.8293 45.0066 53.829 45.1007 53.8477 45.1943C53.3977 45.9254 53.1165 46.7694 53.0977 47.6318C43.1218 47.688 33.1458 47.6513 23.1699 47.6513C21.7823 47.67 20.6573 46.5446 20.6572 45.1757V23.1425C20.6574 21.7737 21.764 20.6669 23.1328 20.6669H54.1855ZM31.2148 25.1718C30.09 25.097 29.0965 25.9785 28.9463 27.0283C28.834 27.5154 29.077 28.003 29.0586 28.4902C26.9398 29.0902 25.1398 30.6849 24.2959 32.7099C23.846 33.6848 23.7709 34.7538 23.6396 35.8036C22.8147 36.1411 22.1393 36.9856 22.1953 37.9042C22.1392 38.9542 22.9646 39.8358 23.9209 40.1171C24.4458 40.9796 24.821 41.9547 25.3271 42.8359C25.5147 43.1921 25.9652 43.155 26.3027 43.1738H36.2598C36.5409 43.1737 36.8969 43.1356 37.0469 42.8359C37.553 41.9547 37.9282 40.9981 38.4531 40.1357C39.4094 39.8543 40.235 38.9728 40.1787 37.9228C40.2347 37.0042 39.5593 36.1597 38.7344 35.8222C38.6032 34.735 38.5097 33.6098 38.0225 32.5976C37.1411 30.6288 35.378 29.0902 33.3154 28.4902C33.2597 28.1342 33.4838 27.7778 33.4463 27.4218C33.5023 26.2219 32.396 25.1157 31.2148 25.1718ZM36.5977 40.1542C36.5039 40.6791 36.1661 41.1112 35.9785 41.5986C33.5034 41.7298 31.0093 41.6167 28.5342 41.6542C27.8029 41.6355 27.0524 41.7298 26.3398 41.5986C26.1336 41.1111 25.7959 40.6792 25.7021 40.1542C29.3399 40.1355 32.9786 40.1355 36.5977 40.1542ZM24.9521 37.1357C29.2649 37.1544 33.5777 37.1167 37.9092 37.1542C38.7715 37.0795 38.9217 38.5044 38.0781 38.6171C33.7091 38.6734 29.3398 38.6167 24.9707 38.6542C24.6332 38.6355 24.2766 38.692 23.9766 38.5234C23.5267 38.2233 23.5827 37.4163 24.0889 37.2099C24.3701 37.1163 24.671 37.1544 24.9521 37.1357ZM31.1592 29.6718C34.3467 29.5596 37.2527 32.4667 37.1592 35.6542H25.1582C25.0647 32.4666 27.9715 29.5593 31.1592 29.6718ZM36.0723 33.7978C35.3221 31.6978 33.0524 30.1975 30.8398 30.4599C30.1277 30.7227 30.3717 31.9784 31.1592 31.8847C32.6402 31.8849 34.0653 32.8413 34.6279 34.2285C34.7404 34.5847 35.0404 34.9596 35.4717 34.8847C36.0339 34.9221 36.2407 34.2291 36.0723 33.7978ZM43.7217 31.955C43.422 31.9737 43.1218 31.9368 42.8408 32.0302C42.3158 32.2365 42.2598 33.0426 42.7285 33.3427C43.0284 33.53 43.3843 33.4559 43.7217 33.4745C47.3406 33.4558 50.9602 33.5115 54.5791 33.4365C55.4223 33.3236 55.2723 31.899 54.4102 31.9736C50.8475 31.9548 47.2843 31.9738 43.7217 31.955ZM43.7041 27.999C43.423 28.0177 43.122 27.9796 42.8408 28.0732C42.2785 28.2795 42.2787 29.2358 42.8408 29.4423C43.1783 29.536 43.5539 29.4988 43.9102 29.5175C47.4728 29.4988 51.0174 29.5554 54.5801 29.4804C55.4229 29.3672 55.273 27.9432 54.4111 28.0175C50.8485 27.9988 47.2854 28.0177 43.7041 27.999ZM30.8584 26.7089C31.327 26.5031 31.9455 26.8599 31.8896 27.4033C31.9458 27.947 31.3084 28.303 30.8584 28.0781C30.2772 27.8905 30.2771 26.9152 30.8584 26.7089ZM43.7041 24.0419C43.423 24.0607 43.122 24.0236 42.8408 24.1171C42.2786 24.3236 42.2785 25.2799 42.8408 25.4863C43.1783 25.58 43.5539 25.5417 43.9102 25.5605C47.4728 25.5417 51.0174 25.5984 54.5801 25.5234C55.4229 25.4101 55.2729 23.9862 54.4111 24.0605C50.8485 24.0417 47.2854 24.0607 43.7041 24.0419Z" fill="url(#icon-pick)"/>
+          <defs><linearGradient id="icon-pick" x1="10.38" y1="2.26" x2="32.81" y2="80.27" gradientUnits="userSpaceOnUse"><stop stop-color="#FC0120"/><stop offset="1" stop-color="#FFC606"/></linearGradient></defs>
+        </svg>
+        <span class="step__text" data-fm-layer="Step text — Pick up or dine in">
+          <h3 class="step__title" data-fm-layer="Step title — Pick up or dine in">Pick up or dine in</h3>
+          <span class="step__body" data-fm-layer="Step body — Pick up or dine in">Choose what works for you.</span>
+        </span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="cooking" id="whats-cooking" data-fm-layer="What's cooking">
+    <p class="eyebrow cooking__eyebrow" data-fm-layer="Cooking eyebrow">FROM THE HEARTHS</p>
+    <h2 class="section-title cooking__title" data-fm-layer="Cooking title">
+      <span class="section-title__lead" data-fm-layer="Cooking title lead">What's cooking</span>
+      <span class="section-title__accent" data-fm-layer="Cooking title accent">this week</span>
+    </h2>
+
+    <ul class="meal-rail" data-fm-layer="Meal rail">
+      <li class="meal-card" data-fm-layer="Meal card — Birria">
+        <img class="meal-card__image" src="assets/dish-birria.png" width="331" height="191" alt="Birria and handmade tortillas" data-fm-layer="Meal image — Birria">
+        <p class="rating" data-fm-layer="Rating badge — Birria">
+          <svg class="rating__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-fm-layer="Rating star — Birria"><path d="m12 3.6 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"/></svg>
+          <span class="rating__value" data-fm-layer="Rating value — Birria">4.9</span>
+        </p>
+        <span class="meal-card__body" data-fm-layer="Meal body — Birria">
+          <span class="meal-card__flag" data-fm-layer="Meal flag — Birria">VERIFIED HEARTH</span>
+          <h3 class="meal-card__title" data-fm-layer="Meal title — Birria">Birria &amp; handmade tortillas</h3>
+          <span class="meal-card__meta" data-fm-layer="Meal meta — Birria">
+            <svg class="meal-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Meal pin — Birria"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span class="meal-card__place" data-fm-layer="Meal place — Birria">Rosa's Cocina · San Diego</span>
+          </span>
+        </span>
+        <a class="meal-card__link" href="app/shop-storefront.html" aria-label="View Birria &amp; handmade tortillas from Rosa's Cocina" data-fm-layer="Meal link — Birria"></a>
+      </li>
+
+      <li class="meal-card" data-fm-layer="Meal card — Sourdough 2">
+        <img class="meal-card__image" src="assets/dish-sourdough.png" width="331" height="191" alt="Sunday sourdough and pies" data-fm-layer="Meal image — Sourdough 2">
+        <p class="rating" data-fm-layer="Rating badge — Sourdough 2">
+          <svg class="rating__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-fm-layer="Rating star — Sourdough 2"><path d="m12 3.6 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"/></svg>
+          <span class="rating__value" data-fm-layer="Rating value — Sourdough 2">4.8</span>
+        </p>
+        <span class="meal-card__body" data-fm-layer="Meal body — Sourdough 2">
+          <span class="meal-card__flag" data-fm-layer="Meal flag — Sourdough 2">VERIFIED HEARTH</span>
+          <h3 class="meal-card__title" data-fm-layer="Meal title — Sourdough 2">Sunday sourdough &amp; pies</h3>
+          <span class="meal-card__meta" data-fm-layer="Meal meta — Sourdough 2">
+            <svg class="meal-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Meal pin — Sourdough 2"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span class="meal-card__place" data-fm-layer="Meal place — Sourdough 2">Mesa Bakehouse · Chula Vista</span>
+          </span>
+        </span>
+        <a class="meal-card__link" href="app/shop-storefront.html" aria-label="View Sunday sourdough &amp; pies from Mesa Bakehouse" data-fm-layer="Meal link — Sourdough 2"></a>
+      </li>
+
+      <li class="meal-card" data-fm-layer="Meal card — Pho 2">
+        <img class="meal-card__image" src="assets/dish-pho.png" width="331" height="191" alt="Weeknight pho, family pot" data-fm-layer="Meal image — Pho 2">
+        <p class="rating" data-fm-layer="Rating badge — Pho 2">
+          <svg class="rating__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-fm-layer="Rating star — Pho 2"><path d="m12 3.6 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"/></svg>
+          <span class="rating__value" data-fm-layer="Rating value — Pho 2">5.0</span>
+        </p>
+        <span class="meal-card__body" data-fm-layer="Meal body — Pho 2">
+          <span class="meal-card__flag" data-fm-layer="Meal flag — Pho 2">VERIFIED HEARTH</span>
+          <h3 class="meal-card__title" data-fm-layer="Meal title — Pho 2">Weeknight pho, family pot</h3>
+          <span class="meal-card__meta" data-fm-layer="Meal meta — Pho 2">
+            <svg class="meal-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Meal pin — Pho 2"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span class="meal-card__place" data-fm-layer="Meal place — Pho 2">Nhà Bếp Linh · North Park</span>
+          </span>
+        </span>
+        <a class="meal-card__link" href="app/shop-storefront.html" aria-label="View Weeknight pho, family pot from Nhà Bếp Linh" data-fm-layer="Meal link — Pho 2"></a>
+      </li>
+
+      <li class="meal-card" data-fm-layer="Meal card — Birria 3">
+        <img class="meal-card__image" src="assets/dish-birria.png" width="331" height="191" alt="Birria and handmade tortillas" data-fm-layer="Meal image — Birria 3">
+        <p class="rating" data-fm-layer="Rating badge — Birria 3">
+          <svg class="rating__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-fm-layer="Rating star — Birria 3"><path d="m12 3.6 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"/></svg>
+          <span class="rating__value" data-fm-layer="Rating value — Birria 3">4.7</span>
+        </p>
+        <span class="meal-card__body" data-fm-layer="Meal body — Birria 3">
+          <span class="meal-card__flag" data-fm-layer="Meal flag — Birria 3">VERIFIED HEARTH</span>
+          <h3 class="meal-card__title" data-fm-layer="Meal title — Birria 3">Birria &amp; handmade tortillas</h3>
+          <span class="meal-card__meta" data-fm-layer="Meal meta — Birria 3">
+            <svg class="meal-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Meal pin — Birria 3"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span class="meal-card__place" data-fm-layer="Meal place — Birria 3">Cocina de Abuela · Barrio Logan</span>
+          </span>
+        </span>
+        <a class="meal-card__link" href="app/shop-storefront.html" aria-label="View Birria &amp; handmade tortillas from Cocina de Abuela" data-fm-layer="Meal link — Birria 3"></a>
+      </li>
+    </ul>
+
+    <a class="btn btn--primary cooking__more" href="app/shop-search.html" data-fm-layer="View all button">
+      <span class="btn__label" data-fm-layer="View all label">View all</span>
+      <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="View all icon"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg>
+    </a>
+  </section>
+
+  <section class="why" id="why" data-fm-layer="Why Hearthfare">
+    <img class="why__image" src="assets/more-than.jpg" width="493" height="243" alt="Four friends sharing a homemade meal around a table" data-fm-layer="Why image">
+
+    <div class="why__content" data-fm-layer="Why content">
+      <p class="eyebrow eyebrow--dashed" data-fm-layer="Why eyebrow">
+        <span class="eyebrow__dash" data-fm-layer="Why eyebrow dash"></span>
+        <span class="eyebrow__text" data-fm-layer="Why eyebrow text">WHY HEARTHFARE</span>
+      </p>
+      <h2 class="section-title why__title" data-fm-layer="Why title">
+        <span class="section-title__lead" data-fm-layer="Why title lead">More than a meal.</span>
+        <span class="section-title__accent" data-fm-layer="Why title accent">It's a connection.</span>
+      </h2>
+      <p class="why__body" data-fm-layer="Why body">Real people. Real home kitchens. Real stories. That's what makes Hearthfare different.</p>
+      <a class="btn btn--primary why__cta" href="why-hearthfare.html" data-fm-layer="Learn our story button">
+        <span class="btn__label" data-fm-layer="Learn our story label">Learn our story</span>
+        <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Learn our story icon"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <aside class="trust" data-fm-layer="Trust bar">
+      <div class="trust__intro" data-fm-layer="Trust intro">
+        <p class="eyebrow eyebrow--dashed eyebrow--light" data-fm-layer="Trust eyebrow">
+          <span class="eyebrow__dash" data-fm-layer="Trust eyebrow dash"></span>
+          <span class="eyebrow__text" data-fm-layer="Trust eyebrow text">TRUST &amp; LICENSING</span>
+        </p>
+        <p class="trust__body" data-fm-layer="Trust body">Safety, regulations, verification, and licensing — every Hearth, every time.</p>
+      </div>
+
+      <ul class="trust__list" data-fm-layer="Trust list">
+        <li class="trust-item" data-fm-layer="Trust item — Licensed Kitchens">
+          <svg class="trust-item__icon" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-fm-layer="Trust icon — Licensed Kitchens">
+            <path d="M15.4695 22.2219H3.86699C3.37462 22.2219 2.97324 21.8214 2.97324 21.3282V6.6138C2.97324 6.12142 3.3738 5.72005 3.86699 5.72005H4.88262V17.9563C4.88262 19.2555 5.94049 20.3125 7.23887 20.3125H13.7957C14.1996 20.3125 14.527 19.9851 14.527 19.5813C14.527 19.1775 14.1996 18.85 13.7957 18.85H7.23887C6.74649 18.85 6.34512 18.4495 6.34512 17.9563V3.25005C6.34512 2.75767 6.74568 2.3563 7.23887 2.3563H19.7351C20.2275 2.3563 20.6289 2.75686 20.6289 3.25005V11.3913C20.6289 11.7951 20.9563 12.1225 21.3601 12.1225C21.7639 12.1225 22.0914 11.7951 22.0914 11.3913V3.25005C22.0914 1.95086 21.0335 0.893799 19.7351 0.893799H7.23887C5.93968 0.893799 4.88262 1.95167 4.88262 3.25005V4.25674H3.86699C2.5678 4.25674 1.51074 5.31461 1.51074 6.61299V21.3274C1.51074 22.6265 2.56862 23.6836 3.86699 23.6836H15.4695C15.8733 23.6836 16.2007 23.3562 16.2007 22.9524C16.2007 22.5485 15.8733 22.2219 15.4695 22.2219Z" fill="currentColor"/>
+            <path d="M11.5851 6.91099C11.9889 6.91099 12.3164 6.58355 12.3164 6.17974C12.3164 5.77592 11.9889 5.44849 11.5851 5.44849H9.68145C9.27763 5.44849 8.9502 5.77592 8.9502 6.17974C8.9502 6.58355 9.27763 6.91099 9.68145 6.91099H11.5851Z" fill="currentColor"/>
+            <path d="M18.0198 9.13225C18.0198 8.72844 17.6924 8.401 17.2886 8.401H9.68437C9.28056 8.401 8.95312 8.72844 8.95312 9.13225C8.95312 9.53606 9.28056 9.8635 9.68437 9.8635H17.2886C17.6916 9.86431 18.0198 9.53606 18.0198 9.13225Z" fill="currentColor"/>
+            <path d="M17.655 12.0817C17.655 11.6779 17.3276 11.3505 16.9238 11.3505H9.68437C9.28056 11.3505 8.95312 11.6779 8.95312 12.0817C8.95312 12.4855 9.28056 12.813 9.68437 12.813H16.9238C17.3276 12.8138 17.655 12.4855 17.655 12.0817Z" fill="currentColor"/>
+            <path d="M9.68437 14.2999C9.28056 14.2999 8.95312 14.6274 8.95312 15.0312C8.95312 15.435 9.28056 15.7624 9.68437 15.7624H14.1531C14.5569 15.7624 14.8844 15.435 14.8844 15.0312C14.8844 14.6274 14.5569 14.2999 14.1531 14.2999H9.68437Z" fill="currentColor"/>
+            <path d="M24.4911 17.7961C24.4911 15.3618 22.5102 13.3801 20.0751 13.3801C17.6401 13.3801 15.6592 15.361 15.6592 17.7961C15.6592 19.3041 16.4205 20.6374 17.5783 21.4344V24.3749C17.5783 24.5951 17.6774 24.8023 17.8472 24.9412C18.0179 25.0801 18.2397 25.1321 18.4566 25.0915L20.0743 24.7608L21.692 25.0915C21.7416 25.1013 21.7895 25.1069 21.8391 25.1069C22.0056 25.1069 22.1697 25.0493 22.3014 24.942C22.4712 24.8031 22.5703 24.5951 22.5703 24.3757V21.4353C23.7289 20.6382 24.4911 19.3049 24.4911 17.7961ZM21.1086 23.4787L20.2222 23.2967C20.1255 23.278 20.0256 23.278 19.9289 23.2967L19.0424 23.4787V22.0844C19.3747 22.1649 19.7192 22.2112 20.0751 22.2112C20.431 22.2112 20.7763 22.1641 21.1078 22.0844L21.1086 23.4787ZM20.0751 20.7487C18.4469 20.7487 17.1225 19.4243 17.1225 17.7961C17.1225 16.1678 18.4469 14.8434 20.0751 14.8434C21.7034 14.8434 23.0277 16.1678 23.0277 17.7961C23.0277 19.4243 21.7034 20.7487 20.0751 20.7487Z" fill="currentColor"/>
+          </svg>
+          <span class="trust-item__label" data-fm-layer="Trust label — Licensed Kitchens">Licensed Kitchens</span>
+        </li>
+
+        <li class="trust-item" data-fm-layer="Trust item — Verified by Hearthfare">
+          <svg class="trust-item__icon" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-fm-layer="Trust icon — Verified by Hearthfare">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9994 4.33342C8.21288 4.33342 4.33268 8.21361 4.33268 13.0001C4.33268 17.7866 8.21288 21.6668 12.9994 21.6668C17.7858 21.6668 21.666 17.7866 21.666 13.0001C21.666 8.21361 17.7858 4.33342 12.9994 4.33342ZM2.16602 13.0001C2.16602 7.01699 7.01626 2.16675 12.9994 2.16675C18.9824 2.16675 23.8327 7.01699 23.8327 13.0001C23.8327 18.9831 18.9824 23.8334 12.9994 23.8334C7.01626 23.8334 2.16602 18.9831 2.16602 13.0001Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.346 17.55C11.0994 17.5541 10.8627 17.4477 10.6953 17.2573L8.02867 14.224C7.70401 13.8546 7.72595 13.279 8.07766 12.9381C8.42936 12.5972 8.97767 12.6202 9.30232 12.9895L11.3113 15.2747L16.6768 8.7646C16.99 8.38457 17.5373 8.3431 17.8993 8.67197C18.2612 9.00085 18.3007 9.57554 17.9875 9.95557L11.9875 17.2356C11.8261 17.4314 11.5927 17.5458 11.346 17.55Z" fill="currentColor"/>
+          </svg>
+          <span class="trust-item__label" data-fm-layer="Trust label — Verified by Hearthfare">Verified by Hearthfare</span>
+        </li>
+
+        <li class="trust-item" data-fm-layer="Trust item — Real Reviews">
+          <svg class="trust-item__icon" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-fm-layer="Trust icon — Real Reviews">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1817 21.3025L19.3819 22.6584C19.3915 22.7255 19.3634 22.7922 19.3089 22.8321C19.2543 22.8716 19.1817 22.8778 19.1213 22.8476L13.5369 20.0758C13.1957 19.9067 12.7945 19.9067 12.4534 20.0758L6.86899 22.8476C6.80856 22.8778 6.73598 22.8716 6.68142 22.8321C6.62687 22.7922 6.59874 22.7255 6.6084 22.6584L7.51904 16.4911C7.57444 16.1138 7.45065 15.7324 7.18417 15.4604L2.82224 11.0058C2.77524 10.9575 2.75846 10.887 2.77944 10.8224C2.80043 10.7582 2.85498 10.7108 2.9217 10.6998L6.69861 10.0607C7.36167 9.94823 7.80903 9.31875 7.69698 8.65569C7.58452 7.99264 6.95502 7.54528 6.29196 7.65733L2.51506 8.29647C1.55405 8.45887 0.762581 9.14207 0.461268 10.0695C0.159955 10.9965 0.398745 12.0146 1.08069 12.7108L5.01916 16.7332L4.19704 22.3025C4.05478 23.2669 4.46018 24.2308 5.24871 24.8036C6.03767 25.3769 7.07925 25.4646 7.95256 25.0311L12.9951 22.5283L18.0377 25.0311C18.911 25.4646 19.9526 25.3769 20.7416 24.8036C21.5301 24.2308 21.9355 23.2669 21.7932 22.3025L21.593 20.9466C21.4948 20.2814 20.8746 19.8206 20.2094 19.9188C19.5439 20.017 19.0835 20.6373 19.1817 21.3025Z" fill="currentColor"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.69856 10.0607L9.06878 9.65955C9.44437 9.59618 9.76876 9.36034 9.94544 9.02251L12.8344 3.49774C12.8654 3.43815 12.9275 3.40038 12.9951 3.40038C13.0627 3.40038 13.1248 3.43815 13.1558 3.49774L16.0447 9.02251C16.2214 9.36034 16.5458 9.59618 16.9214 9.65955L23.0685 10.6999C23.1353 10.7108 23.1898 10.7582 23.2108 10.8224C23.2318 10.887 23.215 10.9575 23.168 11.0058L18.8061 15.4605C18.3356 15.941 18.3436 16.7131 18.8241 17.1836C19.305 17.6544 20.0772 17.646 20.5476 17.1655L24.9095 12.7109C25.5915 12.0147 25.8303 10.9966 25.529 10.0696C25.2277 9.14211 24.4362 8.45891 23.4752 8.29651L17.9244 7.35732L15.3162 2.36844C14.8642 1.50437 13.97 0.963013 12.9951 0.963013C12.0202 0.963013 11.1259 1.50437 10.674 2.36844L8.06582 7.35732L6.29191 7.65737C5.62885 7.76942 5.18151 8.39932 5.29356 9.06238C5.40561 9.72544 6.03508 10.1728 6.69856 10.0607Z" fill="currentColor"/>
+          </svg>
+          <span class="trust-item__label" data-fm-layer="Trust label — Real Reviews">Real Reviews</span>
+        </li>
+
+        <li class="trust-item" data-fm-layer="Trust item — Secure Payments">
+          <svg class="trust-item__icon" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-fm-layer="Trust icon — Secure Payments">
+            <path d="M6.16602 15.8422C6.61475 15.8422 6.97852 15.4784 6.97852 15.0297C6.97852 14.5809 6.61475 14.2172 6.16602 14.2172C5.71728 14.2172 5.35352 14.5809 5.35352 15.0297C5.35352 15.4784 5.71728 15.8422 6.16602 15.8422Z" fill="currentColor"/>
+            <path d="M10.2285 11.5271H6.16602C5.71728 11.5271 5.35352 11.8909 5.35352 12.3396C5.35352 12.7883 5.71728 13.1521 6.16602 13.1521H10.2285C10.6772 13.1521 11.041 12.7883 11.041 12.3396C11.041 11.8909 10.6772 11.5271 10.2285 11.5271Z" fill="currentColor"/>
+            <path d="M9.89219 20.324H4.875C2.63169 20.324 0.8125 18.5048 0.8125 16.2615V6.51147C0.8125 4.26816 2.63169 2.44897 4.875 2.44897H21.125C23.3683 2.44897 25.1875 4.26816 25.1875 6.51147V12.4598C25.1875 12.9083 24.8235 13.2723 24.375 13.2723C23.9265 13.2723 23.5625 12.9083 23.5625 12.4598V6.51147C23.5625 5.16516 22.4713 4.07397 21.125 4.07397H4.875C3.52869 4.07397 2.4375 5.16516 2.4375 6.51147V16.2615C2.4375 17.6078 3.52869 18.699 4.875 18.699H9.89219C10.3407 18.699 10.7047 19.063 10.7047 19.5115C10.7047 19.96 10.3407 20.324 9.89219 20.324Z" fill="currentColor"/>
+            <path d="M18.6875 25.1875C15.1036 25.1875 12.1875 22.2714 12.1875 18.6875C12.1875 15.1036 15.1036 12.1875 18.6875 12.1875C22.2714 12.1875 25.1875 15.1036 25.1875 18.6875C25.1875 22.2714 22.2714 25.1875 18.6875 25.1875ZM18.6875 13.8125C15.9989 13.8125 13.8125 15.9989 13.8125 18.6875C13.8125 21.3761 15.9989 23.5625 18.6875 23.5625C21.3761 23.5625 23.5625 21.3761 23.5625 18.6875C23.5625 15.9989 21.3761 13.8125 18.6875 13.8125Z" fill="currentColor"/>
+            <path d="M1.625 7.61084H24.375V9.23584H1.625V7.61084Z" fill="currentColor"/>
+            <path d="M17.2103 20.6691L16.1029 19.5616C15.786 19.2447 15.786 18.7296 16.1029 18.4128C16.4198 18.0959 16.9349 18.0959 17.2518 18.4128L17.684 18.845C17.7628 18.9238 17.8896 18.9238 17.9684 18.845L20.124 16.6894C20.4408 16.3717 20.956 16.3717 21.2728 16.6894C21.5897 17.0063 21.5897 17.5214 21.2728 17.8383L18.4413 20.6699C18.1016 21.0095 17.55 21.0095 17.2103 20.6699V20.6691Z" fill="currentColor"/>
+          </svg>
+          <span class="trust-item__label" data-fm-layer="Trust label — Secure Payments">Secure Payments</span>
+        </li>
+      </ul>
+    </aside>
+  </section>
+
+</main>
+
+<footer class="site-footer" data-fm-layer="Footer">
+  <div class="site-footer__brand" data-fm-layer="Footer brand">
+    <a class="brand brand--footer" href="index.html" data-fm-layer="Footer brand link">
+      <img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt="" data-fm-layer="Footer brand mark">
+      <span class="brand__name brand__name--footer" data-fm-layer="Footer brand name">hearthfare</span>
+    </a>
+    <p class="site-footer__blurb" data-fm-layer="Footer blurb">Homemade meals. Local connections. Discover the cooks in your neighborhood.</p>
+  </div>
+
+  <nav class="footer-col" aria-label="Explore" data-fm-layer="Footer column — Explore">
+    <h3 class="footer-col__title" data-fm-layer="Footer column title — Explore">EXPLORE</h3>
+    <ul class="footer-col__list" data-fm-layer="Footer link list — Explore">
+      <li class="footer-col__item" data-fm-layer="Footer item — Find food"><a class="footer-col__link" href="app/shop-search.html" data-fm-layer="Footer link — Find food">Find food</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — What's cooking"><a class="footer-col__link" href="whats-cooking.html" data-fm-layer="Footer link — What's cooking">What's cooking</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — How it works"><a class="footer-col__link" href="how-it-works.html" data-fm-layer="Footer link — How it works">How it works</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Why Hearthfare"><a class="footer-col__link" href="why-hearthfare.html" data-fm-layer="Footer link — Why Hearthfare">Why Hearthfare</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Create an account"><a class="footer-col__link" href="signup.html" data-fm-layer="Footer link — Create an account">Create an account</a></li>
+    </ul>
+  </nav>
+
+  <nav class="footer-col" aria-label="For cooks" data-fm-layer="Footer column — For cooks">
+    <h3 class="footer-col__title" data-fm-layer="Footer column title — For cooks">FOR COOKS</h3>
+    <ul class="footer-col__list" data-fm-layer="Footer link list — For cooks">
+      <li class="footer-col__item" data-fm-layer="Footer item — Start your own Hearth"><a class="footer-col__link" href="signup.html" data-fm-layer="Footer link — Start your own Hearth">Start your own Hearth</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — For cooks"><a class="footer-col__link" href="for-cooks.html" data-fm-layer="Footer link — For cooks">For cooks</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Hearth log in"><a class="footer-col__link" href="login.html" data-fm-layer="Footer link — Hearth log in">Hearth log in</a></li>
+    </ul>
+  </nav>
+
+  <nav class="footer-col" aria-label="Legal" data-fm-layer="Footer column — Legal">
+    <h3 class="footer-col__title" data-fm-layer="Footer column title — Legal">LEGAL</h3>
+    <ul class="footer-col__list" data-fm-layer="Footer link list — Legal">
+      <li class="footer-col__item" data-fm-layer="Footer item — Terms of Service"><a class="footer-col__link" href="#" data-fm-layer="Footer link — Terms of Service">Terms of Service</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Privacy Policy"><a class="footer-col__link" href="#" data-fm-layer="Footer link — Privacy Policy">Privacy Policy</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Contact"><a class="footer-col__link" href="#" data-fm-layer="Footer link — Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="site-footer__bar" data-fm-layer="Footer bar">
+    <span class="site-footer__copy" data-fm-layer="Footer copyright">&copy; 2026 Hearthfare</span>
+    <span class="site-footer__made" data-fm-layer="Footer made in">Made in Home Kitchens</span>
+  </div>
+</footer>
+
+<script src="role-switch.js"></script>
+</body>
+</html>

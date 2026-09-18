@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout — Hearthfare</title>
+<link rel="icon" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body class="page-app" data-fm-layer="Checkout page">
+
+<header class="site-header" data-fm-layer="Header">
+  <a class="brand" href="../index.html" data-fm-layer="Brand">
+    <img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt="" data-fm-layer="Brand mark">
+    <span class="brand__text" data-fm-layer="Brand text">
+      <span class="brand__name" data-fm-layer="Brand name">hearthfare</span>
+      <span class="brand__tagline" data-fm-layer="Brand tagline">Homemade Meals. Local Connections.</span>
+    </span>
+  </a>
+
+  <nav class="site-nav" aria-label="Primary" data-fm-layer="Main nav">
+    <ul class="site-nav__list" data-fm-layer="Nav list">
+      <li class="site-nav__item" data-fm-layer="Nav item — Secure"><span class="site-nav__link" data-fm-layer="Nav label — Secure">Secure checkout</span></li>
+    </ul>
+  </nav>
+
+  <div class="header-actions" data-fm-layer="Header actions">
+    <a class="login-link" href="customer-orders.html" data-fm-layer="Link — Your account">Your account</a>
+    <a class="avatar" href="customer-orders.html" aria-label="Your account" data-fm-layer="Avatar — Marisol"><img src="assets/avatars/marisol.jpg" alt="" data-fm-layer="Avatar photo — Marisol"></a>
+  </div>
+</header>
+
+<main class="sf-body" style="padding-top:var(--space-6);" data-fm-layer="Checkout body">
+
+  <!-- ===== Left: the form ===== -->
+  <div data-fm-layer="Checkout content">
+
+    <div class="page-head" style="margin-bottom:var(--space-5);" data-fm-layer="Page head">
+      <div class="page-head__text" data-fm-layer="Page head text">
+        <a class="checkout-back" href="shop-storefront.html" data-fm-layer="Link — Back to storefront"><svg class="checkout-back__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Back"><path d="M19 12H5m6-6-6 6 6 6"/></svg><span data-fm-layer="Label — Back to storefront">Back to Li&#39;s Hearth</span></a>
+        <h1 class="page-head__title" data-fm-layer="Page title">Checkout</h1>
+        <p class="page-head__sub" data-fm-layer="Page sub">Picking up from <strong data-fm-layer="Hearth name">Li's Hearth</strong> today between 4:00 and 4:30 PM.</p>
+      </div>
+    </div>
+
+    <!-- Fulfillment -->
+    <section class="panel" style="margin-bottom:var(--space-5);" data-fm-layer="Panel — Fulfillment">
+      <div class="panel__head" data-fm-layer="Panel head — Fulfillment">
+        <div data-fm-layer="Panel head text — Fulfillment">
+          <h2 class="panel__title" data-fm-layer="Panel title — Fulfillment">How you are getting it</h2>
+          <p class="panel__sub" data-fm-layer="Panel sub — Fulfillment">Li offers both pickup and dine-in.</p>
+        </div>
+        <a class="panel__link" href="shop-storefront.html" data-fm-layer="Link — Change">Change</a>
+      </div>
+      <div class="panel__body" data-fm-layer="Panel body — Fulfillment">
+        <div class="btn-row" style="margin-bottom:var(--space-4);" data-fm-layer="Fulfillment chips">
+          <a class="chip chip--on" href="shop-checkout.html" aria-current="page" data-fm-layer="Chip — Pickup on">
+            <svg class="chip__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Bag"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg>
+            Pickup
+          </a>
+          <a class="chip" href="shop-checkout-dinein.html" data-fm-layer="Chip — Dine-in off">
+            <svg class="chip__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Chair"><path d="M6.5 3.5v7a2.5 2.5 0 0 0 5 0v-7M9 3.5v17"/><path d="M16.5 3.5c-1.4 1.6-1.8 4-1.4 6.3.2 1 1 1.7 2 1.7h1.4V3.5"/><path d="M18.5 11.5v9"/></svg>
+            Dine-in
+          </a>
+        </div>
+
+        <span class="slot slot--on" data-fm-layer="Slot — Selected">
+          <span class="slot__time" data-fm-layer="Slot time — Selected">Today, Thursday 11 Sep · 4:00 – 4:30 PM</span>
+          <span class="slot__left" data-fm-layer="Slot left — Selected">2 spots left</span>
+        </span>
+
+        <p class="money__note" style="margin-top:0.875rem;" data-fm-layer="Pickup instructions">Park on 30th Street and come to the side gate — the orange one. Your name will be on the bag. Orders close at 1:00 PM.</p>
+      </div>
+    </section>
+
+    <!-- Your details -->
+    <section class="panel" style="margin-bottom:var(--space-5);" data-fm-layer="Panel — Details">
+      <div class="panel__head" data-fm-layer="Panel head — Details">
+        <div data-fm-layer="Panel head text — Details">
+          <h2 class="panel__title" data-fm-layer="Panel title — Details">Your details</h2>
+          <p class="panel__sub" data-fm-layer="Panel sub — Details">We ask for your address once, on your first order, then save it to your profile.</p>
+        </div>
+      </div>
+      <div class="panel__body" data-fm-layer="Panel body — Details">
+        <div class="form" data-fm-layer="Form — Details">
+          <div class="field-row field-row--2" data-fm-layer="Field row — Name">
+            <div class="field" data-fm-layer="Field — First name">
+              <label class="field__label" for="co-first" data-fm-layer="Label — First name">First name</label>
+              <input class="input" id="co-first" type="text" value="Marisol" data-fm-layer="Input — First name">
+            </div>
+            <div class="field" data-fm-layer="Field — Last name">
+              <label class="field__label" for="co-last" data-fm-layer="Label — Last name">Last name</label>
+              <input class="input" id="co-last" type="text" value="Ramirez" data-fm-layer="Input — Last name">
+            </div>
+          </div>
+
+          <div class="field-row field-row--2" data-fm-layer="Field row — Contact">
+            <div class="field" data-fm-layer="Field — Mobile">
+              <label class="field__label" for="co-mobile" data-fm-layer="Label — Mobile">Mobile number</label>
+              <input class="input" id="co-mobile" type="tel" value="(619) 555-0142" data-fm-layer="Input — Mobile">
+              <p class="field__hint" data-fm-layer="Hint — Mobile">Li can reach you here if something changes about your order.</p>
+            </div>
+            <div class="field" data-fm-layer="Field — Email">
+              <label class="field__label" for="co-email" data-fm-layer="Label — Email">Email</label>
+              <input class="input" id="co-email" type="email" value="marisol.r@example.com" data-fm-layer="Input — Email">
+            </div>
+          </div>
+
+          <div class="field" data-fm-layer="Field — Address">
+            <label class="field__label" for="co-address" data-fm-layer="Label — Address">Home address</label>
+            <input class="input" id="co-address" type="text" placeholder="Street address" data-fm-layer="Input — Address">
+            <p class="field__hint" data-fm-layer="Hint — Address">Used for your receipts and to show you Hearths near home. We save it to your profile so you only enter it once.</p>
+          </div>
+
+          <div class="field-row field-row--3" data-fm-layer="Field row — City">
+            <div class="field" data-fm-layer="Field — City">
+              <label class="field__label" for="co-city" data-fm-layer="Label — City">City</label>
+              <input class="input" id="co-city" type="text" placeholder="San Diego" data-fm-layer="Input — City">
+            </div>
+            <div class="field" data-fm-layer="Field — State">
+              <label class="field__label" for="co-state" data-fm-layer="Label — State">State</label>
+              <select class="input input--select" id="co-state" data-fm-layer="Select — State">
+                <option data-fm-layer="Option — CA">California</option>
+              </select>
+            </div>
+            <div class="field" data-fm-layer="Field — Zip">
+              <label class="field__label" for="co-zip" data-fm-layer="Label — Zip">ZIP code</label>
+              <input class="input" id="co-zip" type="text" placeholder="92104" data-fm-layer="Input — Zip">
+            </div>
+          </div>
+
+          <div class="field" data-fm-layer="Field — Notes">
+            <label class="field__label" for="co-notes" data-fm-layer="Label — Notes">Notes for Li <span class="field__hint" data-fm-layer="Hint inline — Notes">(optional)</span></label>
+            <textarea class="input input--area" id="co-notes" data-fm-layer="Textarea — Notes">No onions on the birria please.</textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment -->
+    <section class="panel" style="margin-bottom:var(--space-5);" data-fm-layer="Panel — Payment">
+      <div class="panel__head" data-fm-layer="Panel head — Payment">
+        <div data-fm-layer="Panel head text — Payment">
+          <h2 class="panel__title" data-fm-layer="Panel title — Payment">Payment</h2>
+          <p class="panel__sub" data-fm-layer="Panel sub — Payment">Processed securely by Stripe. Hearthfare never sees your card details.</p>
+        </div>
+        <span class="pill pill--info" data-fm-layer="Pill — Stripe">Stripe</span>
+      </div>
+      <div class="panel__body" data-fm-layer="Panel body — Payment">
+        <div class="form" data-fm-layer="Form — Payment">
+          <div class="field" data-fm-layer="Field — Card">
+            <label class="field__label" for="co-card" data-fm-layer="Label — Card">Card number</label>
+            <input class="input" id="co-card" type="text" value="4242 4242 4242 4242" data-fm-layer="Input — Card">
+          </div>
+          <div class="field-row field-row--2" data-fm-layer="Field row — Card meta">
+            <div class="field" data-fm-layer="Field — Expiry">
+              <label class="field__label" for="co-exp" data-fm-layer="Label — Expiry">Expiry</label>
+              <input class="input" id="co-exp" type="text" value="04 / 29" data-fm-layer="Input — Expiry">
+            </div>
+            <div class="field" data-fm-layer="Field — CVC">
+              <label class="field__label" for="co-cvc" data-fm-layer="Label — CVC">Security code</label>
+              <input class="input" id="co-cvc" type="text" value="•••" data-fm-layer="Input — CVC">
+            </div>
+          </div>
+        </div>
+
+        <div class="banner banner--info" style="margin-top:var(--space-5);" data-fm-layer="Banner — Direct payment">
+          <svg class="banner__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Info"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5m0-8.5h.01"/></svg>
+          <div class="banner__text" data-fm-layer="Banner text — Direct payment">
+            <p class="banner__title" data-fm-layer="Banner title — Direct payment">Your food payment goes straight to Li</p>
+            <p class="banner__body" data-fm-layer="Banner body — Direct payment">Hearthfare does not hold cooks' money. The menu price and sales tax go directly into Li's own Stripe account — supporting a local cook and strengthening your community.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consents -->
+    <section class="panel" data-fm-layer="Panel — Consents">
+      <div class="panel__head" data-fm-layer="Panel head — Consents">
+        <div data-fm-layer="Panel head text — Consents">
+          <h2 class="panel__title" data-fm-layer="Panel title — Consents">Before you order</h2>
+          <p class="panel__sub" data-fm-layer="Panel sub — Consents">Each box must be ticked. We record what you accepted, and when.</p>
+        </div>
+      </div>
+      <div class="panel__body" data-fm-layer="Panel body — Consents">
+        <div class="consents" data-fm-layer="Consents">
+          <label class="consent" data-fm-layer="Consent — Home kitchen">
+            <input class="consent__box" type="checkbox" form="checkout" required checked data-fm-layer="Checkbox — Home kitchen">
+            <span class="consent__text" data-fm-layer="Consent text — Home kitchen">I understand this food is <strong data-fm-layer="Emphasis — Home kitchen">made in a home kitchen</strong> that is permitted and inspected by San Diego County, not in a commercial restaurant kitchen.</span>
+          </label>
+          <label class="consent" data-fm-layer="Consent — Allergy">
+            <input class="consent__box" type="checkbox" form="checkout" required checked data-fm-layer="Checkbox — Allergy">
+            <span class="consent__text" data-fm-layer="Consent text — Allergy">I have read Li's <a href="shop-storefront.html" data-fm-layer="Link — Allergy notice">allergy notice</a> and accept that no dish can be guaranteed free of any allergen.</span>
+          </label>
+          <label class="consent" data-fm-layer="Consent — Refund">
+            <input class="consent__box" type="checkbox" form="checkout" required data-fm-layer="Checkbox — Refund">
+            <span class="consent__text" data-fm-layer="Consent text — Refund">I accept Li's <a href="shop-storefront.html" data-fm-layer="Link — Cancellation">cancellation and refund policy</a> for this order.</span>
+          </label>
+          <label class="consent" data-fm-layer="Consent — Risk">
+            <input class="consent__box" type="checkbox" form="checkout" required data-fm-layer="Checkbox — Risk">
+            <span class="consent__text" data-fm-layer="Consent text — Risk">I accept the Hearthfare <a href="#" data-fm-layer="Link — Terms">transaction terms and assumption of risk</a> for home-kitchen food.</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ===== Right: summary ===== -->
+  <aside class="cart-panel" data-fm-layer="Summary panel">
+    <div class="panel" data-fm-layer="Panel — Summary">
+      <div class="panel__head" data-fm-layer="Panel head — Summary">
+        <h2 class="panel__title" data-fm-layer="Panel title — Summary">Your order</h2>
+        <span class="pill pill--muted" data-fm-layer="Pill — Item count">3 items</span>
+      </div>
+
+      <div class="panel__body" data-fm-layer="Panel body — Summary">
+        <div data-fm-layer="Summary lines">
+          <div class="cart-line" data-fm-layer="Line — Birria"><img class="cart-line__thumb" src="assets/dish-birria.png" alt="" data-fm-layer="Line photo — Birria">
+            <span class="cart-line__text" data-fm-layer="Line text — Birria">
+              <span class="cart-line__name" data-fm-layer="Line name — Birria">Birria plate</span>
+              <span class="cart-line__meta" data-fm-layer="Line meta — Birria">Regular</span><span class="cart-line__qty" data-fm-layer="Qty — Birria">2 &times; $14.00</span>
+            </span>
+            <span class="cart-line__price" data-fm-layer="Line price — Birria">$28.00</span>
+          </div>
+          <div class="cart-line" data-fm-layer="Line — Tamales"><img class="cart-line__thumb" src="assets/dish-tamales.jpg" alt="" data-fm-layer="Line photo — Tamales">
+            <span class="cart-line__text" data-fm-layer="Line text — Tamales">
+              <span class="cart-line__name" data-fm-layer="Line name — Tamales">Tamales, by the dozen</span>
+              <span class="cart-line__meta" data-fm-layer="Line meta — Tamales">Chicken in salsa verde</span><span class="cart-line__qty" data-fm-layer="Qty — Tamales">1 &times; $26.00</span>
+            </span>
+            <span class="cart-line__price" data-fm-layer="Line price — Tamales">$26.00</span>
+          </div>
+        </div>
+
+        <div class="money" style="margin-top:1.25rem;" data-fm-layer="Summary money">
+          <div class="money__row" data-fm-layer="Money row — Subtotal">
+            <span class="money__label" data-fm-layer="Money label — Subtotal">Subtotal</span>
+            <span class="money__value" data-fm-layer="Money value — Subtotal">$54.00</span>
+          </div>
+          <div class="money__row" data-fm-layer="Money row — Tax">
+            <span class="money__label" data-fm-layer="Money label — Tax">Sales tax (7.75%)</span>
+            <span class="money__value" data-fm-layer="Money value — Tax">$4.19</span>
+          </div>
+          <div class="money__row" data-fm-layer="Money row — Fee">
+            <span class="money__label" data-fm-layer="Money label — Fee">
+              Hearthfare platform fee
+              <span class="money__info" data-fm-layer="Money info — Fee">i</span>
+            </span>
+            <span class="money__value" data-fm-layer="Money value — Fee">$3.24</span>
+          </div>
+          <div class="money__row money__row--total" data-fm-layer="Money row — Total">
+            <span class="money__label" data-fm-layer="Money label — Total">Total</span>
+            <span class="money__value" data-fm-layer="Money value — Total">$61.43</span>
+          </div>
+        </div>
+
+        <p class="money__note" style="margin-top:0.875rem;" data-fm-layer="Fee explanation">This fee helps support the operation, technology, and services provided by Hearthfare. No tip is required.</p>
+
+        <!-- The consents above join this form via form="checkout"; `required` stops an unticked submit. -->
+        <form id="checkout" action="shop-confirmation.html" style="margin-top:1.25rem;" data-fm-layer="Summary action">
+          <button class="btn btn--primary btn--block" type="submit" data-fm-layer="Button — Place order">
+            <span class="btn__label" data-fm-layer="Label — Place order">Pay $61.43 and place order</span>
+          </button>
+        </form>
+
+        <p class="money__note" style="margin-top:0.875rem;background:transparent;padding:0;" data-fm-layer="Summary footnote">Your order is confirmed only once payment succeeds. You will get a receipt by email and in your order history.</p>
+      </div>
+    </div>
+  </aside>
+
+</main>
+
+<footer class="site-footer site-footer--bar-only" data-fm-layer="Footer">
+  <div class="site-footer__bar" data-fm-layer="Footer bar">
+    <p class="site-footer__copy" data-fm-layer="Footer copy">© 2026 Hearthfare. All rights reserved.</p>
+    <p class="site-footer__made" data-fm-layer="Footer made">Made for home cooks in San Diego and Los Angeles.</p>
+  </div>
+</footer>
+
+<script src="../role-switch.js"></script>
+</body>
+</html>

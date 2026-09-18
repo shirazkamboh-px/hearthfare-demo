@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hearthfare — Platform component reference</title>
+<link rel="icon" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+<style>
+  /* Reference-page scaffolding only — not part of the design system. */
+  .ref { max-width: 74rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  .ref__head { padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); margin-bottom: 2rem; }
+  .ref__title { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.01em; }
+  .ref__sub { margin-top: 0.375rem; color: var(--muted); font-size: 0.9375rem; max-width: 46rem; }
+  .ref-group { margin-bottom: 2.5rem; }
+  .ref-group__title { font-size: 1.0625rem; font-weight: 700; margin-bottom: 0.25rem; }
+  .ref-group__note { color: var(--muted); font-size: 0.8125rem; margin-bottom: 1rem; }
+  .ref-case { background: var(--white); border: 1px solid var(--line); border-radius: 1rem; padding: 1.5rem; }
+  .ref-case + .ref-case { margin-top: 0.75rem; }
+  .ref-case__label { color: var(--muted-light); font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.875rem; }
+  .ref-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+  .ref-stack { display: grid; gap: 0.75rem; }
+  body { background: var(--cream); }
+</style>
+</head>
+<body class="page-app" data-fm-layer="Components page">
+
+<div class="ref" data-fm-layer="Reference">
+
+  <header class="ref__head" data-fm-layer="Reference header">
+    <a class="brand" href="../index.html" data-fm-layer="Brand">
+      <img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt="" data-fm-layer="Brand mark">
+      <span class="brand__text" data-fm-layer="Brand text">
+        <span class="brand__name" data-fm-layer="Brand name">hearthfare</span>
+        <span class="brand__tagline" data-fm-layer="Brand tagline">Homemade Meals. Local Connections.</span>
+      </span>
+    </a>
+    <h1 class="ref__title" data-fm-layer="Reference title" style="margin-top:1.25rem;">Platform component reference</h1>
+    <p class="ref__sub" data-fm-layer="Reference subtitle">Every component, status and state used across the Hearthfare application. Screens compose from this page — nothing here is decoration. States that only appear on interaction live here, because they cannot be captured from a live screen.</p>
+  </header>
+
+  <!-- ===== Buttons ===== -->
+  <section class="ref-group" data-fm-layer="Group — Buttons">
+    <h2 class="ref-group__title" data-fm-layer="Group title — Buttons">Buttons</h2>
+    <p class="ref-group__note" data-fm-layer="Group note — Buttons">Primary is the warm gradient from the marketing site. Outline is the app's default secondary; ghost stays reserved for dark backgrounds.</p>
+
+    <div class="ref-case" data-fm-layer="Case — Button variants">
+      <p class="ref-case__label" data-fm-layer="Case label — Variants">Variants</p>
+      <div class="ref-row" data-fm-layer="Button row">
+        <button class="btn btn--primary" type="button" data-fm-layer="Button — Primary"><span class="btn__label" data-fm-layer="Label — Primary">Save changes</span></button>
+        <button class="btn btn--outline" type="button" data-fm-layer="Button — Outline"><span class="btn__label" data-fm-layer="Label — Outline">Cancel</span></button>
+        <button class="btn btn--quiet" type="button" data-fm-layer="Button — Quiet"><span class="btn__label" data-fm-layer="Label — Quiet">Preview storefront</span></button>
+        <button class="btn btn--danger" type="button" data-fm-layer="Button — Danger"><span class="btn__label" data-fm-layer="Label — Danger">Place compliance hold</span></button>
+        <button class="btn btn--primary btn--disabled" type="button" disabled data-fm-layer="Button — Disabled"><span class="btn__label" data-fm-layer="Label — Disabled">Activate Hearth</span></button>
+      </div>
+    </div>
+
+    <div class="ref-case" data-fm-layer="Case — Button sizes">
+      <p class="ref-case__label" data-fm-layer="Case label — Sizes">Small · with icon · full width</p>
+      <div class="ref-row" data-fm-layer="Button size row">
+        <button class="btn btn--outline btn--sm" type="button" data-fm-layer="Button — Small outline"><span class="btn__label" data-fm-layer="Label — Small outline">Edit</span></button>
+        <button class="btn btn--primary btn--sm" type="button" data-fm-layer="Button — Small primary"><span class="btn__label" data-fm-layer="Label — Small primary">Accept</span></button>
+        <button class="btn btn--primary" type="button" data-fm-layer="Button — With icon">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Plus"><path d="M12 5v14M5 12h14"/></svg>
+          <span class="btn__label" data-fm-layer="Label — With icon">Add menu item</span>
+        </button>
+      </div>
+      <div style="max-width:18rem;margin-top:0.75rem;" data-fm-layer="Button block wrap">
+        <button class="btn btn--primary btn--block" type="button" data-fm-layer="Button — Block"><span class="btn__label" data-fm-layer="Label — Block">Continue to payment</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Status pills ===== -->
+  <section class="ref-group" data-fm-layer="Group — Status">
+    <h2 class="ref-group__title" data-fm-layer="Group title — Status">Status pills</h2>
+    <p class="ref-group__note" data-fm-layer="Group note — Status">One pill vocabulary across cook, customer and admin screens. Colour carries meaning: green is good standing, amber needs attention, red blocks ordering.</p>
+
+    <div class="ref-case" data-fm-layer="Case — Storefront status">
+      <p class="ref-case__label" data-fm-layer="Case label — Storefront">Storefront status (HF-MVP-078)</p>
+      <div class="ref-row" data-fm-layer="Storefront pill row">
+        <span class="pill pill--ok" data-fm-layer="Pill — Open"><span class="pill__dot" data-fm-layer="Dot — Open"></span>Open</span>
+        <span class="pill pill--warn" data-fm-layer="Pill — Paused"><span class="pill__dot" data-fm-layer="Dot — Paused"></span>Paused</span>
+        <span class="pill pill--muted" data-fm-layer="Pill — Closed"><span class="pill__dot" data-fm-layer="Dot — Closed"></span>Closed</span>
+        <span class="pill pill--muted" data-fm-layer="Pill — Hidden"><span class="pill__dot" data-fm-layer="Dot — Hidden"></span>Hidden</span>
+        <span class="pill pill--danger" data-fm-layer="Pill — Blocked"><span class="pill__dot" data-fm-layer="Dot — Blocked"></span>Ordering blocked</span>
+      </div>
+    </div>
+
+    <div class="ref-case" data-fm-layer="Case — Order status">
+      <p class="ref-case__label" data-fm-layer="Case label — Order">Order status — pickup then dine-in (HF-MVP-121, 122)</p>
+      <div class="ref-row" data-fm-layer="Pickup pill row">
+        <span class="pill pill--info" data-fm-layer="Pill — Paid">Paid</span>
+        <span class="pill pill--ok" data-fm-layer="Pill — Ready">Ready</span>
+        <span class="pill pill--muted" data-fm-layer="Pill — Completed">Completed</span>
+      </div>
+      <div class="ref-row" style="margin-top:0.75rem;" data-fm-layer="Dine-in pill row">
+        <span class="pill pill--warn" data-fm-layer="Pill — Pending acceptance">Pending acceptance</span>
+        <span class="pill pill--ok" data-fm-layer="Pill — Confirmed">Confirmed</span>
+        <span class="pill pill--ok" data-fm-layer="Pill — Ready">Ready (optional)</span>
+        <span class="pill pill--muted" data-fm-layer="Pill — Completed">Completed</span>
+        <span class="pill pill--danger" data-fm-layer="Pill — Declined">Declined</span>
+        <span class="pill pill--muted" data-fm-layer="Pill — Expired">Expired</span>
+      </div>
+    </div>
+
+    <div class="ref-case" data-fm-layer="Case — Permit status">
+      <p class="ref-case__label" data-fm-layer="Case label — Permit">Permit &amp; compliance status (HF-MVP-057, 149)</p>
+      <div class="ref-row" data-fm-layer="Permit pill row">
+        <span class="pill pill--ok" data-fm-layer="Pill — Permit active">Permit active</span>
+        <span class="pill pill--warn" data-fm-layer="Pill — Expiring">Expires in 24 days</span>
+        <span class="pill pill--danger" data-fm-layer="Pill — Expired">Permit expired</span>
+        <span class="pill pill--info" data-fm-layer="Pill — Awaiting approval">Awaiting Hearthfare approval</span>
+        <span class="pill pill--warn" data-fm-layer="Pill — Submitted">Submitted to county</span>
+        <span class="pill pill--danger" data-fm-layer="Pill — Hold">Compliance hold</span>
+        <span class="pill pill--info" data-fm-layer="Pill — Reported">Reported to county</span>
+      </div>
+    </div>
+
+    <div class="ref-case" data-fm-layer="Case — Document status">
+      <p class="ref-case__label" data-fm-layer="Case label — Document">Document approval, then county submission (HF-MVP-040, 048)</p>
+      <div class="ref-row" data-fm-layer="Document pill row">
+        <span class="pill pill--info" data-fm-layer="Pill — Waiting for review">Waiting for review</span>
+        <span class="pill pill--ok" data-fm-layer="Pill — Confirmed">Confirmed</span>
+        <span class="pill pill--warn" data-fm-layer="Pill — Needs attention">Needs your attention</span>
+      </div>
+      <div class="ref-row" style="margin-top:0.75rem;" data-fm-layer="Submission pill row">
+        <span class="pill pill--muted" data-fm-layer="Pill — Draft">Draft</span>
+        <span class="pill pill--info" data-fm-layer="Pill — Ready">Ready</span>
+        <span class="pill pill--ok" data-fm-layer="Pill — Submitted">Submitted</span>
+      </div>
+    </div>
+
+    <div class="ref-case" data-fm-layer="Case — Trust marks">
+      <p class="ref-case__label" data-fm-layer="Case label — Trust">Trust marks (HF-MVP-074, 092)</p>
+      <div class="ref-row" data-fm-layer="Trust row">
+        <span class="verified" data-fm-layer="Badge — Verified">
+          <svg class="verified__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Check"><path d="m4 12.5 5 5L20 6.5"/></svg>
+          Verified by Hearthfare
+        </span>
+        <span class="pill pill--accent" data-fm-layer="Pill — Home kitchen">Made in a Home Kitchen</span>
+        <span class="pill pill--pickup" data-fm-layer="Pill — Pickup"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Pill icon — Pickup"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg><span data-fm-layer="Pill label — Pickup">Pickup</span></span>
+        <span class="pill pill--dinein" data-fm-layer="Pill — Dine-in"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Pill icon — Dine-in"><path d="M6.5 3.5v7a2.5 2.5 0 0 0 5 0v-7M9 3.5v17"/><path d="M16.5 3.5c-1.4 1.6-1.8 4-1.4 6.3.2 1 1 1.7 2 1.7h1.4V3.5"/><path d="M18.5 11.5v9"/></svg><span data-fm-layer="Pill label — Dine-in">Dine-in</span></span>
+      </div>
+    </div>
+
+    <div class="ref-case" data-fm-layer="Case — Filter chips">
+      <p class="ref-case__label" data-fm-layer="Case label — Chips">Filter chips — off and on (HF-MVP-087)</p>
+      <div class="ref-row" data-fm-layer="Chip row">
+        <button class="chip chip--on" type="button" data-fm-layer="Chip — Pickup on">Pickup</button>
+        <button class="chip" type="button" data-fm-layer="Chip — Dine-in off">Dine-in</button>
+        <button class="chip" type="button" data-fm-layer="Chip — Within 5 miles">Within 5 miles</button>
+        <button class="chip" type="button" data-fm-layer="Chip — Mexican">Mexican</button>
+        <button class="chip" type="button" data-fm-layer="Chip — Open now">Open now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Metrics ===== -->
+  <section class="ref-group" data-fm-layer="Group — Metrics">
+    <h2 class="ref-group__title" data-fm-layer="Group title — Metrics">Metric tiles</h2>
+    <p class="ref-group__note" data-fm-layer="Group note — Metrics">Dashboard headline numbers. Used by cook and admin dashboards and by reports.</p>
+    <div class="grid grid--4" data-fm-layer="Metric grid">
+      <article class="metric" data-fm-layer="Metric — Orders today">
+        <p class="metric__label" data-fm-layer="Metric label — Orders today">
+          <svg class="metric__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Bag"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg>
+          Orders today
+        </p>
+        <p class="metric__value" data-fm-layer="Metric value — Orders today">12</p>
+        <p class="metric__note" data-fm-layer="Metric note — Orders today">8 pickup · 4 dine-in</p>
+      </article>
+      <article class="metric" data-fm-layer="Metric — Orders week">
+        <p class="metric__label" data-fm-layer="Metric label — Orders week">
+          <svg class="metric__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Calendar"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3.5V6m8-2.5V6"/></svg>
+          Orders this week
+        </p>
+        <p class="metric__value" data-fm-layer="Metric value — Orders week">57</p>
+        <p class="metric__note metric__note--up" data-fm-layer="Metric note — Orders week">+14% on last week</p>
+      </article>
+      <article class="metric" data-fm-layer="Metric — Revenue">
+        <p class="metric__label" data-fm-layer="Metric label — Revenue">
+          <svg class="metric__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Revenue"><path d="M12 3.5v17M16 7.5H10a2.75 2.75 0 0 0 0 5.5h4a2.75 2.75 0 0 1 0 5.5H7.5"/></svg>
+          Revenue this week
+        </p>
+        <p class="metric__value" data-fm-layer="Metric value — Revenue">$1,284.50</p>
+        <p class="metric__note" data-fm-layer="Metric note — Revenue">Paid directly to your Stripe account</p>
+      </article>
+      <article class="metric" data-fm-layer="Metric — Empty">
+        <p class="metric__label" data-fm-layer="Metric label — Empty">
+          <svg class="metric__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Star"><path d="m12 4 2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 17.4 6.7 20.1l1-5.8-4.2-4.1 5.9-.9Z"/></svg>
+          Average rating
+        </p>
+        <p class="metric__value" data-fm-layer="Metric value — Empty">—</p>
+        <p class="metric__note" data-fm-layer="Metric note — Empty">No reviews yet</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Banners ===== -->
+  <section class="ref-group" data-fm-layer="Group — Banners">
+    <h2 class="ref-group__title" data-fm-layer="Group title — Banners">Banners</h2>
+    <p class="ref-group__note" data-fm-layer="Group note — Banners">Compliance and licensing messaging. These carry the platform's legal obligations, so wording is fixed copy, not placeholder.</p>
+
+    <div class="ref-stack" data-fm-layer="Banner stack">
+      <div class="banner banner--danger" data-fm-layer="Banner — Blocked">
+        <svg class="banner__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Alert"><path d="M12 8.5v4.5m0 3h.01"/><circle cx="12" cy="12" r="8.5"/></svg>
+        <div class="banner__text" data-fm-layer="Banner text — Blocked">
+          <p class="banner__title" data-fm-layer="Banner title — Blocked">New orders are blocked — your permit expired on 2 September 2026</p>
+          <p class="banner__body" data-fm-layer="Banner body — Blocked">Orders already accepted are unaffected and should still be fulfilled. Upload your renewed permit to resume taking new orders. A Hearthfare Account Manager reviews every renewal before ordering restarts.</p>
+          <div class="banner__actions" data-fm-layer="Banner actions — Blocked">
+            <button class="btn btn--primary btn--sm" type="button" data-fm-layer="Button — Upload renewal"><span class="btn__label" data-fm-layer="Label — Upload renewal">Upload renewed permit</span></button>
+            <a class="panel__link" href="cook-compliance.html" data-fm-layer="Link — Compliance center">Go to Permit and Compliance Center</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner banner--warn" data-fm-layer="Banner — Expiring">
+        <svg class="banner__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Clock"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 1.8"/></svg>
+        <div class="banner__text" data-fm-layer="Banner text — Expiring">
+          <p class="banner__title" data-fm-layer="Banner title — Expiring">Your permit expires in 24 days</p>
+          <p class="banner__body" data-fm-layer="Banner body — Expiring">Renew with your county and upload the new permit before 5 October 2026 to keep taking orders without interruption.</p>
+        </div>
+      </div>
+
+      <div class="banner banner--info" data-fm-layer="Banner — Reminder">
+        <svg class="banner__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Info"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5m0-8.5h.01"/></svg>
+        <div class="banner__text" data-fm-layer="Banner text — Reminder">
+          <p class="banner__title" data-fm-layer="Banner title — Reminder">It has been 30 days since you sent your application to San Diego County</p>
+          <p class="banner__body" data-fm-layer="Banner body — Reminder">Have you heard back? Upload your approval to move forward, or let us know it is still pending and we will keep reminding you.</p>
+          <div class="banner__actions" data-fm-layer="Banner actions — Reminder">
+            <button class="btn btn--primary btn--sm" type="button" data-fm-layer="Button — Upload approval"><span class="btn__label" data-fm-layer="Label — Upload approval">Upload my approval</span></button>
+            <button class="btn btn--outline btn--sm" type="button" data-fm-layer="Button — Still pending"><span class="btn__label" data-fm-layer="Label — Still pending">Still pending</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner banner--ok" data-fm-layer="Banner — Approved">
+        <svg class="banner__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Approved"><circle cx="12" cy="12" r="8.5"/><path d="m8.5 12.2 2.4 2.4 4.6-4.9"/></svg>
+        <div class="banner__text" data-fm-layer="Banner text — Approved">
+          <p class="banner__title" data-fm-layer="Banner title — Approved">Your Hearth is verified and open</p>
+          <p class="banner__body" data-fm-layer="Banner body — Approved">You pay no Hearthfare transaction fee until 11 September 2027.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Forms ===== -->
+  <section class="ref-group" data-fm-layer="Group — Forms">
+    <h2 class="ref-group__title" data-fm-layer="Group title — Forms">Form controls</h2>
+    <p class="ref-group__note" data-fm-layer="Group note — Forms">Inherited from the sign-up page so the platform and the marketing site feel like one product. Error and prefix variants are new.</p>
+
+    <div class="ref-case" data-fm-layer="Case — Fields">
+      <p class="ref-case__label" data-fm-layer="Case label — Fields">Default · select · error · price prefix · textarea</p>
+      <div class="form" style="max-width:34rem;" data-fm-layer="Form — Sample">
+        <div class="field" data-fm-layer="Field — Hearth name">
+          <label class="field__label" for="ref-name" data-fm-layer="Label — Hearth name">Hearth name</label>
+          <input class="input" id="ref-name" type="text" value="Li's Hearth" data-fm-layer="Input — Hearth name">
+          <p class="field__hint" data-fm-layer="Hint — Hearth name">This is the name customers see in search and on your storefront.</p>
+        </div>
+
+        <div class="field" data-fm-layer="Field — County">
+          <label class="field__label" for="ref-county" data-fm-layer="Label — County">County</label>
+          <select class="input input--select" id="ref-county" data-fm-layer="Select — County">
+            <option data-fm-layer="Option — San Diego">San Diego County</option>
+            <option data-fm-layer="Option — Los Angeles">Los Angeles County</option>
+          </select>
+        </div>
+
+        <div class="field" data-fm-layer="Field — Permit number">
+          <label class="field__label" for="ref-permit" data-fm-layer="Label — Permit number">Permit number</label>
+          <input class="input input--error" id="ref-permit" type="text" value="" placeholder="e.g. MEHKO-2026-00841" data-fm-layer="Input — Permit number">
+          <p class="field__error" data-fm-layer="Error — Permit number">
+            <svg class="field__error-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Error"><circle cx="12" cy="12" r="8.5"/><path d="M12 8v4.5m0 3h.01"/></svg>
+            Enter the permit number exactly as it appears on your county approval.
+          </p>
+        </div>
+
+        <div class="field-row field-row--2" data-fm-layer="Field row — Price and tax">
+          <div class="field" data-fm-layer="Field — Price">
+            <label class="field__label" for="ref-price" data-fm-layer="Label — Price">Price</label>
+            <span class="input-prefix" data-fm-layer="Prefix wrap — Price">
+              <span class="input-prefix__mark" data-fm-layer="Prefix mark — Dollar">$</span>
+              <input class="input" id="ref-price" type="text" value="14.00" data-fm-layer="Input — Price">
+            </span>
+          </div>
+          <div class="field" data-fm-layer="Field — Tax rate">
+            <span class="field__label" data-fm-layer="Label — Tax rate">Sales tax</span>
+            <p class="field__hint" data-fm-layer="Hint — Tax rate">7.75% · calculated automatically by Stripe Tax from the Hearth's location</p>
+          </div>
+        </div>
+
+        <div class="field" data-fm-layer="Field — Story">
+          <label class="field__label" for="ref-story" data-fm-layer="Label — Story">Our story</label>
+          <textarea class="input input--area" id="ref-story" data-fm-layer="Textarea — Story">I have been cooking my grandmother's recipes for my neighbours for eleven years. Every dish starts the way she taught me — slowly, and with people in mind.</textarea>
+        </div>
+
+        <div class="consents" data-fm-layer="Consents">
+          <label class="consent" data-fm-layer="Consent — Terms">
+            <input class="consent__box" type="checkbox" checked data-fm-layer="Checkbox — Terms">
+            <span class="consent__text" data-fm-layer="Consent text — Terms">I accept the <a href="#" data-fm-layer="Link — Operator agreement">Hearth Operator Agreement</a>, including the regulatory acknowledgments and disclosures.</span>
+          </label>
+          <label class="consent" data-fm-layer="Consent — Attestation">
+            <input class="consent__box" type="checkbox" data-fm-layer="Checkbox — Attestation">
+            <span class="consent__text" data-fm-layer="Consent text — Attestation">I confirm my kitchen meets every condition of my county permit and I will notify Hearthfare of any enforcement action.</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref-case" data-fm-layer="Case — Toggles">
+      <p class="ref-case__label" data-fm-layer="Case label — Toggles">Toggle rows — used for fulfillment methods, notifications and sold-out</p>
+      <div style="max-width:34rem;" data-fm-layer="Switch list">
+        <div class="switch-row" data-fm-layer="Switch row — Pickup">
+          <div data-fm-layer="Switch text — Pickup">
+            <p class="switch-row__title" data-fm-layer="Switch title — Pickup">Offer pickup</p>
+            <p class="switch-row__body" data-fm-layer="Switch body — Pickup">Customers collect their order from your Hearth during a pickup window you set.</p>
+          </div>
+          <span class="toggle toggle--on" data-fm-layer="Toggle — Pickup on">
+            <span class="toggle__track" data-fm-layer="Toggle track — Pickup"><span class="toggle__knob" data-fm-layer="Toggle knob — Pickup"></span></span>
+          </span>
+        </div>
+        <div class="switch-row" data-fm-layer="Switch row — Dine-in">
+          <div data-fm-layer="Switch text — Dine-in">
+            <p class="switch-row__title" data-fm-layer="Switch title — Dine-in">Offer dine-in</p>
+            <p class="switch-row__body" data-fm-layer="Switch body — Dine-in">Guests pull up a chair and eat at your Hearth. You accept or decline each request.</p>
+          </div>
+          <span class="toggle" data-fm-layer="Toggle — Dine-in off">
+            <span class="toggle__track" data-fm-layer="Toggle track — Dine-in"><span class="toggle__knob" data-fm-layer="Toggle knob — Dine-in"></span></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Tables ===== -->
+  <section class="ref-group" data-fm-layer="Group — Tables">
+    <h2 class="ref-group__title" data-fm-layer="Group title — Tables">Data table</h2>
+    <p class="ref-group__note" data-fm-layer="Group note — Tables">One table pattern serves every list screen across cook and admin. Columns change; the pattern does not.</p>
+    <div class="panel panel--flush" data-fm-layer="Panel — Table">
+      <div class="panel__head" data-fm-layer="Panel head — Table">
+        <div data-fm-layer="Panel head text — Table">
+          <h3 class="panel__title" data-fm-layer="Panel title — Table">Today's orders</h3>
+          <p class="panel__sub" data-fm-layer="Panel sub — Table">Thursday, 11 September 2026</p>
+        </div>
+        <a class="panel__link" href="cook-orders.html" data-fm-layer="Link — All orders">View all orders</a>
+      </div>
+      <div class="table-wrap" data-fm-layer="Table wrap">
+        <table class="table" data-fm-layer="Table — Orders">
+          <thead data-fm-layer="Table head">
+            <tr data-fm-layer="Head row">
+              <th data-fm-layer="Head cell — Order">Order</th>
+              <th data-fm-layer="Head cell — Customer">Customer</th>
+              <th data-fm-layer="Head cell — Method">Method</th>
+              <th data-fm-layer="Head cell — Time">Time</th>
+              <th data-fm-layer="Head cell — Status">Status</th>
+              <th class="table__num" data-fm-layer="Head cell — Total">Total paid</th>
+            </tr>
+          </thead>
+          <tbody data-fm-layer="Table body">
+            <tr data-fm-layer="Row — 1042">
+              <td class="table__strong" data-fm-layer="Cell — 1042 number">#1042</td>
+              <td data-fm-layer="Cell — 1042 customer">
+                <span class="table__person" data-fm-layer="Person — Marisol">
+                  <span class="avatar" data-fm-layer="Avatar — MR"><img src="assets/avatars/marisol.jpg" alt="" data-fm-layer="Avatar photo — MR"></span>Marisol R.
+                </span>
+              </td>
+              <td data-fm-layer="Cell — 1042 method"><span class="pill pill--pickup" data-fm-layer="Pill — 1042 pickup"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Pill icon — 1042 pickup"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg><span data-fm-layer="Pill label — 1042 pickup">Pickup</span></span></td>
+              <td class="table__muted" data-fm-layer="Cell — 1042 time">5:30 – 6:00 PM</td>
+              <td data-fm-layer="Cell — 1042 status"><span class="pill pill--info" data-fm-layer="Pill — 1042 paid">Paid</span></td>
+              <td class="table__num table__strong" data-fm-layer="Cell — 1042 total">$41.86</td>
+            </tr>
+            <tr data-fm-layer="Row — 1041">
+              <td class="table__strong" data-fm-layer="Cell — 1041 number">#1041</td>
+              <td data-fm-layer="Cell — 1041 customer">
+                <span class="table__person" data-fm-layer="Person — Daniel">
+                  <span class="avatar" data-fm-layer="Avatar — DK"><img src="assets/avatars/daniel.jpg" alt="" data-fm-layer="Avatar photo — DK"></span>Daniel K.
+                </span>
+              </td>
+              <td data-fm-layer="Cell — 1041 method"><span class="pill pill--dinein" data-fm-layer="Pill — 1041 dine-in"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Pill icon — 1041 dine-in"><path d="M6.5 3.5v7a2.5 2.5 0 0 0 5 0v-7M9 3.5v17"/><path d="M16.5 3.5c-1.4 1.6-1.8 4-1.4 6.3.2 1 1 1.7 2 1.7h1.4V3.5"/><path d="M18.5 11.5v9"/></svg><span data-fm-layer="Pill label — 1041 dine-in">Dine-in</span></span></td>
+              <td class="table__muted" data-fm-layer="Cell — 1041 time">7:00 PM · 2 guests</td>
+              <td data-fm-layer="Cell — 1041 status"><span class="pill pill--warn" data-fm-layer="Pill — 1041 pending">Pending acceptance</span></td>
+              <td class="table__num table__strong" data-fm-layer="Cell — 1041 total">$63.20</td>
+            </tr>
+            <tr data-fm-layer="Row — 1040">
+              <td class="table__strong" data-fm-layer="Cell — 1040 number">#1040</td>
+              <td data-fm-layer="Cell — 1040 customer">
+                <span class="table__person" data-fm-layer="Person — Aisha">
+                  <span class="avatar" data-fm-layer="Avatar — AB"><img src="assets/avatars/aisha.jpg" alt="" data-fm-layer="Avatar photo — AB"></span>Aisha B.
+                </span>
+              </td>
+              <td data-fm-layer="Cell — 1040 method"><span class="pill pill--pickup" data-fm-layer="Pill — 1040 pickup"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Pill icon — 1040 pickup"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg><span data-fm-layer="Pill label — 1040 pickup">Pickup</span></span></td>
+              <td class="table__muted" data-fm-layer="Cell — 1040 time">4:00 – 4:30 PM</td>
+              <td data-fm-layer="Cell — 1040 status"><span class="pill pill--ok" data-fm-layer="Pill — 1040 ready">Ready</span></td>
+              <td class="table__num table__strong" data-fm-layer="Cell — 1040 total">$28.44</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Empty states ===== -->
+  <section class="ref-group" data-fm-layer="Group — Empty">
+    <h2 class="ref-group__title" data-fm-layer="Group title — Empty">Empty states</h2>
+    <p class="ref-group__note" data-fm-layer="Group note — Empty">Day one is the most common state at launch — around 60 licensed kitchens across both counties. These screens have to look deliberate, not broken.</p>
+    <div class="grid grid--2" data-fm-layer="Empty grid">
+      <div class="panel" data-fm-layer="Panel — Empty orders">
+        <div class="empty" data-fm-layer="Empty — Orders">
+          <svg class="empty__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Empty bag"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg>
+          <p class="empty__title" data-fm-layer="Empty title — Orders">No orders yet today</p>
+          <p class="empty__body" data-fm-layer="Empty body — Orders">Orders appear here the moment a customer pays. Your next pickup window opens at 4:00 PM.</p>
+        </div>
+      </div>
+      <div class="panel" data-fm-layer="Panel — Caught up">
+        <div class="empty" data-fm-layer="Empty — Needs your attention">
+          <svg class="empty__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Caught up"><circle cx="12" cy="12" r="8.5"/><path d="m8.5 12.2 2.4 2.4 4.6-4.9"/></svg>
+          <p class="empty__title" data-fm-layer="Empty title — Caught up">You're all caught up.</p>
+          <p class="empty__body" data-fm-layer="Empty body — Caught up">Dashboard "Needs your attention" rail when there are no dine-in requests, unread messages, orders, compliance or Stripe issues waiting on you.</p>
+        </div>
+      </div>
+      <div class="panel" data-fm-layer="Panel — Empty search">
+        <div class="empty" data-fm-layer="Empty — Search">
+          <svg class="empty__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Empty search"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+          <p class="empty__title" data-fm-layer="Empty title — Search">No Hearths within 5 miles of 92104</p>
+          <p class="empty__body" data-fm-layer="Empty body — Search">Hearthfare is serving San Diego and Los Angeles, with more counties and communities to come. Try widening your search.</p>
+          <div class="empty__action" data-fm-layer="Empty action — Search">
+            <button class="btn btn--outline btn--sm" type="button" data-fm-layer="Button — Widen"><span class="btn__label" data-fm-layer="Label — Widen">Search within 15 miles</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Stepper ===== -->
+  <section class="ref-group" data-fm-layer="Group — Stepper">
+    <h2 class="ref-group__title" data-fm-layer="Group title — Stepper">Licensing stepper</h2>
+    <p class="ref-group__note" data-fm-layer="Group note — Stepper">Ten steps, auto-saved. Drives the whole licensing wizard; done / current / upcoming are the only three states.</p>
+    <div class="grid grid--2" data-fm-layer="Stepper grid">
+      <div class="panel" data-fm-layer="Panel — Stepper">
+        <div class="panel__body panel__body--tight" data-fm-layer="Panel body — Stepper">
+          <nav class="stepper" data-fm-layer="Stepper">
+            <span class="stepper__item stepper__item--done" data-fm-layer="Step — Location">
+              <span class="stepper__mark" data-fm-layer="Mark — Location"><svg class="stepper__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Check location"><path d="m4 12.5 5 5L20 6.5"/></svg></span>Location
+            </span>
+            <span class="stepper__item stepper__item--done" data-fm-layer="Step — Business">
+              <span class="stepper__mark" data-fm-layer="Mark — Business"><svg class="stepper__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Check business"><path d="m4 12.5 5 5L20 6.5"/></svg></span>Business
+            </span>
+            <span class="stepper__item stepper__item--done" data-fm-layer="Step — Owner">
+              <span class="stepper__mark" data-fm-layer="Mark — Owner"><svg class="stepper__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Check owner"><path d="m4 12.5 5 5L20 6.5"/></svg></span>Owner
+            </span>
+            <span class="stepper__item stepper__item--on" data-fm-layer="Step — Kitchen">
+              <span class="stepper__mark" data-fm-layer="Mark — Kitchen">4</span>Kitchen
+            </span>
+            <span class="stepper__item" data-fm-layer="Step — Operations"><span class="stepper__mark" data-fm-layer="Mark — Operations">5</span>Operations &amp; hours</span>
+            <span class="stepper__item" data-fm-layer="Step — Menu"><span class="stepper__mark" data-fm-layer="Mark — Menu">6</span>Menu</span>
+            <span class="stepper__item" data-fm-layer="Step — Documents"><span class="stepper__mark" data-fm-layer="Mark — Documents">7</span>Documents</span>
+            <span class="stepper__item" data-fm-layer="Step — Review"><span class="stepper__mark" data-fm-layer="Mark — Review">8</span>Review</span>
+            <span class="stepper__item" data-fm-layer="Step — Submit"><span class="stepper__mark" data-fm-layer="Mark — Submit">9</span>Submit</span>
+            <span class="stepper__item" data-fm-layer="Step — Complete"><span class="stepper__mark" data-fm-layer="Mark — Complete">10</span>Complete</span>
+          </nav>
+        </div>
+      </div>
+      <div class="ref-stack" data-fm-layer="Progress stack">
+        <div class="panel" data-fm-layer="Panel — Progress">
+          <div class="panel__body" data-fm-layer="Panel body — Progress">
+            <p class="switch-row__title" data-fm-layer="Progress title">Step 4 of 10 · Kitchen</p>
+            <p class="switch-row__body" style="margin-bottom:0.875rem;" data-fm-layer="Progress body">Saved automatically. You can leave and pick this up any time.</p>
+            <div class="progress" data-fm-layer="Progress bar">
+              <span class="progress__bar" style="width:40%;" data-fm-layer="Progress fill"></span>
+            </div>
+          </div>
+        </div>
+        <div class="panel" data-fm-layer="Panel — Countdown">
+          <div class="panel__body" data-fm-layer="Panel body — Countdown">
+            <p class="metric__label" data-fm-layer="Countdown label">Permit expires in</p>
+            <p class="metric__value" data-fm-layer="Countdown value">24 days</p>
+            <p class="metric__note" data-fm-layer="Countdown note">5 October 2026 · San Diego County Department of Environmental Health and Quality</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Money ===== -->
+  <section class="ref-group" data-fm-layer="Group — Money">
+    <h2 class="ref-group__title" data-fm-layer="Group title — Money">Fee breakdown</h2>
+    <p class="ref-group__note" data-fm-layer="Group note — Money">Four lines, exactly as the client's V4 copy specifies: menu price, sales tax calculated automatically from the Hearth's location, one Hearthfare platform fee, total. The info control copy is Company-approved and must not be reworded (HF-MVP-100).</p>
+    <div class="grid grid--2" data-fm-layer="Money grid">
+      <div class="panel" data-fm-layer="Panel — Money">
+        <div class="panel__body" data-fm-layer="Panel body — Money">
+          <div class="money" data-fm-layer="Money">
+            <div class="money__row" data-fm-layer="Money row — Subtotal">
+              <span class="money__label" data-fm-layer="Money label — Subtotal">Subtotal</span>
+              <span class="money__value" data-fm-layer="Money value — Subtotal">$38.00</span>
+            </div>
+            <div class="money__row" data-fm-layer="Money row — Tax">
+              <span class="money__label" data-fm-layer="Money label — Tax">Sales tax (7.75%)</span>
+              <span class="money__value" data-fm-layer="Money value — Tax">$2.95</span>
+            </div>
+            <div class="money__row" data-fm-layer="Money row — Fee">
+              <span class="money__label" data-fm-layer="Money label — Fee">
+                Hearthfare platform fee
+                <span class="money__info" data-fm-layer="Money info — Fee">i</span>
+              </span>
+              <span class="money__value" data-fm-layer="Money value — Fee">$2.50</span>
+            </div>
+            <div class="money__row money__row--total" data-fm-layer="Money row — Total">
+              <span class="money__label" data-fm-layer="Money label — Total">Total</span>
+              <span class="money__value" data-fm-layer="Money value — Total">$43.45</span>
+            </div>
+            <p class="money__note" data-fm-layer="Money note">This fee helps support the operation, technology, and services provided by Hearthfare. No tip is required.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel" data-fm-layer="Panel — Cook payout">
+        <div class="panel__head" data-fm-layer="Panel head — Payout">
+          <h3 class="panel__title" data-fm-layer="Panel title — Payout">What the cook receives</h3>
+        </div>
+        <div class="panel__body" data-fm-layer="Panel body — Payout">
+          <div class="money" data-fm-layer="Money — Payout">
+            <div class="money__row" data-fm-layer="Payout row — Menu">
+              <span class="money__label" data-fm-layer="Payout label — Menu">Menu price</span>
+              <span class="money__value" data-fm-layer="Payout value — Menu">$38.00</span>
+            </div>
+            <div class="money__row" data-fm-layer="Payout row — Tax">
+              <span class="money__label" data-fm-layer="Payout label — Tax">Sales tax collected</span>
+              <span class="money__value" data-fm-layer="Payout value — Tax">$2.95</span>
+            </div>
+            <div class="money__row" data-fm-layer="Payout row — Fee">
+              <span class="money__label" data-fm-layer="Payout label — Fee">Hearthfare transaction fee</span>
+              <span class="money__value" data-fm-layer="Payout value — Fee">$0.00</span>
+            </div>
+            <div class="money__row money__row--total" data-fm-layer="Payout row — Total">
+              <span class="money__label" data-fm-layer="Payout label — Total">Paid to your Stripe account</span>
+              <span class="money__value" data-fm-layer="Payout value — Total">$40.95</span>
+            </div>
+            <p class="money__note" data-fm-layer="Payout note">You pay no Hearthfare transaction fee for your first 12 months — until 11 September 2027. After that it is 3% of the order subtotal. Stripe's own processing fee is deducted by Stripe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Modal ===== -->
+  <section class="ref-group" data-fm-layer="Group — Modal">
+    <h2 class="ref-group__title" data-fm-layer="Group title — Modal">Modal</h2>
+    <p class="ref-group__note" data-fm-layer="Group note — Modal">Rendered open, because a closed modal does not survive the Figma import. Used for confirmations, decline reasons and refunds.</p>
+    <div class="modal-scrim" style="border-radius:1rem;" data-fm-layer="Modal scrim">
+      <div class="modal" data-fm-layer="Modal">
+        <div class="modal__head" data-fm-layer="Modal head">
+          <div data-fm-layer="Modal head text">
+            <h3 class="modal__title" data-fm-layer="Modal title">Decline this dine-in request?</h3>
+            <p class="modal__sub" data-fm-layer="Modal sub">Daniel K. · 2 guests · tonight at 7:00 PM</p>
+          </div>
+        </div>
+        <div class="modal__body" data-fm-layer="Modal body">
+          <div class="field" data-fm-layer="Field — Decline reason">
+            <label class="field__label" for="ref-decline" data-fm-layer="Label — Decline reason">Let Daniel know why (optional)</label>
+            <textarea class="input input--area" id="ref-decline" placeholder="We are fully booked for that seating tonight." data-fm-layer="Textarea — Decline reason"></textarea>
+          </div>
+          <p class="money__note" style="margin-top:0.875rem;" data-fm-layer="Modal note">Declining releases the hold on Daniel's card straight away. He is charged nothing — not even the Hearthfare platform fee — and the seats go back on sale.</p>
+        </div>
+        <div class="modal__foot" data-fm-layer="Modal foot">
+          <button class="btn btn--outline" type="button" data-fm-layer="Button — Keep request"><span class="btn__label" data-fm-layer="Label — Keep request">Keep request</span></button>
+          <button class="btn btn--danger" type="button" data-fm-layer="Button — Confirm decline"><span class="btn__label" data-fm-layer="Label — Confirm decline">Decline request</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Tabs ===== -->
+  <section class="ref-group" data-fm-layer="Group — Tabs">
+    <h2 class="ref-group__title" data-fm-layer="Group title — Tabs">Tabs</h2>
+    <p class="ref-group__note" data-fm-layer="Group note — Tabs">Section navigation inside a screen — orders, documents, admin queues.</p>
+    <div class="panel" data-fm-layer="Panel — Tabs">
+      <div class="panel__body" data-fm-layer="Panel body — Tabs">
+        <nav class="tabs" data-fm-layer="Tabs">
+          <span class="tab tab--on" data-fm-layer="Tab — All">All orders<span class="tab__count" data-fm-layer="Count — All">57</span></span>
+          <span class="tab" data-fm-layer="Tab — Needs action">Needs action<span class="tab__count" data-fm-layer="Count — Needs action">3</span></span>
+          <span class="tab" data-fm-layer="Tab — Pickup">Pickup<span class="tab__count" data-fm-layer="Count — Pickup">41</span></span>
+          <span class="tab" data-fm-layer="Tab — Dine-in">Dine-in<span class="tab__count" data-fm-layer="Count — Dine-in">16</span></span>
+          <span class="tab" data-fm-layer="Tab — Refunded">Refunded<span class="tab__count" data-fm-layer="Count — Refunded">1</span></span>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="app.js"></script>
+<script src="../role-switch.js"></script>
+</body>
+</html>

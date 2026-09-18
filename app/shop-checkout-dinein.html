@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request dine-in — Hearthfare</title>
+<link rel="icon" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body class="page-app" data-fm-layer="Dine-in checkout page">
+
+<header class="site-header" data-fm-layer="Header">
+  <a class="brand" href="../index.html" data-fm-layer="Brand">
+    <img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt="" data-fm-layer="Brand mark">
+    <span class="brand__text" data-fm-layer="Brand text">
+      <span class="brand__name" data-fm-layer="Brand name">hearthfare</span>
+      <span class="brand__tagline" data-fm-layer="Brand tagline">Homemade Meals. Local Connections.</span>
+    </span>
+  </a>
+  <nav class="site-nav" aria-label="Primary" data-fm-layer="Main nav">
+    <ul class="site-nav__list" data-fm-layer="Nav list">
+      <li class="site-nav__item" data-fm-layer="Nav item — Secure"><span class="site-nav__link" data-fm-layer="Nav label — Secure">Secure checkout</span></li>
+    </ul>
+  </nav>
+  <div class="header-actions" data-fm-layer="Header actions">
+    <a class="login-link" href="customer-orders.html" data-fm-layer="Link — Your account">Your account</a>
+    <a class="avatar" href="customer-orders.html" aria-label="Your account" data-fm-layer="Avatar — Marisol"><img src="assets/avatars/marisol.jpg" alt="" data-fm-layer="Avatar photo — Marisol"></a>
+  </div>
+</header>
+
+<main class="sf-body" style="padding-top:var(--space-6);" data-fm-layer="Checkout body">
+
+  <div data-fm-layer="Checkout content">
+
+    <div class="page-head" style="margin-bottom:var(--space-5);" data-fm-layer="Page head">
+      <div class="page-head__text" data-fm-layer="Page head text">
+        <a class="checkout-back" href="shop-storefront.html#dinein" data-fm-layer="Link — Back to storefront"><svg class="checkout-back__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Icon — Back"><path d="M19 12H5m6-6-6 6 6 6"/></svg><span data-fm-layer="Label — Back to storefront">Back to Li&#39;s Hearth</span></a>
+        <h1 class="page-head__title" data-fm-layer="Page title">Request dine-in</h1>
+        <p class="page-head__sub" data-fm-layer="Page sub">Asking <strong>Li's Hearth</strong> for 2 seats tonight at 7:00 PM.</p>
+      </div>
+    </div>
+
+    <div class="banner banner--warn" style="margin-bottom:var(--space-5);" data-fm-layer="Banner — Pending until accepted">
+      <svg class="banner__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 1.8"/></svg>
+      <div class="banner__text">
+        <p class="banner__title">Pending until Li accepts</p>
+        <p class="banner__body">This is a request, not a booking. Your card is authorized now but not charged. Li has 15 minutes to answer. If Li declines or doesn't answer in time, the hold is released and you are not charged.</p>
+      </div>
+    </div>
+
+    <!-- Fulfillment -->
+    <section class="panel" style="margin-bottom:var(--space-5);" data-fm-layer="Panel — Fulfillment">
+      <div class="panel__head" data-fm-layer="Panel head — Fulfillment">
+        <div data-fm-layer="Panel head text — Fulfillment">
+          <h2 class="panel__title" data-fm-layer="Panel title — Fulfillment">How you are getting it</h2>
+          <p class="panel__sub" data-fm-layer="Panel sub — Fulfillment">Li offers both pickup and dine-in.</p>
+        </div>
+        <a class="panel__link" href="shop-storefront.html#dinein" data-fm-layer="Link — Change">Change</a>
+      </div>
+      <div class="panel__body" data-fm-layer="Panel body — Fulfillment">
+        <div class="btn-row" style="margin-bottom:var(--space-4);" data-fm-layer="Fulfillment chips">
+          <a class="chip" href="shop-checkout.html" data-fm-layer="Chip — Pickup off">
+            <svg class="chip__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/><path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/></svg>
+            Pickup
+          </a>
+          <a class="chip chip--on" href="shop-checkout-dinein.html" aria-current="page" data-fm-layer="Chip — Dine-in on">
+            <svg class="chip__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5v7a2.5 2.5 0 0 0 5 0v-7M9 3.5v17"/><path d="M16.5 3.5c-1.4 1.6-1.8 4-1.4 6.3.2 1 1 1.7 2 1.7h1.4V3.5"/><path d="M18.5 11.5v9"/></svg>
+            Dine-in
+          </a>
+        </div>
+
+        <span class="slot slot--on" data-fm-layer="Slot — Requested">
+          <span class="slot__time" data-fm-layer="Slot time — Requested">Tonight, Thursday 11 Sep · 7:00 – 9:00 PM</span>
+          <span class="slot__left" data-fm-layer="Slot left — Requested">2 seats left</span>
+        </span>
+
+        <div class="field" style="margin-top:var(--space-4);max-width:12rem;" data-fm-layer="Field — Guests">
+          <label class="field__label" for="co-guests">Guests</label>
+          <select class="input input--select" id="co-guests"><option>1 guest</option><option selected>2 guests</option></select>
+        </div>
+
+        <p class="money__note" style="margin-top:0.875rem;" data-fm-layer="Dine-in instructions">Four chairs at one table, so you may be sitting with neighbors you have not met yet. Knock at the front door when you arrive. Please arrive on time — dinner is served together.</p>
+      </div>
+    </section>
+
+    <!-- Your details -->
+    <section class="panel" style="margin-bottom:var(--space-5);" data-fm-layer="Panel — Details">
+      <div class="panel__head" data-fm-layer="Panel head — Details">
+        <div data-fm-layer="Panel head text — Details">
+          <h2 class="panel__title" data-fm-layer="Panel title — Details">Your details</h2>
+          <p class="panel__sub" data-fm-layer="Panel sub — Details">Li uses these to reach you about your request.</p>
+        </div>
+      </div>
+      <div class="panel__body" data-fm-layer="Panel body — Details">
+        <div class="form" data-fm-layer="Form — Details">
+          <div class="field-row field-row--2" data-fm-layer="Field row — Name">
+            <div class="field"><label class="field__label" for="co-first">First name</label><input class="input" id="co-first" type="text" value="Marisol"></div>
+            <div class="field"><label class="field__label" for="co-last">Last name</label><input class="input" id="co-last" type="text" value="Ramirez"></div>
+          </div>
+          <div class="field-row field-row--2" data-fm-layer="Field row — Contact">
+            <div class="field"><label class="field__label" for="co-mobile">Mobile number</label><input class="input" id="co-mobile" type="tel" value="(619) 555-0142"><p class="field__hint">You get a message the moment Li answers.</p></div>
+            <div class="field"><label class="field__label" for="co-email">Email</label><input class="input" id="co-email" type="email" value="marisol.r@example.com"></div>
+          </div>
+          <div class="field" data-fm-layer="Field — Notes">
+            <label class="field__label" for="co-notes">Notes for Li <span class="field__hint">(allergies, arrival — optional)</span></label>
+            <textarea class="input input--area" id="co-notes">We may be five minutes late — parking.</textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment -->
+    <section class="panel" style="margin-bottom:var(--space-5);" data-fm-layer="Panel — Payment">
+      <div class="panel__head" data-fm-layer="Panel head — Payment">
+        <div data-fm-layer="Panel head text — Payment">
+          <h2 class="panel__title" data-fm-layer="Panel title — Payment">Payment</h2>
+          <p class="panel__sub" data-fm-layer="Panel sub — Payment">Processed securely by Stripe. Authorized now, charged only if Li accepts.</p>
+        </div>
+        <span class="pill pill--info" data-fm-layer="Pill — Stripe">Stripe</span>
+      </div>
+      <div class="panel__body" data-fm-layer="Panel body — Payment">
+        <div class="form" data-fm-layer="Form — Payment">
+          <div class="field"><label class="field__label" for="co-card">Card number</label><input class="input" id="co-card" type="text" value="4242 4242 4242 4242"></div>
+          <div class="field-row field-row--2">
+            <div class="field"><label class="field__label" for="co-exp">Expiry</label><input class="input" id="co-exp" type="text" value="04 / 29"></div>
+            <div class="field"><label class="field__label" for="co-cvc">Security code</label><input class="input" id="co-cvc" type="text" value="•••"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consents -->
+    <section class="panel" data-fm-layer="Panel — Consents">
+      <div class="panel__head" data-fm-layer="Panel head — Consents">
+        <div data-fm-layer="Panel head text — Consents">
+          <h2 class="panel__title" data-fm-layer="Panel title — Consents">Before you request</h2>
+          <p class="panel__sub" data-fm-layer="Panel sub — Consents">Each box must be ticked. We record what you accepted, and when.</p>
+        </div>
+      </div>
+      <div class="panel__body" data-fm-layer="Panel body — Consents">
+        <div class="consents" data-fm-layer="Consents">
+          <label class="consent"><input class="consent__box" type="checkbox" form="checkout" required checked><span class="consent__text">I understand this food is <strong>made in a home kitchen</strong> that is permitted and inspected by San Diego County, not in a commercial restaurant kitchen.</span></label>
+          <label class="consent"><input class="consent__box" type="checkbox" form="checkout" required checked><span class="consent__text">I have read Li's <a href="shop-storefront.html#policies">allergy notice</a> and accept that no dish can be guaranteed free of any allergen.</span></label>
+          <label class="consent"><input class="consent__box" type="checkbox" form="checkout" required><span class="consent__text">I accept Li's <a href="shop-storefront.html#policies">dine-in, cancellation and refund policies</a> for this request.</span></label>
+          <label class="consent"><input class="consent__box" type="checkbox" form="checkout" required><span class="consent__text">I accept the Hearthfare <a href="#">transaction terms and assumption of risk</a> for home-kitchen food.</span></label>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Summary -->
+  <aside class="cart-panel" data-fm-layer="Summary panel">
+    <div class="panel" data-fm-layer="Panel — Summary">
+      <div class="panel__head" data-fm-layer="Panel head — Summary">
+        <h2 class="panel__title">Your request</h2>
+        <span class="pill pill--dinein">Dine-in · 2 guests</span>
+      </div>
+      <div class="panel__body" data-fm-layer="Panel body — Summary">
+        <div class="cart-method" data-fm-layer="Summary method">
+          <span class="cart-method__when">Tonight · 7:00 PM · 2 guests</span>
+          <span class="pill pill--warn">Pending acceptance</span>
+        </div>
+        <div style="margin-top:0.5rem;">
+          <div class="cart-line"><img class="cart-line__thumb" src="assets/dish-birria.png" alt="" data-fm-layer="Line photo — Birria"><span class="cart-line__text"><span class="cart-line__name">Birria plate</span><span class="cart-line__meta">Regular</span><span class="cart-line__qty">2 &times; $14.00</span></span><span class="cart-line__price">$28.00</span></div>
+          <div class="cart-line"><img class="cart-line__thumb" src="assets/dish-tamales.jpg" alt="" data-fm-layer="Line photo — Tamales"><span class="cart-line__text"><span class="cart-line__name">Tamales, by the dozen</span><span class="cart-line__meta">Chicken in salsa verde</span><span class="cart-line__qty">1 &times; $26.00</span></span><span class="cart-line__price">$26.00</span></div>
+        </div>
+        <div class="money" style="margin-top:1.25rem;">
+          <div class="money__row"><span class="money__label">Subtotal</span><span class="money__value">$54.00</span></div>
+          <div class="money__row"><span class="money__label">Sales tax (7.75%)</span><span class="money__value">$4.19</span></div>
+          <div class="money__row"><span class="money__label">Hearthfare platform fee <span class="money__info">i</span></span><span class="money__value">$3.24</span></div>
+          <div class="money__row money__row--total"><span class="money__label">Total if accepted</span><span class="money__value">$61.43</span></div>
+        </div>
+        <p class="money__note" style="margin-top:0.875rem;">This fee helps support the operation, technology, and services provided by Hearthfare. No tip is required.</p>
+        <!-- The consents above join this form via form="checkout"; `required` stops an unticked submit. -->
+        <form id="checkout" action="shop-dinein-status.html" style="margin-top:1.25rem;">
+          <button class="btn btn--primary btn--block" type="submit" data-fm-layer="Button — Request dine-in"><span class="btn__label">Request dine-in</span></button>
+        </form>
+        <p class="money__note money__note--bare" style="margin-top:0.875rem;">$61.43 is held on your card, not charged. It is charged only if Li accepts; if the request is declined or expires, the hold is released.</p>
+      </div>
+    </div>
+  </aside>
+
+</main>
+
+<footer class="site-footer site-footer--bar-only" data-fm-layer="Footer">
+  <div class="site-footer__bar" data-fm-layer="Footer bar">
+    <p class="site-footer__copy" data-fm-layer="Footer copy">© 2026 Hearthfare. All rights reserved.</p>
+    <p class="site-footer__made" data-fm-layer="Footer made">Made for home cooks in San Diego and Los Angeles.</p>
+  </div>
+</footer>
+
+<script src="../role-switch.js"></script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hearthfare — What's cooking this week</title>
+<link rel="icon" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" data-fm-layer="Header">
+  <a class="brand" href="index.html" data-fm-layer="Brand">
+    <img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt="" data-fm-layer="Brand mark">
+    <span class="brand__text" data-fm-layer="Brand text">
+      <span class="brand__name" data-fm-layer="Brand name">hearthfare</span>
+      <span class="brand__tagline" data-fm-layer="Brand tagline">Homemade Meals. Local Connections.</span>
+    </span>
+  </a>
+
+  <nav class="site-nav" aria-label="Primary" data-fm-layer="Main nav">
+    <ul class="site-nav__list" data-fm-layer="Nav list">
+      <li class="site-nav__item" data-fm-layer="Nav item — How it works"><a class="site-nav__link" href="how-it-works.html" data-fm-layer="Nav label — How it works">How it works</a></li>
+      <li class="site-nav__item" data-fm-layer="Nav item — Why Hearthfare"><a class="site-nav__link" href="why-hearthfare.html" data-fm-layer="Nav label — Why Hearthfare">Why Hearthfare</a></li>
+      <li class="site-nav__item" data-fm-layer="Nav item — What's cooking"><a class="site-nav__link" href="whats-cooking.html" aria-current="page" data-fm-layer="Nav label — What's cooking">What's cooking</a></li>
+      <li class="site-nav__item" data-fm-layer="Nav item — For cooks"><a class="site-nav__link" href="for-cooks.html" data-fm-layer="Nav label — For cooks">For cooks</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-actions" data-fm-layer="Header actions">
+    <a class="cart" href="app/shop-cart.html" aria-label="Cart, 0 items" data-fm-layer="Cart button">
+      <svg class="cart__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Cart icon">
+        <path d="M5.5 7.5h13l-1.1 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8Z"/>
+        <path d="M9 7.5V6a3 3 0 0 1 6 0v1.5"/>
+      </svg>
+      <span class="cart__badge" data-fm-layer="Cart badge">0</span>
+    </a>
+    <a class="login-link" href="login.html" data-fm-layer="Log in link">Log in</a>
+    <a class="btn btn--primary" href="signup.html" data-fm-layer="Sign up button"><span class="btn__label" data-fm-layer="Sign up label">Sign up</span></a>
+  </div>
+</header>
+
+<main data-fm-layer="Page">
+
+  <!-- 1. Hero -->
+  <section class="hiw-hero hiw-hero--cooking" data-fm-layer="What's cooking hero">
+    <div class="hiw-hero__inner" data-fm-layer="Hero inner">
+      <div class="hiw-hero__content" data-fm-layer="Hero content">
+        <p class="eyebrow eyebrow--light hiw-hero__eyebrow" data-fm-layer="Hero eyebrow">FROM THE HEARTHS</p>
+
+        <h1 class="hiw-hero__title" data-fm-layer="Hero title">
+          <span class="hiw-hero__title-line" data-fm-layer="Hero title line 1">Know who&rsquo;s cooking</span>
+          <span class="hiw-hero__title-line hiw-hero__title-line--accent" data-fm-layer="Hero title line 2">what, this week.</span>
+        </h1>
+
+        <p class="hiw-hero__lede" data-fm-layer="Hero lede">Discover new Hearths near you, meet the cooks behind them, and see what&rsquo;s cooking this week. Find your next homemade meal and new local favorites.</p>
+
+        <form class="zip-search hiw-hero__search" action="app/shop-search.html" data-fm-layer="ZIP search">
+          <label class="zip-search__label" for="zip" data-fm-layer="ZIP label">Enter your Address or ZIP Code</label>
+          <svg class="zip-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="ZIP pin icon">
+            <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/>
+            <circle cx="12" cy="10" r="2.6"/>
+          </svg>
+          <input class="zip-search__input" id="zip" name="zip" type="text" autocomplete="street-address" placeholder="Enter your Address or ZIP Code" data-fm-layer="ZIP input">
+          <button class="btn btn--primary zip-search__button" type="submit" data-fm-layer="Find food button"><span class="btn__label" data-fm-layer="Find food label">Find food near you</span></button>
+        </form>
+
+        <p class="hero__trust hiw-hero__trust" data-fm-layer="Hero trust note">
+          <svg class="hero__trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-fm-layer="Hero trust icon">
+            <path d="M12 3 5 6v5.6c0 4.3 2.9 7.6 7 9.4 4.1-1.8 7-5.1 7-9.4V6Z"/>
+            <path d="m9.2 12.2 2 2 3.6-4"/>
+          </svg>
+          <span class="hero__trust-text" data-fm-layer="Hero trust text">Currently available in San Diego and Los Angeles, with more to come &mdash; every Hearth is county-licensed and verified by Hearthfare.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Trust marks strip -->
+  <section class="marks" aria-label="What every Hearth carries" data-fm-layer="Trust marks strip">
+    <ul class="marks__list" data-fm-layer="Trust marks list">
+      <li class="mark" data-fm-layer="Mark — Licensed Kitchens">
+        <img class="mark__icon" src="assets/icons/kitchen.svg" alt="">
+        <span class="mark__label" data-fm-layer="Mark label — Licensed Kitchens">County-licensed kitchens</span>
+      </li>
+      <li class="mark" data-fm-layer="Mark — Verified">
+        <img class="mark__icon" src="assets/icons/verified.svg" alt="">
+        <span class="mark__label" data-fm-layer="Mark label — Verified">Verified by Hearthfare</span>
+      </li>
+      <li class="mark" data-fm-layer="Mark — Pickup or dine-in">
+        <img class="mark__icon" src="assets/icons/pickup.svg" alt="">
+        <span class="mark__label" data-fm-layer="Mark label — Pickup or dine-in">Pickup or dine-in</span>
+      </li>
+      <li class="mark" data-fm-layer="Mark — Reviews">
+        <img class="mark__icon" src="assets/icons/reviews.svg" alt="">
+        <span class="mark__label" data-fm-layer="Mark label — Reviews">Reviews from real orders</span>
+      </li>
+      <li class="mark" data-fm-layer="Mark — Payments">
+        <img class="mark__icon" src="assets/icons/card.svg" alt="">
+        <span class="mark__label" data-fm-layer="Mark label — Payments">Secure Stripe payments</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 3. Browse — what's cooking this week -->
+  <section class="browse" id="this-week" data-fm-layer="Browse this week">
+    <p class="eyebrow browse__eyebrow" data-fm-layer="Browse eyebrow">THIS WEEK NEAR YOU</p>
+    <h2 class="section-title browse__title" data-fm-layer="Browse title">
+      <span class="section-title__lead" data-fm-layer="Browse title lead">What&rsquo;s cooking</span>&nbsp;<span class="section-title__accent" data-fm-layer="Browse title accent">this week</span>
+    </h2>
+
+    <ul class="filters" aria-label="Filter meals" data-fm-layer="Filter chips">
+      <li data-fm-layer="Filter — All"><a class="chip" href="#this-week" aria-current="true" data-fm-layer="Filter label — All">All Hearths</a></li>
+      <li data-fm-layer="Filter — Pickup"><a class="chip" href="#this-week" data-fm-layer="Filter label — Pickup">Pickup</a></li>
+      <li data-fm-layer="Filter — Dine-in"><a class="chip" href="#this-week" data-fm-layer="Filter label — Dine-in">Dine-in</a></li>
+      <li data-fm-layer="Filter — Available today"><a class="chip" href="#this-week" data-fm-layer="Filter label — Available today">Available today</a></li>
+      <li data-fm-layer="Filter — San Diego"><a class="chip" href="#this-week" data-fm-layer="Filter label — San Diego">San Diego</a></li>
+      <li data-fm-layer="Filter — Los Angeles"><a class="chip" href="#this-week" data-fm-layer="Filter label — Los Angeles">Los Angeles</a></li>
+      <li data-fm-layer="Filter — Top rated"><a class="chip" href="#this-week" data-fm-layer="Filter label — Top rated">Top rated</a></li>
+    </ul>
+
+    <ul class="meal-grid" data-fm-layer="Meal grid">
+      <li class="meal-card" data-fm-layer="Meal card — Birria">
+        <img class="meal-card__image" src="assets/dish-birria.png" width="331" height="191" alt="Birria and handmade tortillas" data-fm-layer="Meal image — Birria">
+        <p class="rating" data-fm-layer="Rating badge — Birria">
+          <svg class="rating__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3.6 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"/></svg>
+          <span class="rating__value" data-fm-layer="Rating value — Birria">4.9</span>
+        </p>
+        <span class="meal-card__body" data-fm-layer="Meal body — Birria">
+          <span class="meal-card__flag" data-fm-layer="Meal flag — Birria">VERIFIED HEARTH</span>
+          <h3 class="meal-card__title" data-fm-layer="Meal title — Birria">Birria &amp; handmade tortillas</h3>
+          <span class="meal-card__meta" data-fm-layer="Meal meta — Birria">
+            <svg class="meal-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span class="meal-card__place" data-fm-layer="Meal place — Birria">Rosa&rsquo;s Cocina &middot; San Diego</span>
+          </span>
+          <span class="meal-card__foot" data-fm-layer="Meal foot — Birria">
+            <span class="meal-card__price" data-fm-layer="Meal price — Birria">$16</span>
+            <span class="meal-card__slot" data-fm-layer="Meal slot — Birria">Pickup today &middot; 5&ndash;7pm</span>
+          </span>
+        </span>
+        <a class="meal-card__link" href="app/shop-storefront.html" aria-label="View Birria and handmade tortillas from Rosa&rsquo;s Cocina" data-fm-layer="Meal link — Birria"></a>
+      </li>
+
+      <li class="meal-card" data-fm-layer="Meal card — Sourdough">
+        <img class="meal-card__image" src="assets/dish-sourdough.png" width="331" height="191" alt="Sunday sourdough and pies" data-fm-layer="Meal image — Sourdough">
+        <p class="rating" data-fm-layer="Rating badge — Sourdough">
+          <svg class="rating__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3.6 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"/></svg>
+          <span class="rating__value" data-fm-layer="Rating value — Sourdough">4.8</span>
+        </p>
+        <span class="meal-card__body" data-fm-layer="Meal body — Sourdough">
+          <span class="meal-card__flag" data-fm-layer="Meal flag — Sourdough">VERIFIED HEARTH</span>
+          <h3 class="meal-card__title" data-fm-layer="Meal title — Sourdough">Sunday sourdough &amp; pies</h3>
+          <span class="meal-card__meta" data-fm-layer="Meal meta — Sourdough">
+            <svg class="meal-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span class="meal-card__place" data-fm-layer="Meal place — Sourdough">Mesa Bakehouse &middot; Chula Vista</span>
+          </span>
+          <span class="meal-card__foot" data-fm-layer="Meal foot — Sourdough">
+            <span class="meal-card__price" data-fm-layer="Meal price — Sourdough">$9</span>
+            <span class="meal-card__slot" data-fm-layer="Meal slot — Sourdough">Pickup Sun &middot; 9&ndash;11am</span>
+          </span>
+        </span>
+        <a class="meal-card__link" href="app/shop-storefront.html" aria-label="View Sunday sourdough and pies from Mesa Bakehouse" data-fm-layer="Meal link — Sourdough"></a>
+      </li>
+
+      <li class="meal-card" data-fm-layer="Meal card — Pho">
+        <img class="meal-card__image" src="assets/dish-pho.png" width="331" height="191" alt="Weeknight pho, family pot" data-fm-layer="Meal image — Pho">
+        <p class="rating" data-fm-layer="Rating badge — Pho">
+          <svg class="rating__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3.6 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"/></svg>
+          <span class="rating__value" data-fm-layer="Rating value — Pho">5.0</span>
+        </p>
+        <span class="meal-card__body" data-fm-layer="Meal body — Pho">
+          <span class="meal-card__flag" data-fm-layer="Meal flag — Pho">VERIFIED HEARTH</span>
+          <h3 class="meal-card__title" data-fm-layer="Meal title — Pho">Weeknight pho, family pot</h3>
+          <span class="meal-card__meta" data-fm-layer="Meal meta — Pho">
+            <svg class="meal-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span class="meal-card__place" data-fm-layer="Meal place — Pho">Nh&agrave; B&#7871;p Linh &middot; North Park</span>
+          </span>
+          <span class="meal-card__foot" data-fm-layer="Meal foot — Pho">
+            <span class="meal-card__price" data-fm-layer="Meal price — Pho">$18</span>
+            <span class="meal-card__slot" data-fm-layer="Meal slot — Pho">Dine-in Thu &middot; 6pm</span>
+          </span>
+        </span>
+        <a class="meal-card__link" href="app/shop-storefront.html" aria-label="View weeknight pho from Nh&agrave; B&#7871;p Linh" data-fm-layer="Meal link — Pho"></a>
+      </li>
+
+      <li class="meal-card" data-fm-layer="Meal card — Biryani">
+        <img class="meal-card__image" src="assets/dish-biryani.png" width="331" height="191" alt="Hyderabadi dum biryani" data-fm-layer="Meal image — Biryani">
+        <p class="rating" data-fm-layer="Rating badge — Biryani">
+          <svg class="rating__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3.6 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"/></svg>
+          <span class="rating__value" data-fm-layer="Rating value — Biryani">4.9</span>
+        </p>
+        <span class="meal-card__body" data-fm-layer="Meal body — Biryani">
+          <span class="meal-card__flag" data-fm-layer="Meal flag — Biryani">VERIFIED HEARTH</span>
+          <h3 class="meal-card__title" data-fm-layer="Meal title — Biryani">Hyderabadi dum biryani</h3>
+          <span class="meal-card__meta" data-fm-layer="Meal meta — Biryani">
+            <svg class="meal-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span class="meal-card__place" data-fm-layer="Meal place — Biryani">Anjali&rsquo;s Kitchen &middot; Kearny Mesa</span>
+          </span>
+          <span class="meal-card__foot" data-fm-layer="Meal foot — Biryani">
+            <span class="meal-card__price" data-fm-layer="Meal price — Biryani">$17</span>
+            <span class="meal-card__slot" data-fm-layer="Meal slot — Biryani">Pickup Fri &middot; 5&ndash;8pm</span>
+          </span>
+        </span>
+        <a class="meal-card__link" href="app/shop-storefront.html" aria-label="View Hyderabadi dum biryani from Anjali&rsquo;s Kitchen" data-fm-layer="Meal link — Biryani"></a>
+      </li>
+
+      <li class="meal-card" data-fm-layer="Meal card — Pozole">
+        <img class="meal-card__image" src="assets/dish-birria.png" width="331" height="191" alt="Pozole rojo, big pot" data-fm-layer="Meal image — Pozole">
+        <p class="rating" data-fm-layer="Rating badge — Pozole">
+          <svg class="rating__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3.6 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"/></svg>
+          <span class="rating__value" data-fm-layer="Rating value — Pozole">4.7</span>
+        </p>
+        <span class="meal-card__body" data-fm-layer="Meal body — Pozole">
+          <span class="meal-card__flag" data-fm-layer="Meal flag — Pozole">VERIFIED HEARTH</span>
+          <h3 class="meal-card__title" data-fm-layer="Meal title — Pozole">Pozole rojo, big pot</h3>
+          <span class="meal-card__meta" data-fm-layer="Meal meta — Pozole">
+            <svg class="meal-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span class="meal-card__place" data-fm-layer="Meal place — Pozole">Cocina de Abuela &middot; Barrio Logan</span>
+          </span>
+          <span class="meal-card__foot" data-fm-layer="Meal foot — Pozole">
+            <span class="meal-card__price" data-fm-layer="Meal price — Pozole">$15</span>
+            <span class="meal-card__slot" data-fm-layer="Meal slot — Pozole">Pickup Sat &middot; 4&ndash;7pm</span>
+          </span>
+        </span>
+        <a class="meal-card__link" href="app/shop-storefront.html" aria-label="View pozole rojo from Cocina de Abuela" data-fm-layer="Meal link — Pozole"></a>
+      </li>
+
+      <li class="meal-card" data-fm-layer="Meal card — Cardamom buns">
+        <img class="meal-card__image" src="assets/dish-sourdough.png" width="331" height="191" alt="Levain loaves and cardamom buns" data-fm-layer="Meal image — Cardamom buns">
+        <p class="rating" data-fm-layer="Rating badge — Cardamom buns">
+          <svg class="rating__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3.6 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"/></svg>
+          <span class="rating__value" data-fm-layer="Rating value — Cardamom buns">4.8</span>
+        </p>
+        <span class="meal-card__body" data-fm-layer="Meal body — Cardamom buns">
+          <span class="meal-card__flag" data-fm-layer="Meal flag — Cardamom buns">VERIFIED HEARTH</span>
+          <h3 class="meal-card__title" data-fm-layer="Meal title — Cardamom buns">Levain &amp; cardamom buns</h3>
+          <span class="meal-card__meta" data-fm-layer="Meal meta — Cardamom buns">
+            <svg class="meal-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span class="meal-card__place" data-fm-layer="Meal place — Cardamom buns">Hearth &amp; Rye &middot; Echo Park, LA</span>
+          </span>
+          <span class="meal-card__foot" data-fm-layer="Meal foot — Cardamom buns">
+            <span class="meal-card__price" data-fm-layer="Meal price — Cardamom buns">$11</span>
+            <span class="meal-card__slot" data-fm-layer="Meal slot — Cardamom buns">Pickup Sat &middot; 8&ndash;11am</span>
+          </span>
+        </span>
+        <a class="meal-card__link" href="app/shop-storefront.html" aria-label="View levain and cardamom buns from Hearth &amp; Rye" data-fm-layer="Meal link — Cardamom buns"></a>
+      </li>
+
+      <li class="meal-card" data-fm-layer="Meal card — Bun bo Hue">
+        <img class="meal-card__image" src="assets/dish-pho.png" width="331" height="191" alt="Bun bo Hue on Saturdays" data-fm-layer="Meal image — Bun bo Hue">
+        <p class="rating" data-fm-layer="Rating badge — Bun bo Hue">
+          <svg class="rating__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3.6 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"/></svg>
+          <span class="rating__value" data-fm-layer="Rating value — Bun bo Hue">4.9</span>
+        </p>
+        <span class="meal-card__body" data-fm-layer="Meal body — Bun bo Hue">
+          <span class="meal-card__flag" data-fm-layer="Meal flag — Bun bo Hue">VERIFIED HEARTH</span>
+          <h3 class="meal-card__title" data-fm-layer="Meal title — Bun bo Hue">B&uacute;n b&ograve; Hu&#7871; Saturdays</h3>
+          <span class="meal-card__meta" data-fm-layer="Meal meta — Bun bo Hue">
+            <svg class="meal-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span class="meal-card__place" data-fm-layer="Meal place — Bun bo Hue">B&#7871;p Nh&agrave; Ba &middot; Highland Park, LA</span>
+          </span>
+          <span class="meal-card__foot" data-fm-layer="Meal foot — Bun bo Hue">
+            <span class="meal-card__price" data-fm-layer="Meal price — Bun bo Hue">$17</span>
+            <span class="meal-card__slot" data-fm-layer="Meal slot — Bun bo Hue">Dine-in Sat &middot; 12&ndash;3pm</span>
+          </span>
+        </span>
+        <a class="meal-card__link" href="app/shop-storefront.html" aria-label="View b&uacute;n b&ograve; Hu&#7871; from B&#7871;p Nh&agrave; Ba" data-fm-layer="Meal link — Bun bo Hue"></a>
+      </li>
+
+      <li class="meal-card" data-fm-layer="Meal card — Adobo">
+        <img class="meal-card__image" src="assets/dish-biryani.png" width="331" height="191" alt="Chicken adobo and garlic rice" data-fm-layer="Meal image — Adobo">
+        <p class="rating" data-fm-layer="Rating badge — Adobo">
+          <svg class="rating__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3.6 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"/></svg>
+          <span class="rating__value" data-fm-layer="Rating value — Adobo">4.8</span>
+        </p>
+        <span class="meal-card__body" data-fm-layer="Meal body — Adobo">
+          <span class="meal-card__flag" data-fm-layer="Meal flag — Adobo">VERIFIED HEARTH</span>
+          <h3 class="meal-card__title" data-fm-layer="Meal title — Adobo">Chicken adobo &amp; garlic rice</h3>
+          <span class="meal-card__meta" data-fm-layer="Meal meta — Adobo">
+            <svg class="meal-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span class="meal-card__place" data-fm-layer="Meal place — Adobo">Tita Nen&rsquo;s &middot; City Heights</span>
+          </span>
+          <span class="meal-card__foot" data-fm-layer="Meal foot — Adobo">
+            <span class="meal-card__price" data-fm-layer="Meal price — Adobo">$14</span>
+            <span class="meal-card__slot" data-fm-layer="Meal slot — Adobo">Pickup Wed &middot; 5&ndash;8pm</span>
+          </span>
+        </span>
+        <a class="meal-card__link" href="app/shop-storefront.html" aria-label="View chicken adobo and garlic rice from Tita Nen&rsquo;s" data-fm-layer="Meal link — Adobo"></a>
+      </li>
+    </ul>
+
+    <a class="btn btn--outline browse__more" href="app/shop-search.html" data-fm-layer="Show more button">
+      <span class="btn__label" data-fm-layer="Show more label">Show more Hearths</span>
+      <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15"/><path d="m6 13 6 6 6-6"/></svg>
+    </a>
+
+    <p class="browse__note" data-fm-layer="Browse note">Menus change week to week. Enter your Address or ZIP Code to see the Hearths cooking closest to you.</p>
+  </section>
+
+  <!-- 4. Before you order -->
+  <section class="values" id="ordering" data-fm-layer="Ordering">
+    <p class="eyebrow values__eyebrow" data-fm-layer="Ordering eyebrow">BEFORE YOU ORDER</p>
+    <h2 class="section-title values__title" data-fm-layer="Ordering title">
+      <span class="section-title__lead" data-fm-layer="Ordering title lead">Real kitchens.</span>&nbsp;<span class="section-title__accent" data-fm-layer="Ordering title accent">Real neighbors.</span>
+    </h2>
+
+    <ul class="values__list" data-fm-layer="Ordering list">
+      <li class="value-card" data-fm-layer="Ordering — Meet the cook">
+        <span class="journey-step__figure journey-step__figure--tile" data-fm-layer="Ordering figure — Meet the cook">
+          <img class="journey-step__icon" src="assets/icons/cook.svg" alt="" data-fm-layer="Ordering icon — Meet the cook">
+        </span>
+        <div class="journey-step__text" data-fm-layer="Ordering text — Meet the cook">
+          <h3 class="journey-step__title" data-fm-layer="Ordering title — Meet the cook">Meet the cook</h3>
+          <p class="journey-step__body" data-fm-layer="Ordering body — Meet the cook">Every Hearth has a person and a story behind it. Get to know who&rsquo;s cooking, what they love to make, and what makes their Hearth special.</p>
+        </div>
+      </li>
+
+      <li class="value-card" data-fm-layer="Ordering — Pickup or dine-in">
+        <span class="journey-step__figure journey-step__figure--tile" data-fm-layer="Ordering figure — Pickup or dine-in">
+          <img class="journey-step__icon" src="assets/icons/pickup.svg" alt="" data-fm-layer="Ordering icon — Pickup or dine-in">
+        </span>
+        <div class="journey-step__text" data-fm-layer="Ordering text — Pickup or dine-in">
+          <h3 class="journey-step__title" data-fm-layer="Ordering title — Pickup or dine-in">Pick up, or pull up a chair</h3>
+          <p class="journey-step__body" data-fm-layer="Ordering body — Pickup or dine-in">Choose what fits for you. Pick up your meal, or when dine-in is offered, pull up a chair and enjoy it at the Hearth.</p>
+        </div>
+      </li>
+
+      <li class="value-card" data-fm-layer="Ordering — Food details">
+        <span class="journey-step__figure journey-step__figure--tile" data-fm-layer="Ordering figure — Food details">
+          <img class="journey-step__icon" src="assets/icons/menu.svg" alt="" data-fm-layer="Ordering icon — Food details">
+        </span>
+        <div class="journey-step__text" data-fm-layer="Ordering text — Food details">
+          <h3 class="journey-step__title" data-fm-layer="Ordering title — Food details">Food details up front</h3>
+          <p class="journey-step__body" data-fm-layer="Ordering body — Food details">Know what you&rsquo;re ordering before you order. Each Hearth shares its menu details, policies, and important food and allergy information clearly.</p>
+        </div>
+      </li>
+
+      <li class="value-card" data-fm-layer="Ordering — Secure payment">
+        <span class="journey-step__figure journey-step__figure--tile" data-fm-layer="Ordering figure — Secure payment">
+          <img class="journey-step__icon" src="assets/icons/card.svg" alt="" data-fm-layer="Ordering icon — Secure payment">
+        </span>
+        <div class="journey-step__text" data-fm-layer="Ordering text — Secure payment">
+          <h3 class="journey-step__title" data-fm-layer="Ordering title — Secure payment">Pay securely. Keep it together</h3>
+          <p class="journey-step__body" data-fm-layer="Ordering body — Secure payment">Pay securely through Hearthfare while your food payment goes directly to the cook. Keep your orders, receipts, favorite Hearths, and past meals together in your account.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 5. Newsletter -->
+  <section class="newsletter-wrap" data-fm-layer="Newsletter section">
+    <div class="newsletter" data-fm-layer="Newsletter band">
+      <div class="newsletter__intro" data-fm-layer="Newsletter intro">
+        <h2 class="newsletter__title" data-fm-layer="Newsletter title">Know who&rsquo;s cooking what</h2>
+        <p class="newsletter__body" data-fm-layer="Newsletter body">Discover new Hearths near you, meet the cooks behind them, and see what&rsquo;s cooking this week. Find your next homemade meal and new local favorites.</p>
+      </div>
+
+      <form class="newsletter__form" action="#" method="post" data-fm-layer="Newsletter form">
+        <label class="sr-only" for="newsletter-email">Email address</label>
+        <input class="newsletter__input" id="newsletter-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="Email address" required>
+        <button class="newsletter__button" type="submit" aria-label="Sign up for updates" data-fm-layer="Newsletter button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" data-fm-layer="Footer">
+  <div class="site-footer__brand" data-fm-layer="Footer brand">
+    <a class="brand brand--footer" href="index.html" data-fm-layer="Footer brand link">
+      <img class="brand__mark" src="assets/logo-mark.svg" width="38" height="35" alt="" data-fm-layer="Footer brand mark">
+      <span class="brand__name brand__name--footer" data-fm-layer="Footer brand name">hearthfare</span>
+    </a>
+    <p class="site-footer__blurb" data-fm-layer="Footer blurb">Homemade meals. Local connections. Discover the cooks in your neighborhood.</p>
+  </div>
+
+  <nav class="footer-col" aria-label="Explore" data-fm-layer="Footer column — Explore">
+    <h3 class="footer-col__title" data-fm-layer="Footer column title — Explore">EXPLORE</h3>
+    <ul class="footer-col__list" data-fm-layer="Footer link list — Explore">
+      <li class="footer-col__item" data-fm-layer="Footer item — Find food"><a class="footer-col__link" href="app/shop-search.html" data-fm-layer="Footer link — Find food">Find food</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — What's cooking"><a class="footer-col__link" href="whats-cooking.html" data-fm-layer="Footer link — What's cooking">What's cooking</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — How it works"><a class="footer-col__link" href="how-it-works.html" data-fm-layer="Footer link — How it works">How it works</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Why Hearthfare"><a class="footer-col__link" href="why-hearthfare.html" data-fm-layer="Footer link — Why Hearthfare">Why Hearthfare</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Create an account"><a class="footer-col__link" href="signup.html" data-fm-layer="Footer link — Create an account">Create an account</a></li>
+    </ul>
+  </nav>
+
+  <nav class="footer-col" aria-label="For cooks" data-fm-layer="Footer column — For cooks">
+    <h3 class="footer-col__title" data-fm-layer="Footer column title — For cooks">FOR COOKS</h3>
+    <ul class="footer-col__list" data-fm-layer="Footer link list — For cooks">
+      <li class="footer-col__item" data-fm-layer="Footer item — Start your own Hearth"><a class="footer-col__link" href="signup.html" data-fm-layer="Footer link — Start your own Hearth">Start your own Hearth</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — For cooks"><a class="footer-col__link" href="for-cooks.html" data-fm-layer="Footer link — For cooks">For cooks</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Hearth log in"><a class="footer-col__link" href="login.html" data-fm-layer="Footer link — Hearth log in">Hearth log in</a></li>
+    </ul>
+  </nav>
+
+  <nav class="footer-col" aria-label="Legal" data-fm-layer="Footer column — Legal">
+    <h3 class="footer-col__title" data-fm-layer="Footer column title — Legal">LEGAL</h3>
+    <ul class="footer-col__list" data-fm-layer="Footer link list — Legal">
+      <li class="footer-col__item" data-fm-layer="Footer item — Terms of Service"><a class="footer-col__link" href="#" data-fm-layer="Footer link — Terms of Service">Terms of Service</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Privacy Policy"><a class="footer-col__link" href="#" data-fm-layer="Footer link — Privacy Policy">Privacy Policy</a></li>
+      <li class="footer-col__item" data-fm-layer="Footer item — Contact"><a class="footer-col__link" href="#" data-fm-layer="Footer link — Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="site-footer__bar" data-fm-layer="Footer bar">
+    <span class="site-footer__copy" data-fm-layer="Footer copyright">&copy; 2026 Hearthfare</span>
+    <span class="site-footer__made" data-fm-layer="Footer made in">Made in Home Kitchens</span>
+  </div>
+</footer>
+
+<script src="role-switch.js"></script>
+</body>
+</html>
